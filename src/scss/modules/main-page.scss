@@ -1,0 +1,113 @@
+.header-hero {
+	height: 500px;
+	margin-top: 15px;
+	&__wrapper {
+		position: relative;
+		padding: 78px 0;
+		background-color: #e6ece4;
+		height: auto;
+		overflow: hidden;
+		& .almost-square-btn {
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			z-index: 2;
+		}
+	}
+	&__title {
+		text-align: center;
+		& span {
+			font-family: $GS;
+			font-size: 63px;
+			color: #2f2f2f;
+			line-height: 75px;
+		}
+	}
+	&__subtitle {
+		margin-top: 29px;
+		text-align: center;
+		& span {
+			font-family: $SFL;
+			color: #2f2f2f;
+			font-size: 20px;
+    		letter-spacing: 0.7px;
+		}
+	}
+	&__form {
+		margin-top: 46px;
+	}
+	.main-form {
+		&__container {
+			padding: 0 24px;
+		}
+		&__wrapper {
+		    display: flex;
+    		flex-direction: row;
+		}
+		&__inputs {
+			width: 100%;
+			display: flex;
+			flex-direction:row;
+  			border-radius: 4px;
+		    border: 1px solid #d1d1d1;
+		    border-right: none;
+		    margin-right: -8px;
+		}
+		&__input {
+			position: relative;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    width: 50%;
+		    padding: 0 41px;
+		    background-color: #fff;
+		    &:nth-child(1) {
+		    	&:after {
+		    		@media screen and (min-width: $phoneWidth) {
+					    content: '';
+					    position: absolute;
+					    right: 0;
+					    top: 50%;
+					    transform:translateY(-50%);
+					    height: 70%;
+					    width: 1px;
+					    background-color: #e3e3e3;
+					}
+		    	}
+		    }
+		}
+		&__input-content {
+			white-space: nowrap;
+			& span {
+				font-family: $SFS;
+				font-size: 16px;
+				color: #231f20;
+				letter-spacing: 0.6px;
+			}
+			& .arrow-svg {
+				background-color: #231f20;
+				transform:rotate(180deg);
+				margin-left: 10px;
+				width: 17px;
+				height: 15px;
+			}
+		}
+
+	}
+
+
+	&__figure {
+		background-image: url(/img/general/hero-item.png);
+	    background-size: contain;
+	    background-repeat: no-repeat;
+	    position: absolute;
+	    top: -127px;
+	    left: -182px;
+	    height: 147%;
+	    width: 100%;	
+	}
+	& .container-bg {
+		@media (min-width: 1200px){
+		    max-width: 1293px;
+		}
+	}
+}

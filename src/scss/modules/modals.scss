@@ -1,0 +1,198 @@
+.modal.active .modal-body {
+	transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+	z-index: 997;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000000ba;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.active {
+    	opacity: 1;
+    	visibility: visible;
+    	pointer-events: unset;
+    }
+	&__wrapper {
+		position: relative;
+		padding-top: 122px;
+		overflow-y: auto;
+		height: 100%;
+		padding-bottom: 50px;
+		&::-webkit-scrollbar {
+		    width: 0px;  /* remove scrollbar space */
+		    background: transparent;
+		}
+	}
+	&__title {
+		text-align: center;
+		& span {
+			font-family: $GS;
+			font-size: 35px;
+			color: #33473f;
+		    line-height: 32px;
+		}
+	}
+	&__subtitle {
+		margin-top: 12px;
+		text-align: center;
+		& span {
+			font-family: $SFL;
+			font-size: 16px;
+			color: #515151;
+			line-height: 23px;
+		}
+	}
+	&__form {
+		margin-top: 33px;
+	    padding: 0 20px;
+	    & form {
+    	    display: flex;
+    		flex-direction: column;
+	    }
+	    & .rectangle-btn {
+	    	margin-top: 16px;
+	    }
+	    & .empty-btn {
+	    	margin:25px auto;
+	    }
+	}
+	&__label {
+		margin-bottom: 17px;
+	    display: flex;
+    	flex-direction: column;
+    	&.invalid {
+    		& .validation {
+    			opacity: 1;
+    			visibility: visible;
+    		}
+    	}
+    	& input {
+    		background: #e6ece4;
+		    padding: 24px 29px;
+		    border-radius: 4px;
+		    letter-spacing: 0.7px;
+		    transition: .4s;
+    		border: 1px solid transparent;
+    		&::placeholder {
+    			font-family: $SFL;
+				color: #b4b4b4;
+				font-size: 20px;
+    		}
+    	}
+	}
+	&__input-name {
+		margin-bottom: 7px;
+		font-family: $SFM;
+		color: #343434;
+		font-size: 15px;
+	    letter-spacing: 1.1px;
+	}
+	&__label {
+	    
+	}
+	&__var {
+		padding: 20px 0;
+    	padding-bottom: 50px;
+		&.thanks-modal {
+		    padding: 60px 0;
+    		padding-bottom: 100px;
+			& .modal__form {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.modal__label.invalid {
+	& input {
+		border: 1px solid #ff0000;
+	}
+}
+.forgot-pass {
+	& a {
+		font-size: 14px;
+		font-family: $SFM;
+		text-decoration: underline;
+		line-height: 1.357;
+		color: rgba(52, 52, 52, 0.722);
+		display: block;
+		margin-top: 5px;
+	}
+}
+.validation {
+	font-family: $GS;
+	font-size: 14px;
+	color: red;
+	display: block;
+	margin-top: 5px;
+	user-select:none;
+	opacity: 0;
+	visibility:hidden; 
+	transition:.4s;
+}
+.modal-body {
+	background: #fff;
+	border-radius: 8px;
+	padding-top: 54px;
+
+	transform: translateY(60px);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+	&__cross {
+	    position: absolute;
+        top: 30px;
+    	right: 30px;
+    	cursor: pointer;
+    	& .times-svg {
+    		background-color: #858585;
+    		height: 30px;
+    		width: 30px;
+    	}
+		
+	}
+}
+.acquainted {
+	margin-top: 65px;
+	margin-bottom: 30px;
+	&__wrapper {
+		padding: 0px 30px;
+	}
+	&__body {
+		padding: 50px 30px 30px;
+		border-radius: 9px;
+		border:1px solid rgb(224, 224, 224);
+		display: flex;
+		flex-direction:row;
+	}
+	&__title {
+		& span {
+			font-family: $GS;
+			font-size: 25px;
+			color: #33473f;
+		}
+	}
+	&__intro {
+		width: 70%;
+	}
+	&__subtitle {
+		margin-top: 10px;
+		& p {
+			font-family: $SFL;
+			font-size: 16px;
+			color: #33473f;
+		}
+	}
+	&__button {
+		margin-top: 20px;
+	}
+}

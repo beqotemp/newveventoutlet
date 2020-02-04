@@ -1,0 +1,83 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+    <header class="header-hero">
+    	<div class="container container-bg">
+			<div class="header-hero__wrapper">
+				<div class="header-hero__figure"></div>
+				<div class="row">
+					<div class="col-xl-8 offset-xl-2">
+						<div class="header-hero__title">
+							<span>
+								Поиск свободных 
+								специалистов для вашего
+								мероприятия со скидкой
+							</span>
+						</div>
+						<div class="header-hero__subtitle">
+							<span>Найдите специалиста для проекта в 2 клика</span>
+						</div>
+						<div class="header-hero__form">
+							<div class="main-form__container">
+								<div class="main-form__wrapper">
+									<div class="main-form__inputs">
+										<div class="main-form__input catalog-select show">
+											<div class="main-form__input-content">
+												<span>Выберите специалиста</span>
+												<div class="arrow-svg"></div>
+											</div>
+											<div class="catalog-select__body ">
+												<div class="catalog-select__body-title">
+													 <span>Выберете город</span>
+												 </div>
+												<div class="form__select-wrapper">
+													 <div class="form__select-list">
+														 <span>Москвабад</span>
+														 <span>Питерстан</span>
+														 <span>Сочян</span>
+														 <span>Краснодаридзе</span>
+													 </div>
+												 </div>
+											</div>
+										</div>
+										<div class="main-form__input catalog-select">
+											<div class="main-form__input-content">
+												<span>Выберите специалиста</span>
+												<div class="arrow-svg"></div>
+											</div>
+											<div class="catalog-select__body">
+												<div class="catalog-select__body-title">
+													 <span>Выберете город</span>
+												 </div>
+												<div class="form__select-wrapper">
+													 <div class="form__select-list">
+														 <span>Москвабад</span>
+														 <span>Питерстан</span>
+														 <span>Сочян</span>
+														 <span>Краснодаридзе</span>
+													 </div>
+												 </div>
+											</div>
+										</div>
+									</div>
+									<button type="button" class="almost-square-btn almost-square-btn-corral">
+										<span>Поиск</span>
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+    			
+    		</div>
+    	</div>
+    </header>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
