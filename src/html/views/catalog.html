@@ -90,43 +90,29 @@
 											</div>
 										</div>
 										<div class="catalog-filter__item">
-											<div class="catalog-select">
-												<v-calendar
-													class="calendar"
-										  			mode='range' 
-										  			title-position="left"
-										  			v-model='date'
-										  			:popover="{ placement: 'bottom', visibility: 'click' }">
-														<div class="catalog-select__intro">
-												
-														
-															<div class="catalog-select__title">
-																<span>Дата</span>
-																<div class="arrow-svg"></div>
-															</div>
-												
-															<div class="catalog-select__result">
-																<span>Москва</span>
-															</div>
-														</div>
-												</v-calendar>
+											<div class="catalog-select show">
+												<div class="catalog-select__intro">
+													<div class="catalog-select__title">
+														<span>Дата</span>
+														<div class="arrow-svg"></div>
+													</div>
+													<div class="catalog-select__result">
+														<span>Москва</span>
+													</div>
+												</div>
 												<div class="catalog-select__body">
 													<div class="catalog-select__body-title">
 	 													<span>Выберете размер скидки</span>
 	 												</div>
-													<div class="form__select-wrapper">
-		 												<div class="form__select-list">
-			 												<span>Художники</span>
-			 												<span>Фотографы</span>
-			 												<span>Ведущие</span>
-			 												<span>Колористы</span>
-			 												<span>Организаторы</span>
-			 												<span>Рестораны</span>
-			 												<span>Аниматоры</span>
-			 												<span>Эвент-мейкеры</span>
-			 												<span>Хареографы</span>
-		 												</div>
-	 												</div>
+													<v-calendar
+														mode='range' 
+														title-position="left"
+														v-model='date'
+														is-inline
+														color="red"
+														:popover="{ placement: 'bottom', visibility: 'click' }">
+													</v-calendar>
+													<div class="catalog-select__button"><a href="#" class="rectangle-btn-border rectangle-btn-border-green"><span>Применить</span></a></div>
 												</div>
 											</div>
 										</div>
@@ -214,9 +200,21 @@
 									<div class="how-much-filters__wrapper">
 										<div class="how-much-filters__main">
 											<ul>
-												<li><a href="">5 предложений</a></li>
-												<li><a href="">10 предложений</a></li>
-												<li><a href="">Все предложения</a></li>
+												<li>
+													<label for="five-offers">
+														<input id="five-offers" type="radio" name="gender" value="five-offers">5 предложений
+													</label>
+												</li>
+												<li>
+													<label for="ten-offers">
+														<input id="ten-offers" type="radio" name="gender" value="ten-offers">10 предложений
+													</label>
+												</li>
+												<li>
+													<label for="all-offers">
+														<input id="all-offers" type="radio" name="gender" value="all-offers">Все предложения
+													</label>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -546,6 +544,17 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-pagination">
+					<div class="catalog-pagination__wrapper">
+						<div class="catalog-pagination__body">
+							<div class="catalog-pagination__item active">1</div>
+							<div class="catalog-pagination__item">2</div>
+							<div class="catalog-pagination__item">3</div>
+							<div class="catalog-pagination__item">...</div>
+							<div class="catalog-pagination__item">98</div>
 						</div>
 					</div>
 				</div>

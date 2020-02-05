@@ -502,13 +502,16 @@
 	top: 7px;
 }
 
-.calendarr {
+.calendar {
  & .vc-title {
  	font-family: $GM;
  	font-size: 16px;
  	color: #231f20;
  	text-transform: capitalize;
  }
+}
+.vc-container {
+	border:0px!important;
 }
 
 .vc-reset [role=button], .vc-reset button {
@@ -524,7 +527,21 @@
 .vc-svg-icon path[data-v-5572e632] {
 	color: #302c2d;
 }
+.vc-weekday[data-v-d137fa42] {
+	font-family: $GR;
+	font-size: 14px;
+	color: #acacac;
+}
+.vc-title[data-v-d137fa42] {
+	padding: 0;
+}
+.vc-header[data-v-d137fa42], .vc-weeks[data-v-d137fa42] {
+	padding-left: 0!important;
+}
 
+.vc-weeks[data-v-d137fa42] {
+	margin-top: 15px;
+}
 
 
 .additional_filters {
@@ -579,12 +596,51 @@
 					top: 2px;
 					right:0;
 				}
-				& a {
+				& label {
 					font-family: $GR;
 					font-size: 14px;
 					color: #767676;
+					& input {
+						display:none;
+					}
 				}
 			}
+		}
+	}
+}
+.catalog-pagination {
+	margin-top: 50px;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	&__body {
+		display: flex;
+    	flex-direction: row;
+	}
+	&__item {
+		cursor: pointer;
+		margin-right: 15px;
+		height: 45px;
+		width: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		border: 1px solid #9aaf64;
+		font-family: $GS;
+		font-size: 16px;
+		transition:.4s;
+		&.active {
+			background-color:#9aaf64;
+			color: #fff;
+		}
+		&:hover {
+			background-color: #cee19c;
+			border-color:#cee19c;
+		}
+		&:last-child{
+			margin-right: 0;
 		}
 	}
 }
