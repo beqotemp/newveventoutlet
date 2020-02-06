@@ -195,11 +195,24 @@
 		margin-top: 20px;
 	}
 }
-
-.alert {
+.alert__wrapper {
 	position: fixed;
-    top: 20px;
-    right: 20px;
+	top: 0;
+	right: 15px;
+	display: flex;
+	flex-direction: column;
+	
+	transform: translateX(110%);
+    opacity: 0;
+	visibility: hidden;
+	&.active {
+		transform: translateX(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.alert {
+    margin-top: 20px;
 	overflow: hidden;
 	transition: .4s;
 	border-radius: 5px;
