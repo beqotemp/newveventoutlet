@@ -169,7 +169,26 @@
 }
 
 // SVG`s
-
+.check-mark-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/check-mark.svg) no-repeat center;
+  mask: url(../img/svg/check-mark.svg) no-repeat center;
+}
+.exclamation-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/exclamation.svg) no-repeat center;
+  mask: url(../img/svg/exclamation.svg) no-repeat center;
+}
 .arrow-svg {
   display: inline-block;
   width: 22px;

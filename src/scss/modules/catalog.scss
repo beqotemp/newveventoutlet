@@ -201,6 +201,8 @@
 		background-size: cover;
 		height: 85px;
 		width: 85px;
+		min-width: 85px;
+		min-height: 85px;
 		background-position: center;
 		border-radius: 50%;
 		overflow: hidden;
@@ -241,6 +243,9 @@
 			    letter-spacing: 0.6px;
 			}
 		}
+		// catalog-card-name
+		// catalog-card-insta
+		// catalog-card-price
 		&:nth-child(2) {
 		    padding: 0 36px 0 23px;
 		    
