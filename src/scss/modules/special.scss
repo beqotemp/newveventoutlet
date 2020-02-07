@@ -1,0 +1,198 @@
+.profile-special {
+    padding-bottom: 30px;
+    & .pe-block__add-btn {
+        margin-top: 22px;
+    }
+    &__label-comment {
+        margin-top: 15px;
+        & p {
+            font-family: $SFR;
+            font-size: 14px;
+            color: #7b7b7b;
+        }
+    }
+    &__title {
+        margin-top: 40px;
+        & span {
+            font-family: $GS;
+            font-size: 18px;
+            color: #343434;
+        }
+    }
+    &__body {
+        padding: 10px 60px 30px 35px;
+    }
+    &__icon {
+        & .catalog-card__discount-icon {
+            height: 44px;
+            padding: 9px;
+            width: 44px;
+            margin-left: 0;
+            & .percent-svg {
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+    &__footer {
+        margin-top: 53px;
+        & .profile-special__political {
+            max-width: 650px;
+        }
+        & .additional_filters__checkbox {
+            text-align: left;
+        }
+        & .filter-checkbox input:checked~.checkmark {
+            background-color: #91b15f;
+        }
+        & .filter-checkbox {
+            font-family: $SFL;
+            font-size: 15px;
+            color: #525252;
+            & a {
+                color: #000000;
+                font-family: $SFL;
+                font-size: 15px;
+                text-decoration: underline;
+            }
+        }
+        & .pe-block__save-button {
+            margin-top: 25px;
+        }
+    }
+}
+.pr-block {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+.form {
+    &__discount{
+        display: flex;
+        flex-wrap: wrap;
+        width: 290px;
+        margin-top: 21px;
+    }
+}
+.discount-item {
+    background-color: #e6ece4;
+    border-radius: 4px;
+    font-family: $GR;
+    font-size: 14px;
+    color:#343434;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    & input[type="radio"] {
+        display: none;
+    }
+    & input {
+        background-color: #e6ece4;
+        font-family: $GR;
+        font-size: 14px;
+        color: #343434;
+        width: 100%;
+        text-align: center;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &::placeholder {
+            font-family: $GR;
+            font-size: 14px;
+            color: #343434;
+        }
+    }
+    & span {
+        cursor: pointer;
+        margin: 0;
+        font-family: $GR;
+        font-size: 14px;
+        color: #343434;
+        margin-left: 2px;
+    }
+}
+.discount-item-other {
+    flex: 1;
+    position: relative;    
+}
+.special-offer {
+    &__head {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-right: 25px;
+        border-right: 1px solid #ededed;
+        & span {
+            &:nth-child(1){
+                font-family: $GR;
+                font-size: 14px;
+                color: #8f8f8f;
+                white-space: nowrap;
+            }
+            &:nth-child(2){
+                font-family: $GR;
+                font-size: 15px;
+                color: #202020;
+                white-space: nowrap;
+            }
+        }
+    }
+    &__button {
+        & a {
+            font-family: $GR;
+            font-size: 15px;
+            color: #202020;
+        }
+    }
+    &__desctipton {
+        background-color: #fcfcfc;
+        padding: 20px;
+        margin-top: 18px;
+    }
+    &__desctipton-title {
+        span {
+            font-family: $GR;
+            font-size: 14px;
+            color: #8f8f8f;
+            display: block;
+            letter-spacing: .7px;
+        }
+    }
+    &__desctipton-body {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        p {
+            font-family: $SFL;
+            font-size: 14px;
+            color: #202020;
+            letter-spacing: 0.7px;
+        }
+    }
+    &__footer {
+        margin-top: 21px;
+        & .additional_filters__checkbox {
+            text-align: left;
+        }
+        & .filter-checkbox input:checked~.checkmark {
+            background-color: #91b15f;
+        }
+        & .filter-checkbox {
+            font-family: $SFL;
+            font-size: 15px;
+            color: #525252;
+        }
+    }
+}

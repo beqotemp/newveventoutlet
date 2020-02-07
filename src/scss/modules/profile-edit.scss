@@ -1,5 +1,8 @@
 .profile-edit {
 	background-color: #f9f9f9;
+	@media screen and (min-width: $tableWidth) {
+		min-height: 100vh;
+	}
 	&__content {
 		margin: 0 -15px;
 	}

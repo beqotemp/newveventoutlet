@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  // background: url(/img/remove/cat.png);
+  // background: url(/img/remove/spec.png);
   background-size: cover;
 //dev
 
@@ -68,5 +68,8 @@ section, .section {
 @import "modules/main-page.scss";
 @import "modules/profile-edit.scss";
 @import "modules/catalog.scss";
+@import "modules/special.scss";
+@import "modules/lk.scss";
 @import "modules/modals.scss";
+
 

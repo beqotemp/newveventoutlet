@@ -1,0 +1,28 @@
+.lk {
+    &__title {
+        margin-top: 0;
+    }
+    &__body {
+        padding: 15px 60px 0px 35px;
+    }
+    &__havent-offers-title {
+        & span {
+            font-family: $GM;
+            font-size: 25px;
+            color: #33473f;
+            & a {
+                color: #ff7061;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__havent-offers {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        & .pe-block__add-btn {
+            margin-top: 30px;
+        }
+    }
+}
