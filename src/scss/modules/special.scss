@@ -60,6 +60,21 @@
             margin-top: 25px;
         }
     }
+    &__calendar {
+        background: #e6ece4;
+    }
+    &__calendar-wrapper {
+        background: #e6ece4;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 0;
+        & .vc-container {
+            background: #e6ece4;
+        }
+        & .vc-reset [role=button], .vc-reset button {
+            background-color: #ffffff!important;
+        }
+    }
 }
 .pr-block {
     border-bottom: none;

@@ -1,10 +1,11 @@
 
-console.log('1');
+
 // JS
 import './scripts/menu.js'
 import './scripts/glide.js'
 import './scripts/range-slider.js'
 import './scripts/sticky.js'
+import './scripts/slick-slider'
 
 
 // Vue

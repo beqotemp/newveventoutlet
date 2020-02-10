@@ -547,8 +547,24 @@
 .vc-weeks[data-v-d137fa42] {
 	margin-top: 15px;
 }
-
-
+.vc-bg-red-200 {
+    background-color: #eadad2;
+}
+.vc-bg-red-600 {
+	background-color: #ff7061!important;
+}
+.vc-border-red-700 {
+    border-color: #f08f87!important;
+    background-color: #f08f87!important;
+}
+.vc-text-white {
+    color: #fff!important;
+}
+.vc-day-content[data-v-47ef1cd6] {
+	font-family: $GR;
+	font-size: 14px;
+	color: #231f20;
+}
 .additional_filters {
 	padding: 30px 0;
 	&__wrapper {

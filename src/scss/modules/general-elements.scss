@@ -187,6 +187,26 @@
   
 }
 // SVG`s
+.full-arrow-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/full-arrow.svg) no-repeat center;
+  mask: url(../img/svg/full-arrow.svg) no-repeat center;
+}
+.location-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/location.svg) no-repeat center;
+  mask: url(../img/svg/location.svg) no-repeat center;
+}
 .check-mark-svg {
   display: inline-block;
   width: 22px;

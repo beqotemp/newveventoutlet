@@ -103,16 +103,18 @@
                               </label>
                               <label class="form__label">
                                 <span>Выбериет дату, несколько дат или диапазон дат </span>
-
-                                <v-calendar
-                                  mode="range"
-                                  title-position="left"
-                                  v-model="date"
-                                  is-inline
-                                  color="red"
-                                  :popover="{ placement: 'bottom', visibility: 'click' }"
-                                >
-                                </v-calendar>
+                                <div class="profile-special__calendar-wrapper">
+                                  <v-calendar
+                                    class="profile-special__calendar"
+                                    mode="range"
+                                    title-position="left"
+                                    v-model="date"
+                                    is-inline
+                                    color="red"
+                                    :popover="{ placement: 'bottom', visibility: 'click' }"
+                                  >
+                                  </v-calendar>
+                                </div>
                               </label>
                             </div>
                             <div class="col-12 col-sm-12 col-md-6 col-xl-6">
