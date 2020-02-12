@@ -298,7 +298,7 @@
                   <div class="catalog-card__head">
                     <div class="catalog-card__head-photo" style="background-image: url(/img/person.png);"></div>
                     <div class="catalog-card__head-info catalog-card-name">
-                      <span>Александр Мирошниченко</span> <span>Колористика</span>
+                      <span><a href="#">Александр Мирошниченко</a></span> <span>Колористика</span>
                     </div>
                     <div class="catalog-card__head-info catalog-card-insta">
                       <span>@info_mirosch</span> <span>Instagram</span>
@@ -482,11 +482,9 @@
           <div class="catalog-pagination">
             <div class="catalog-pagination__wrapper">
               <div class="catalog-pagination__body">
-                <div class="catalog-pagination__item active">1</div>
-                <div class="catalog-pagination__item">2</div>
-                <div class="catalog-pagination__item">3</div>
-                <div class="catalog-pagination__item">...</div>
-                <div class="catalog-pagination__item">98</div>
+                <a href="#" class="catalog-pagination__item active">1</a>
+                <a href="#" class="catalog-pagination__item">2</a> <a href="#" class="catalog-pagination__item">3</a>
+                <a href="#" class="catalog-pagination__item">...</a> <a href="#" class="catalog-pagination__item">98</a>
               </div>
             </div>
           </div>
@@ -494,7 +492,48 @@
       </section>
     </div>
     <!-- end main wrapper -->
-    <footer>123</footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="footer__logo">
+              <img src="./img/general/logo.png" alt="" /> <span class="eventoutlet">EventOutlet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xl-7">
+            <div class="footer__discription">
+              <p>
+                Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc.Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
+                augue velit cursus nunc Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                leo eget bibendum sodales, augue
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="footer-nav">
+              <div class="footer-nav__item">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Каталог специалистов</a></li>
+                  <li><a href="#">Стать исполнителем</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav__item">
+                <ul>
+                  <li><a href="#">Вход</a></li>
+                  <li><a href="#">Регистрация</a></li>
+                  <li><a href="#">Как пользоваться?</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/bundle.js"></script>
   </body>
