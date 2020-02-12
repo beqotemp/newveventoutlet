@@ -1,7 +1,8 @@
 .modal.active .modal-body {
 	transform: translateY(0px);
     opacity: 1;
-    visibility: visible;
+	visibility: visible;
+	overflow: hidden;
 }
 .modal {
 	z-index: 997;
@@ -14,7 +15,27 @@
     transition: .4s;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+	pointer-events: none;
+	
+	&__f-figure {
+		background-image: url(../img/general/modal-item.png);
+		height: 437px;
+		width: 281px;
+		position: absolute;
+		top: -90px;
+		left: -120px;
+		background-size: cover;
+	}
+	&__s-figure {
+		background-image: url(../img/general/modal-itemm.png);
+		height: 225px;
+		width: 212px;
+		position: absolute;
+		right: -90px;
+		top: 0%;
+		transform: translateY(120%);
+		background-repeat: no-repeat;
+	}
     &.active {
     	opacity: 1;
     	visibility: visible;
@@ -94,9 +115,6 @@
 		color: #343434;
 		font-size: 15px;
 	    letter-spacing: 1.1px;
-	}
-	&__label {
-	    
 	}
 	&__var {
 		padding: 20px 0;
