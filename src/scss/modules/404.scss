@@ -1,0 +1,24 @@
+.fof-page {
+    padding: 0;
+    user-select: none;
+    &__wrapp {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 80vh;
+    }
+    &__pic {}
+    &__title {
+        text-align: center;
+        & span {
+            font-family: $GS;
+            font-size: 26px;
+            color: #33473f;
+        }
+        
+    }
+    &__button {
+        margin-top: 30px;
+    }
+}

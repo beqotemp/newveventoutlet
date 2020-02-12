@@ -5,7 +5,7 @@
 <%= _.template(require('./../includes/head.html'))(data) %>
 
 <%= _.template(require('./../includes/header.html'))(data) %>
- 
+   
 <section id="profile" class="profile">
     <div class="profile-slider">
         <div class="profile-slider__wrapper">
@@ -87,10 +87,10 @@
                                     <span>@info_mirosch</span>
                                     <span>Instagram</span>
                                 </div>
-                                <div class="profile-preview__item profile-preview__price">
+                                <!-- <div class="profile-preview__item profile-preview__price">
                                     <span>Цена со скидкой</span>
                                     <span>от 3 000 р / час</span>
-                                </div>
+                                </div> -->
                                 <div class="profile-preview__item profile-preview__catacts">
                                     <div class="contacts-block__item">
                                         <a href="#">
@@ -229,11 +229,11 @@
                                                             <span>Услуга</span>
                                                             <span>Фотосессия </span>
                                                         </div>
-                                                        <div class="special-offer__item">
+                                                        <div class="special-offer__item profile-core__offer-item">
                                                             <span>Цена со скидкой</span>
                                                             <span>3 000 р / фикс</span>
                                                         </div>
-                                                        <div class="special-offer__item">
+                                                        <div class="special-offer__item profile-core__offer-item">
                                                             <span>Скидка</span>
                                                             <span>30%</span>
                                                         </div>
@@ -268,11 +268,11 @@
                                                             <span>Услуга</span>
                                                             <span>Фотосессия </span>
                                                         </div>
-                                                        <div class="special-offer__item">
+                                                        <div class="special-offer__item profile-core__offer-item">
                                                             <span>Цена со скидкой</span>
                                                             <span>3 000 р / фикс</span>
                                                         </div>
-                                                        <div class="special-offer__item">
+                                                        <div class="special-offer__item profile-core__offer-item">
                                                             <span>Скидка</span>
                                                             <span>30%</span>
                                                         </div>
@@ -305,60 +305,63 @@
                                                         title-position="left"
                                                         v-model='date'
                                                         is-inline
-                                                        color="red"
                                                         :popover="{ placement: 'bottom', visibility: 'click' }">
 												    </v-calendar>
                                                 </div>
                                                 
                                             </div>
                                         </div>
-                                        <div class="sidebar__title">
-                                            <span>Стоимость</span>
-                                        </div>
-                                        <div class="sidebar__item">
-                                            <div class="sidebar__core">
-                                               <div class="sidebar__head">
-                                                <div class="sidebar__head_item">
-                                                    <span>Услуга</span>
-                                                    <span class="service-name">Фотосессия</span>
-                                                </div>
-                                                <div class="sidebar__slash"></div>
-                                                <div class="sidebar__head_item">
-                                                    <span>Стоимость</span>
-                                                    <span class="sidebar-price">4 000 р / час</span>
-                                                </div>
-                                               </div>
-                                               <div class="sidebar__description">
-                                                   <span>Описание</span>
-                                                   <p>
-                                                        Минимальное время работы 5 часа. Если свадьба загородом трансфер оплачивает заказчик.
-                                                   </p>
-                                               </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="sidebar__item">
-                                            <div class="sidebar__core">
-                                               <div class="sidebar__head">
-                                                <div class="sidebar__head_item">
-                                                    <span>Услуга</span>
-                                                    <span class="service-name">Фотосессия</span>
-                                                </div>
-                                                <div class="sidebar__slash"></div>
-                                                <div class="sidebar__head_item">
-                                                    <span>Стоимость</span>
-                                                    <span class="sidebar-price">4 000 р / час</span>
-                                                </div>
-                                               </div>
-                                               <div class="sidebar__description">
-                                                   <span>Описание</span>
-                                                   <p>
-                                                        Минимальное время работы 5 часа. Если свадьба загородом трансфер оплачивает заказчик.
-                                                   </p>
-                                               </div>
-                                            </div>
-                                        </div>
                                         
+                                        <div class="sidebar__item-wrapper"><!-- html change-->
+
+                                        
+                                            <div class="sidebar__title">
+                                                <span>Стоимость</span>
+                                            </div>
+                                            <div class="sidebar__item">
+                                                <div class="sidebar__core">
+                                                <div class="sidebar__head">
+                                                    <div class="sidebar__head_item">
+                                                        <span>Услуга</span>
+                                                        <span class="service-name">Фотосессия</span>
+                                                    </div>
+                                                    <div class="sidebar__slash"></div>
+                                                    <div class="sidebar__head_item">
+                                                        <span>Стоимость</span>
+                                                        <span class="sidebar-price">4 000 р / час</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sidebar__description">
+                                                    <span>Описание</span>
+                                                    <p>
+                                                            Минимальное время работы 5 часа. Если свадьба загородом трансфер оплачивает заказчик.
+                                                    </p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="sidebar__item">
+                                                <div class="sidebar__core">
+                                                <div class="sidebar__head">
+                                                    <div class="sidebar__head_item">
+                                                        <span>Услуга</span>
+                                                        <span class="service-name">Фотосессия</span>
+                                                    </div>
+                                                    <div class="sidebar__slash"></div>
+                                                    <div class="sidebar__head_item">
+                                                        <span>Стоимость</span>
+                                                        <span class="sidebar-price">4 000 р / час</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sidebar__description">
+                                                    <span>Описание</span>
+                                                    <p>
+                                                        Минимальное время работы 5 часа. Если свадьба загородом трансфер оплачивает заказчик.
+                                                    </p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>

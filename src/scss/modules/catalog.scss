@@ -234,7 +234,14 @@
 		& span {
 			&:nth-child(1) {
 				font-family: $SFB;
-			    letter-spacing: -.6px;
+				letter-spacing: -.6px;
+				color:#101010;
+				& a {
+					font-family: $SFB;
+					letter-spacing: -.6px;
+					color:#101010;
+				}
+				
 			}
 			&:nth-child(2){
 				font-family: $SFR;
@@ -355,7 +362,15 @@
 			background-color: #ededed;
 			& .contacts-block-svg {
 			    height: 17px;
-    			width: 17px;
+				width: 17px;
+				@media screen and (max-width: $beforeSmDesktopWidth) {
+					height: 17px;
+					width: 17px;
+				}
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				height: 36px;
+				width: 36px;
 			}
 		}
 	}
@@ -546,7 +561,7 @@
 
 .vc-weeks[data-v-d137fa42] {
 	margin-top: 15px;
-}
+} 
 .vc-bg-red-200 {
     background-color: #eadad2;
 }
@@ -652,6 +667,7 @@
 		font-family: $GS;
 		font-size: 16px;
 		transition:.4s;
+		color: #000;
 		&.active {
 			background-color:#9aaf64;
 			color: #fff;
@@ -659,9 +675,42 @@
 		&:hover {
 			background-color: #cee19c;
 			border-color:#cee19c;
+			color: #757575;
 		}
 		&:last-child{
 			margin-right: 0;
 		}
 	}
+}
+
+// calendar styles 
+.vc-relative {
+	
+}
+
+.vc-bg-blue-600 {
+    background-color: #ff7061!important;
+}
+.vc-bg-blue-200 {
+    background-color: #ffebe9!important;
+}
+.vc-border-blue-700 {
+	border-color: #ffa39a!important;
+	background-color: #ffa39a!important;
+}
+.vc-svg-icon[data-v-63f7b5ec] {
+	height: 15px!important;
+	width: 15px!important;
+}
+.vc-text-gray-600 {
+    color: #302c2d!important;
+}
+.vc-weekday[data-v-d137fa42] {
+	font-family: $GR!important;
+	font-size: 14px!important;
+	color:#acacac!important;
+}
+.vc-day-content[data-v-47ef1cd6] {
+	font-family: $GR!important;
+	font-size: 14px!important;
 }
