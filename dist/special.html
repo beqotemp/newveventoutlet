@@ -18,7 +18,7 @@
             <div class="col-xl-12">
               <div class="navbar-general__row">
                 <a href="#" class="navbar-logo">
-                  <img src="/img/general/logo.png" alt="" /> <span class="eventoutlet"> EventOutlet </span>
+                  <img src="./img/general/logo.png" alt="" /> <span class="eventoutlet"> EventOutlet </span>
                 </a>
                 <div class="navbar-general__collapse">
                   <ul class="navbar-general__main">
@@ -31,7 +31,7 @@
                         <span>Виктория</span>
                         <div
                           class="navbar-general__profile-photo"
-                          style="background-image: url(/img/person.png);"
+                          style="background-image: url(./img/person.png);"
                         ></div>
                         <div class="arrow-svg"></div>
                       </div>
@@ -121,108 +121,89 @@
                               <label class="form__label">
                                 <span>Выберите размер скидки</span>
                                 <div class="form__discount">
-                                  <div class="discount-item">
-                                    <label for="ten-proc-disc">
-                                      <input
-                                        id="ten-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>10%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="fifteen-proc-disc">
-                                      <input
-                                        id="fifteen-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>15%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="twenty-proc-disc">
-                                      <input
-                                        id="twenty-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>20%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="twentyfive-proc-disc">
-                                      <input
-                                        id="twentyfive-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>25%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="thirteen-proc-disc">
-                                      <input
-                                        id="thirteen-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>30%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="thirdifive-proc-disc">
-                                      <input
-                                        id="thirdifive-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>35%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="fourteen-proc-disc">
-                                      <input
-                                        id="fourteen-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>40%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="fourtyfife-proc-disc">
-                                      <input
-                                        id="fourtyfife-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>45%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item">
-                                    <label for="fifty-proc-disc">
-                                      <input
-                                        id="fifty-proc-disc"
-                                        type="radio"
-                                        name="discount-special-offer"
-                                        value="male"
-                                      />
-                                      <span>50%</span>
-                                    </label>
-                                  </div>
-                                  <div class="discount-item discount-item-other">
-                                    <input type="number" placeholder="Другое" />
-                                  </div>
+                                  <label for="ten-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      checked="checked"
+                                      id="ten-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>10%</span></div>
+                                  </label>
+                                  <label for="fifteen-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="fifteen-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>15%</span></div>
+                                  </label>
+                                  <label for="twenty-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="twenty-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>20%</span></div>
+                                  </label>
+                                  <label for="twentyfive-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="twentyfive-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>25%</span></div>
+                                  </label>
+                                  <label for="thirteen-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="thirteen-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>30%</span></div>
+                                  </label>
+                                  <label for="thirdifive-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="thirdifive-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>35%</span></div>
+                                  </label>
+                                  <label for="fourteen-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="fourteen-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>40%</span></div>
+                                  </label>
+                                  <label for="fourtyfife-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="fourtyfife-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>45%</span></div>
+                                  </label>
+                                  <label for="fifty-proc-disc" class="discount-item__wrapper">
+                                    <input
+                                      id="fifty-proc-disc"
+                                      type="radio"
+                                      name="discount-special-offer"
+                                      value="male"
+                                    />
+                                    <div class="discount-item"><span>50%</span></div>
+                                  </label>
+                                  <div class="discount-item-other"><input type="number" placeholder="Другое" /></div>
                                 </div>
                               </label>
                               <label class="form__label">

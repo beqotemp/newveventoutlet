@@ -18,7 +18,7 @@
             <div class="col-xl-12">
               <div class="navbar-general__row">
                 <a href="#" class="navbar-logo">
-                  <img src="/img/general/logo.png" alt="" /> <span class="eventoutlet"> EventOutlet </span>
+                  <img src="./img/general/logo.png" alt="" /> <span class="eventoutlet"> EventOutlet </span>
                 </a>
                 <div class="navbar-general__collapse">
                   <ul class="navbar-general__main">
@@ -31,7 +31,7 @@
                         <span>Виктория</span>
                         <div
                           class="navbar-general__profile-photo"
-                          style="background-image: url(/img/person.png);"
+                          style="background-image: url(./img/person.png);"
                         ></div>
                         <div class="arrow-svg"></div>
                       </div>
@@ -215,17 +215,39 @@
                         <ul>
                           <li>
                             <label for="five-offers">
-                              <input id="five-offers" type="radio" name="gender" value="five-offers" />5 предложений
+                              <input
+                                id="five-offers"
+                                class="how-much__input"
+                                type="radio"
+                                name="gender"
+                                value="five-offers"
+                              />
+                              <span>5 предложений</span>
                             </label>
                           </li>
                           <li>
                             <label for="ten-offers">
-                              <input id="ten-offers" type="radio" name="gender" value="ten-offers" />10 предложений
+                              <input
+                                id="ten-offers"
+                                class="how-much__input"
+                                type="radio"
+                                name="gender"
+                                value="ten-offers"
+                              />
+                              <span>10 предложений</span>
                             </label>
                           </li>
                           <li>
                             <label for="all-offers">
-                              <input id="all-offers" type="radio" name="gender" value="all-offers" />Все предложения
+                              <input
+                                checked="checked"
+                                id="all-offers"
+                                class="how-much__input"
+                                type="radio"
+                                name="gender"
+                                value="all-offers"
+                              />
+                              <span>Все предложения</span>
                             </label>
                           </li>
                         </ul>
@@ -264,10 +286,9 @@
                         <div class="catalog-select__body">
                           <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
                           <div class="form__select-wrapper">
-                            <div class="form__range">
-                              <div class="range-result"><span class="rent-value"> </span></div>
-                              <input type="text" id="sampleSlider" />
-                            </div>
+                            <label class="form__label">
+                              <span>Кол-во</span> <input type="text" class="form__input" placeholder="Кол-во" />
+                            </label>
                           </div>
                           <div class="catalog-select__button">
                             <a href="#" class="rectangle-btn-border rectangle-btn-border-green">

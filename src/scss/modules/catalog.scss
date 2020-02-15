@@ -605,6 +605,11 @@
 		text-align: right;
 	}
 }
+.how-much__input {
+	&:checked+span {
+		color: #000;
+	}
+}
 .how-much-filters {
 	&__main {
 		margin-right: 20px;
@@ -633,9 +638,17 @@
 					right:0;
 				}
 				& label {
-					font-family: $GR;
-					font-size: 14px;
-					color: #767676;
+					& span {
+						font-family: $GR;
+						font-size: 14px;
+						color: #767676;
+						cursor: pointer;
+						transition: .4s;
+						&:hover {
+							color: #000;
+						}
+					}
+					
 					& input {
 						display:none;
 					}

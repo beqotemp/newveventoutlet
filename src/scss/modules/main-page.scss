@@ -1,5 +1,5 @@
 .header-hero {
-	height: 500px;
+	// height: 500px;
 	margin-top: 15px;
 	&__wrapper {
 		position: relative;
@@ -110,4 +110,51 @@
 		    max-width: 1293px;
 		}
 	}
+}
+
+
+
+.main-page {
+	background-color: #f9f9f9;
+}
+.whats-it {
+	&__block {
+		background-color: #fff;
+		border-radius: 8px;
+		padding: 12px 28px 24px;
+		&_wrapp {
+
+		}
+		&_pic {
+			height: 166px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&_title {
+			min-height: 50px;
+			& span {
+				font-size: 20px;
+				font-family: $GS;
+				color:#33473f;
+				line-height: 23px;
+				letter-spacing: .64px;
+			}
+		}
+		&_subtitle {
+			margin-top: 15px;
+			p {
+				font-family: $SFL;
+				color: #515151;
+				font-size: 15px;
+				line-height: 19px;
+				letter-spacing: .64px;
+			}
+		}
+		&_button {
+			margin-top: auto;
+		}
+	}
+	&__pic {}
+	&__head{}
 }

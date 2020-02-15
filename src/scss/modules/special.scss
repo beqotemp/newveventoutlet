@@ -97,15 +97,59 @@
     color:#343434;
     height: 43px;
     width: 43px;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     margin-right: 5px;
     margin-bottom: 6px;
+    transition:.4s;
     cursor: pointer;
-    & input[type="radio"] {
-        display: none;
+    &:hover {
+        background-color: #e16f62;
+        & span {
+            color:#fff;
+        }
+        
     }
+    &__wrapper {
+        & input[type="radio"] {
+            display: none;
+        }
+        & input:checked+.discount-item{
+            background-color: #c16055;
+            & span {
+                color: #fff;
+            }
+        }
+    }
+    & span {
+        cursor: pointer;
+        margin: 0;
+        font-family: $GR;
+        font-size: 14px;
+        color: #343434;
+        margin-left: 2px;
+        transition:.2s;
+        user-select:none;
+    }
+ 
+}
+.discount-item-other {
+    flex: 1;
+    position: relative;    
+    background-color: #e6ece4;
+    border-radius: 4px;
+    font-family: $GR;
+    font-size: 14px;
+    color:#343434;
+    height: 43px;
+    width: 43px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    transition:.4s;
     & input {
         background-color: #e6ece4;
         font-family: $GR;
@@ -131,11 +175,9 @@
         font-size: 14px;
         color: #343434;
         margin-left: 2px;
+        transition:.2s;
+        user-select:none;
     }
-}
-.discount-item-other {
-    flex: 1;
-    position: relative;    
 }
 .special-offer {
     &__head {
