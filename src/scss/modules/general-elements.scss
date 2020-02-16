@@ -151,7 +151,59 @@
     margin-right: 4px;
   }
 }
+.benefit-btn {
+  & span {
+    font-family: $SFM;
+    font-size: 15px;
+    color: #6a991d;
+    line-height: 21px;
+    letter-spacing: .64px;
+  }
+  & .long-arrow-svg {
+    height: 19px;
+    width: 14px;
+    margin-left: 5px;
+    background-color: #6a991d;
 
+  }
+}
+.benefits-btn {
+  &.red-border {
+    background-color: transparent;
+    border:1px solid #ff7061;
+    & span {
+      font-family: $SFM;
+      font-size: 18px;
+      color: #ff7061;
+    }
+    & .full-arrow-svg {
+      background-color: #ff7061;
+    }
+  }
+  &.yellow {
+    background-color: #ffcc61;
+    & span {
+      font-size: 18px;
+      color:#3e3e3e;
+      font-family: $SFM;
+      letter-spacing: .64px;    
+    }
+    & .full-arrow-svg {  
+      background-color: #3e3e3e;    
+    }
+  }
+  
+  border-radius: 4px;
+  padding: 23px 40px 25px 45px;
+  display: inline-block;
+
+  & .full-arrow-svg {
+    transform: rotate(90deg);
+    margin-left: 27px;
+    height: 20px;
+    width: 20px;
+  }
+}
 .add-btn {
   display: inline-block;
   font-family: $GM;
@@ -185,6 +237,46 @@
   }
 }
 // SVG`s
+.thumble-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/thumble.svg) no-repeat center;
+  mask: url(../img/svg/thumble.svg) no-repeat center;
+}
+.clock-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/clock.svg) no-repeat center;
+  mask: url(../img/svg/clock.svg) no-repeat center;
+}
+.letter-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/letter.svg) no-repeat center;
+  mask: url(../img/svg/letter.svg) no-repeat center;
+}
+.long-arrow-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/long-arrow.svg) no-repeat center;
+  mask: url(../img/svg/long-arrow.svg) no-repeat center;
+}
 .full-arrow-svg {
   display: inline-block;
   width: 22px;

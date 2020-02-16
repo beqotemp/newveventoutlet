@@ -1,9 +1,9 @@
 .header-hero {
-	// height: 500px;
-	margin-top: 15px;
+	margin-top: 16px;
+	margin-bottom: 66px;
 	&__wrapper {
 		position: relative;
-		padding: 78px 0;
+		padding: 81px 0;
 		background-color: #e6ece4;
 		height: auto;
 		overflow: hidden;
@@ -114,25 +114,59 @@
 
 
 
-.main-page {
+.whats {
 	background-color: #f9f9f9;
+	padding: 75px 0 95px;
 }
 .whats-it {
+	user-select: none;
+	&__title {
+		text-align: center;
+		span {
+			font-family: $GS;
+			font-size: 50px;
+			color: #3a3a3a;
+			letter-spacing: 2.04px;
+			line-height: 66px;
+		}
+		
+	}
+	&__subtitle {
+		margin-top: 36px;
+		text-align: center;
+		padding: 0 20px;
+		p {
+			font-family: $SFR;
+			font-size: 16px;
+			line-height: 23px;
+			letter-spacing: .64px;
+			color: #676666;
+		}
+	}
+	&__count {
+		margin-top: 90px;
+		padding-bottom: 41px;
+		border-bottom: 1px solid #e2e2e2;
+	}
 	&__block {
 		background-color: #fff;
 		border-radius: 8px;
-		padding: 12px 28px 24px;
+		padding: 12px 22px 24px;
+		margin: 0 -7px;
 		&_wrapp {
-
+			display: flex;
+			flex-direction: column;
+			height: 100%;
 		}
 		&_pic {
-			height: 166px;
+			height: 190px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
 		&_title {
-			min-height: 50px;
+			// min-height: 50px;
+			margin-top: -4px;
 			& span {
 				font-size: 20px;
 				font-family: $GS;
@@ -142,7 +176,8 @@
 			}
 		}
 		&_subtitle {
-			margin-top: 15px;
+			margin-top: 12px;
+			margin-bottom: 16px;
 			p {
 				font-family: $SFL;
 				color: #515151;
@@ -153,8 +188,81 @@
 		}
 		&_button {
 			margin-top: auto;
+			& .rectangle-btn-border {
+				width: 100%;
+				padding: 12px 0;
+				height: unset;
+				border: 1px solid #6a991d;
+			}
+			& .rectangle-btn-border-green span {
+				font-size: 15px;
+				color: #6a991d;
+			}
 		}
 	}
-	&__pic {}
-	&__head{}
+	&__benefits {
+		padding-top: 46px;
+		&_button {
+			margin-top: 49px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&__benefit {
+		background-color: #fff;
+		border-radius: 7px;		
+		overflow: hidden;
+		padding: 31px 18px;
+		&_wrapper {}
+		&_head {
+			display:flex;
+			flex-direction: row;
+			align-items: center;
+			& .svg {
+				margin-left: -3px;
+				height: 24px;
+				width: 24px;
+				background-color: #33473f;
+			}
+			& span {
+				margin-left: 14px;
+				font-family: $GS;
+				font-size: 20px;
+				color: #33473f;
+				line-height: 30px;
+				letter-spacing: .64px;
+			}
+		}
+		&_subtitle {
+			margin-top: 13px;
+			& p {
+				font-family: $SFL;
+				font-size: 15px;
+				line-height: 21px;
+				letter-spacing: .64px;
+				color: #676666;
+			}
+		}
+		&_button {
+			margin-top: 13px;
+		}
+	}
+}
+.finda {
+	padding: 40px 0 85px;
+	&__head {
+		padding-top: 39px;
+	}
+	&__wrapper {
+		margin-top: 60px;
+	}
+	&__button {
+		margin-top: 42px;
+		display: flex;
+		justify-content: center;
+	}
+}
+.profitable {
+	background-color: #e6ece4;
+	padding: 81px 0 62px;
 }
