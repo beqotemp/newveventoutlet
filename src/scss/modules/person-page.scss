@@ -451,10 +451,18 @@
         border-bottom: 1px solid #ededed;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        &:nth-child(2) {
+            padding-top: 20px;
+        }
         &_item {
             display: flex;
             flex-direction: column;
+            &:nth-child(1) {
+                width: 65%;
+            }
+            &:nth-child(2) {
+                width: 35%;
+            }
             & span {
                 font-family: $GR;
                 font-size: 14px;
@@ -465,9 +473,9 @@
                     color: #202020;
                 }
                 &.sidebar-price {
-                    font-family: $GR;
-                    font-size: 16px;
-                    color: #202020;
+                font-family: $GR;
+                font-size: 14px;
+                color: #8f8f8f;
                 }
             }
         }

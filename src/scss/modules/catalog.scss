@@ -3,9 +3,9 @@
 	background-color: #f9f9f9;
 	padding-top:0;
 	overflow: hidden;
-	@media (max-width: $phoneWidth) {
-		background-color: unset;
-	}	
+	@media screen and (max-width: $beforeTableWidth) {
+		
+	}
 	&__wrapper {
 	    
 	}
@@ -47,16 +47,20 @@
 	}
 	&__title {
 		@media (max-width: $tableWidth) {
-			padding: 20px 0;
-			font-family: $GS;
-			font-size: 16px;
-			color: #231f20;
+			display: flex;
+			align-items: center;
+			height: 61px;
+			padding-top: 7px;
 		}	
 		& span {
 			font-family: $SFM;
 			font-size: 15px;
 			color: #231f20;
 			letter-spacing: 0.7px;
+			@media (max-width: $tableWidth) {
+				font-family: $GS;
+				font-size: 16px;
+			}	
 		}
 	}
 }
@@ -131,6 +135,7 @@
     		font-family: $GR;
     		font-size: 16px;
 			color: #231f20;
+			letter-spacing: .64px;
     	}
     	& .filter-svg {
 		    height: 17px;
@@ -190,12 +195,20 @@
 	background-color: #fff;
     border-radius: 8px;
     padding-bottom: 23px;
-    margin-bottom: 25px;
+	margin-bottom: 25px;
+	@media screen and (max-width: $beforeTableWidth) {
+		padding-bottom: 16px;
+		margin-bottom: 12px;
+	}
 	&__head {
 		display: flex;
 		flex-direction:row;
 		padding: 30px;
-	    align-items: center;
+		align-items: center;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 12px;
+			flex-wrap: wrap;
+		}
 	}
 	&__head-photo {
 		background-size: cover;
@@ -207,62 +220,127 @@
 		border-radius: 50%;
 		overflow: hidden;
 		margin-right: 28px;
+		@media screen and (max-width: $beforeTableWidth) {
+			height: 56px;
+			width: 56px;
+			margin-right: 21px;
+			min-width: 56px;
+    		min-height: 56px;
+		}
+	}
+	&__first-title {
+		font-family: $SFB;
+		letter-spacing: .6px;
+		color:#101010;
+		font-size: 16px;
+		@media screen and (max-width: $beforeTableWidth) {
+			font-size: 14px;
+			line-height: 14px;
+		}	
+		& a {
+			font-family: $SFB;
+			letter-spacing: .6px;
+			color:#101010;
+			font-size: 16px;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 15px;
+			}
+		}
+	}
+	&__second-title {
+		font-family: $SFR;
+		font-size: 16px;
+		color: #9f9f9f;
+		letter-spacing: 0.6px;
+		line-height: 16px;
+		@media screen and (max-width: $beforeTableWidth) {
+			font-size: 13px;
+			line-height: 16px;
+			margin-top: 4px;
+		}	
+	}
+	&__price {
+		display: inline-block;
+		& span {
+			font-family: $SFR;
+			font-size: 16px;
+			color: #231f20;
+			position: relative;
+			letter-spacing: 0.7px;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 14px;
+				margin-top: 5px;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background-color: #b5b4b4;
+			}
+		}
 	}
 	&__head-info-price {
-		font-family: $SFR;
-		font-size: 14px;
-		color: #727272;
-		display: block;
-		position: relative;
-		letter-spacing: 0.7px;
-		&:after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			height: 1px;
-			width: 75%;
-			background-color: #c9c9c9;
+		
+		& span {
+			font-family: $SFR;
+			font-size: 16px;
+			color: #9f9f9f;
+			letter-spacing: 0.6px;
 		}
 	}
 	&__head-info {
 		display: flex;
 		flex-direction:column;
-	    padding: 0 27px;
-	    position: relative;
-	    
-		& span {
-			&:nth-child(1) {
-				font-family: $SFB;
-				letter-spacing: -.6px;
-				color:#101010;
-				& a {
-					font-family: $SFB;
-					letter-spacing: -.6px;
-					color:#101010;
-				}
-				
-			}
-			&:nth-child(2){
-				font-family: $SFR;
-				font-size: 16px;
-				color: #9f9f9f;
-			    letter-spacing: 0.6px;
+	    padding: 0 25px;
+		position: relative;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0;
+		}
+		&.catalog-card-name {
+			width: 295px;
+			@media screen and (max-width: $beforeTableWidth) {
+				width: 60%;
+				padding-top: 7px;
 			}
 		}
-		// catalog-card-name
-		// catalog-card-insta
-		// catalog-card-price
-		&:nth-child(2) {
-		    padding: 0 36px 0 23px;
-		    
-	    }
-	    &:nth-child(3) {
-	        padding: 0 64px 0 29px;
-	    }
-	    &:nth-child(4) {
-	        padding: 0 50px 0 31px;
-	    }
+		&.catalog-card-insta {
+			width: 215px;
+			@media screen and (max-width: $beforeTableWidth) {
+				display: none;
+			}
+			
+		}
+		&.catalog-card-price {
+			width: 210px;
+			@media screen and (max-width: $beforeTableWidth) {
+				flex: 1;
+				padding-top: 15px;
+				margin-top: 16px;
+				width: unset;
+				height: 55px;
+				border-top: 1px solid #ececec;
+				padding-left: 4px;
+			}
+			
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform:translateY(-50%);
+			width: 1px;
+			background-color: #dadada;
+			height: 131%;
+			@media screen and (max-width: $beforeTableWidth) {
+				display: none;
+			}
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -272,35 +350,49 @@
 			width: 1px;
 			background-color: #dadada;
 			height: 131%;
+			@media screen and (max-width: $beforeTableWidth) {
+				display: none;
+			}
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
 		}
 	}
 	&__head-info-discount {
+		margin-left: auto;
 		display: flex;
 		flex-direction:row;
 		padding: 0 23px;
 		position: relative;
 		align-items: center;
-		&:before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform:translateY(-50%);
-			width: 1px;
-			background-color: #dadada;
-			height: 131%;
+		@media screen and (max-width: $beforeTableWidth) {
+			flex: 1;
+			align-items: flex-start;
+			padding: 16px 0 0;
+			margin-top: 16px;
+			height: 55px;
+			border-top: 1px solid #ececec;
 		}
 	}
 	&__discount-info {
 		display: flex;
 		flex-direction:column;
-	    margin-left: 19px;
+		margin-left: 19px;
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-left: 11px;
+		}
 	    & span {
 	    	&:nth-child(1) {
 	    		font-family: $SFS;
 	    		font-size: 16px;
 	    		color: #ff7061;
-    		    letter-spacing: 0.7px;
+				letter-spacing: 0.7px;
+				@media screen and (max-width: $beforeTableWidth) {
+					font-size: 14px;
+					line-height: 14px;
+				}
 	    	}
 	    	& a {
 	    		font-family: $SFR;
@@ -328,7 +420,10 @@
 	    margin-left: 5px;
 	    height: 53px;
 	    width: 53px;
-	    margin-top: 3px;
+		margin-top: 3px;
+		@media screen and (max-width: $beforeTableWidth) {
+			display: none;
+		}
 	    & .percent-svg {
 	    	height: 33px;
 		    width: 33px;
@@ -337,6 +432,10 @@
 	}
 	&__media {
 		padding: 0 34px;
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-top: 4px;
+			padding: 0 17px;
+		}
 	}
 	&__contacts-block {
 		margin-top: 20px;
@@ -344,6 +443,10 @@
 		display: flex;
 		width: 100%;
 		justify-content: flex-end;
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-top: 15px;
+    		padding: 0 11px;
+		}
 	}
 }
 .contacts-block {
@@ -457,6 +560,9 @@
 		height: 60px;
 		transition:.4s;
 		opacity: 0;
+		@media screen and (max-width: $beforeTableWidth) { 
+			opacity: 1;
+		}
 		.strelka-svg {
 			height: 22px;
 			width: 22px;
@@ -476,7 +582,10 @@
 			background-repeat: no-repeat;
 			background-size: cover;
 			width:100%;
-		  	border-radius: 7px;
+			border-radius: 7px;
+			@media screen and (max-width: $beforeTableWidth) { 
+				height: 193;
+			}			  
 		}
 	}
 }
@@ -582,6 +691,9 @@
 }
 .additional_filters {
 	padding: 30px 0;
+	@media screen and (max-width: $beforeTableWidth) {
+		padding: 13px 0;
+	}
 	&__wrapper {
 		display: flex;
 		flex-wrap: wrap;
@@ -616,7 +728,7 @@
 		@media screen and (max-width: $beforeSmDesktopWidth) {
 			margin-top: 15px;
 		}
-		& ul {
+		& ul { 
 			display: inline;
 			& li {
 				display: inline;
