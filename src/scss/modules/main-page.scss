@@ -264,5 +264,11 @@
 }
 .profitable {
 	background-color: #e6ece4;
-	padding: 81px 0 62px;
+	padding: 98px 0 114px;
+}
+.profitable-cards {
+	background-color: #f9f9f9;
+	& .catalog__wrapper {
+	    margin-top: -91px;
+	}
 }

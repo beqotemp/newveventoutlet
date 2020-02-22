@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: url(/img/remove/mob.png);
+  background: url(/img/remove/main.jpg);
   background-size: cover;
 //dev
 
@@ -44,13 +44,12 @@ section, .section {
   position: relative;
   padding: 40px 0;
   @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
     padding: 20px 0;
+  }
+}
+.container {
+  @media screen and (max-width: $beforeTableWidth) {
+    width: 86%;
   }
 }
 .Site {
