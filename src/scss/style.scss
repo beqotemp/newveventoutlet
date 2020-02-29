@@ -12,8 +12,14 @@ html {
   @media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
   }
+  @media screen and (max-width: $beforeSmDesktopWidth) {
+    font-size: 15px;
+  }
   @media screen and (max-width: $tableWidth) {
 		font-size: 15px;
+  }
+  @media screen and (max-width: $beforeTableWidth) {
+    font-size: 14px;
   }
   @media screen and (max-width: $phoneWidth) {
 		font-size: 14px;
@@ -21,7 +27,7 @@ html {
 }
 
 body {
-  background: url(/img/remove/main.jpg);
+  // background: url(/img/remove/bg.png);
   background-size: cover;
 //dev
 
@@ -72,6 +78,8 @@ section, .section {
 @import "modules/lk.scss";
 @import "modules/person-page.scss";
 @import "modules/404.scss";
+@import "modules/info-page.scss";
+@import "modules/password-recovery.scss";
 @import "modules/modals.scss";
 @import "modules/footer.scss";
 
