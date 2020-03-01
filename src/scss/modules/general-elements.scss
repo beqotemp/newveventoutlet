@@ -705,7 +705,10 @@
   transform: rotate(0deg);
 }
 .main-form__input .catalog-select__body:before {
-  display: none !important;
+  
+  @media screen and (min-width: $beforeTableWidth) {
+    display: none !important;
+  }
 }
 .main-form__input .catalog-select__body {
   top: unset;
