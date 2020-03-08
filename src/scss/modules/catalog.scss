@@ -198,7 +198,7 @@
 	margin-bottom: 25px;
 	@media screen and (max-width: $beforeTableWidth) {
 		padding-bottom: 16px;
-		margin-bottom: 12px;
+		margin-bottom: 8px;
 	}
 	&__head {
 		display: flex;
@@ -853,9 +853,12 @@
 			}
 		}
 	}
-}
+} 
 .catalog-pagination {
 	margin-top: 50px;
+	@media screen and (max-width: $beforeTableWidth) {
+		margin-top: 25px;
+	}
 	&__wrapper {
 		display: flex;
 		justify-content: center;
@@ -892,6 +895,41 @@
 		}
 	}
 }
+// noihing found 
+.catalog {
+	&__nothing {
+		min-height: 80vh;
+		&_body {
+			padding: 40px;
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    & .info-page__head_subtitle {
+		    	margin-top: 5px;
+		    	max-width: 520px
+		    }
+		}
+		&_pic {
+			height: 192px;
+			img {
+				height: 100%;
+			}
+		}
+		&_title {
+			margin-top: 10px;
+			& span {
+				color: gray;
+				font-size: 40px;
+				font-family: $SFS;
+			}
+		}
+		&_button {
+			margin-top: 20px;
+		}
+	}
+}
+
 
 // calendar styles 
 .vc-relative {

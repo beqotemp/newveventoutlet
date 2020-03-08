@@ -13,7 +13,6 @@
 		@media screen and (max-width: $beforeTableWidth) {
             margin: 0 -41px;
             padding: 49px 30px 67px 38px;
-            overflow: auto;
         }
 		& .almost-square-btn {
 			border-top-left-radius: 0px;
@@ -31,6 +30,14 @@
 			font-size: 63px;
 			color: #2f2f2f;
 			line-height: 75px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 53px;
+				line-height: 62px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 43px;
+				line-height: 54px;
+			}
 			@media screen and (max-width: $beforeTableWidth) {
             	font-size: 30px;
             	line-height: 42px;
@@ -50,6 +57,9 @@
 			color: #2f2f2f;
 			font-size: 20px;
     		letter-spacing: 0.7px;
+    		@media screen and (max-width: $beforeSmDesktopWidth) {
+    			font-size: 17px;
+    		}
     		@media screen and (max-width: $beforeTableWidth) {
         		font-size: 16px;
         		line-height: 22px;
@@ -69,9 +79,23 @@
 		&__wrapper {
 		    display: flex;
     		flex-direction: row;
+    		& .almost-square-btn {
+    			@media screen and (max-width: $beforeSmDesktopWidth) { 
+    				padding: 28px 51px;
+    			}
+				@media screen and (max-width: $beforeTableWidth) {
+					border-radius: 0 0 4px 4px;
+					padding: 24px 65px;  
+				}
+    		}
     		@media screen and (max-width: $beforeTableWidth) {
         		flex-direction: column;
+        		max-width: 300px;
        		}
+       		@media screen and (min-width: $phoneWidth) and (max-width: $beforeTableWidth) {
+    			max-width: 300px;
+        		margin: 0 auto;
+    		}
 		}
 		&__inputs {
 			width: 100%;
@@ -88,7 +112,7 @@
         		border-bottom: 0px;
        		}
 		}
-		&__input {
+		&__input { 
 			position: relative;
 		    display: flex;
 		    align-items: center;
@@ -96,6 +120,14 @@
 		    width: 50%;
 		    padding: 0 41px;
 		    background-color: #fff;
+		    &:first-child{
+		    	@media screen and (min-width: $tableWidth) { 
+		    		border-radius:4px 0px 0px 4px;
+		    	}	
+		    }
+		    @media screen and (max-width: $beforeSmDesktopWidth) { 
+		    	padding: 0 20px;
+		    }
 		    @media screen and (max-width: $beforeTableWidth) {
         		width: 100%;
         		padding: 19px 41px;
@@ -135,9 +167,9 @@
 				font-size: 16px;
 				color: #231f20;
 				letter-spacing: 0.6px;
-				@media screen and (max-width: $beforeTableWidth) {
-		    		font-size: 14px;
-		   		}
+				@media screen and (max-width: $beforeSmDesktopWidth) {
+					font-size: 14px;
+				}
 			}
 			& .arrow-svg {
 				background-color: #231f20;
@@ -149,8 +181,6 @@
 		}
 
 	}
-
-
 	&__figure {
 		background-image: url(../img/general/hero-item.png);
 	    background-size: contain;
@@ -160,13 +190,29 @@
 	    left: -182px;
 	    height: 147%;
 	    width: 100%;	
+	    @media screen and (max-width: $desktopWidth) {
+		    top: 43px;
+		    left: -162px;
+		    height: 107%;
+		    width: 100%;
+	    }
+	    @media screen and (max-width: $beforeSmDesktopWidth) {
+    	    height: 117%;
+			width: 100%;
+			top: -67px;
+    		left: -182px;
+	    }
 		@media screen and (max-width: $beforeTableWidth) {
+			height: 147%;
+	    	width: 100%;	
 			top: unset;
-	    	bottom: -569px;
-		    left: -112px;
+			bottom: -309px;
+    		left: -152px;
 		}
-
-	     
+		@media screen and (max-width: $beforePhoneWidth ) {
+			bottom: -569px;
+		    left: -112px;
+		}	     
 	}
 	& .container-bg {
 		@media (min-width: 1200px){
@@ -174,20 +220,20 @@
 		}
 	}
 }
-
-
-
 .whats {
 	background-color: #f9f9f9;
 	padding: 75px 0 95px;
 	@media screen and (max-width: $beforeTableWidth) {
-		padding-top: 42px;
+	    padding: 42px 0 67px;
 	}
 }
 .whats-it {
 	user-select: none;
 	&__title {
 		text-align: center;
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 0 -4px;
+		}
 		span {
 			font-family: $GS;
 			font-size: 50px;
@@ -235,8 +281,17 @@
 		border-radius: 8px;
 	    padding: 30px 28px 24px;
 		margin: 0 -7px;
-		@media screen and (max-width: $beforeTableWidth) {
+		@media screen and (max-width: $desktopWidth ) {
 			margin-bottom: 21px;
+		    padding: 30px 17px 24px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    
+		    padding: 30px 23px 24px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			max-width: 300px;
+			margin: 0 auto 21px;
 		}
 		&_wrapp {
 			display: flex;
@@ -248,6 +303,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@media screen and (max-width: $beforeTableWidth) {
+			    height: 121px;
+			}
 		}
 		&_title {
 			// min-height: 50px;
@@ -315,9 +373,11 @@
 		border-radius: 7px;		
 		overflow: hidden;
 		padding: 31px 18px;
+		@media screen and (max-width: $beforeSmDesktopWidth ) {
+			margin-bottom: 22px;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
-	        padding: 20px 23px;
-    		margin-bottom: 22px;
+	        padding: 20px 22px;
 		}
 		&_head {
 			display:flex;
@@ -359,6 +419,10 @@
 		}
 		&_button {
 			margin-top: 13px;
+			@media screen and (max-width: $beforeTableWidth) {
+				margin-top: 19px;
+			}
+
 		}
 	}
 }
@@ -366,6 +430,9 @@
 	padding: 40px 0 85px;
 	&__head {
 		padding-top: 39px;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding-top: 13px;
+		}
 	}
 	&__wrapper {
 		margin-top: 60px;
@@ -379,10 +446,16 @@
 .profitable {
 	background-color: #e6ece4;
 	padding: 98px 0 114px;
+	@media screen and (max-width: $beforeTableWidth) {
+    	padding: 56px 0 123px;
+	}
 }
 .profitable-cards {
 	background-color: #f9f9f9;
 	& .catalog__wrapper {
 	    margin-top: -91px;
+	    @media screen and (max-width: $beforeTableWidth) {
+    	    margin-top: -68px;
+    	}
 	}
 }

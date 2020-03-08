@@ -17,7 +17,7 @@
 }
 .navbar-general.show .navbar-general__row .navbar-burger {
 	& span:nth-child(1){
-	    transform: translateY(6.5px) rotate(45deg);
+	    transform: translateY(8.1px) rotate(45deg);
 	}
     & span:nth-child(2){
 	    opacity: 0;
@@ -56,7 +56,10 @@
 		& img {
 			height: 46px;
 			@media screen and (max-width: $beforeSmDesktopWidth) {
-  				height: 41px;
+  				height: 34px;
+  			}
+  			@media screen and (max-width: $beforeTableWidth) {
+  				height: 44px;
   			}
 		}
 		& span.eventoutlet {
@@ -70,6 +73,7 @@
 			@media screen and (max-width: $beforeSmDesktopWidth) {
 				font-size: 17px;
 				margin-left: 10px;
+			    letter-spacing: 0.8px;
   			}
 			@media screen and (max-width: $beforeTableWidth) {
 				margin-left: 6px;
@@ -251,11 +255,8 @@
 				margin-right: 25px;
 				white-space: nowrap;
 				@media screen and (max-width: $beforeSmDesktopWidth) {
-					font-size: 15px;
+					font-size: 14px;
 					margin-right: 0;
-				}
-				@media screen and (max-width: $beforeSmDesktopWidth) {
-					font-size: 15px;
 				}
 			}
 			&:nth-child(2){

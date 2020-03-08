@@ -72,11 +72,10 @@
     font-size: 16px;
     color: #fff;
     letter-spacing: 0.2px;
+
   }
   @media screen and (max-width: $beforeTableWidth) {
-    padding: 24px 65px;
-    border-radius: 0 0 4px 4px;
-    
+    padding: 19px 62px;
   }
 }
 .almost-square-btn-corral {
@@ -88,8 +87,7 @@
   position: relative;
   display: inline-block;
   text-align: center;
-  height: 60px;
-  padding: 19px 30px;
+  padding: 21px 50px;
   vertical-align: middle;
   border-radius: 4px;
 }
@@ -134,6 +132,9 @@
     font-family: $SFR;
     font-size: 17px;
     color: #91b15f;
+    @media screen and (max-width: $beforeTableWidth) {
+      font-size: 14px;
+    }
   }
 }
 .back-btn {
@@ -177,16 +178,27 @@
   }
 }
 .benefits-btn {
+  border-radius: 4px;
+  padding: 23px 40px 25px 45px;
+  display: inline-block;
+  @media screen and (max-width: $beforeTableWidth) {
+    padding: 21px 20px;
+  }
   &.red-border {
     background-color: transparent;
-    border:1px solid #ff7061;
+    border:2px solid #ff7061;
+
     & span {
       font-family: $SFM;
       font-size: 18px;
       color: #ff7061;
+      @media screen and (max-width: $beforeTableWidth) {
+        font-size: 14px;
+      }  
     }
     & .full-arrow-svg {
       background-color: #ff7061;
+      
     }
   }
   &.yellow {
@@ -195,22 +207,27 @@
       font-size: 18px;
       color:#3e3e3e;
       font-family: $SFM;
-      letter-spacing: .64px;    
+      letter-spacing: .64px;
+      @media screen and (max-width: $beforeTableWidth) {
+        font-size: 14px;
+      }  
     }
     & .full-arrow-svg {  
-      background-color: #3e3e3e;    
+      background-color: #3e3e3e;
     }
   }
   
-  border-radius: 4px;
-  padding: 23px 40px 25px 45px;
-  display: inline-block;
 
   & .full-arrow-svg {
     transform: rotate(90deg);
     margin-left: 27px;
     height: 20px;
     width: 20px;
+    @media screen and (max-width: $beforeTableWidth) {
+      margin-left: 8px;
+      height: 17px;
+      width: 17px;
+    }  
   }
 }
 .add-btn {
@@ -701,21 +718,48 @@
     transition: 0.25s ease-in;
   }
 }
+
+.main-form__input .catalog-select__body {
+  transform: translateY(-40%);
+  opacity: 0!important;
+  max-height: 500px!important;
+  visibility: hidden!important;
+  position: absolute!important;
+  padding: 31px 35px;
+  width: 310px;
+  @media screen and (max-width: $beforeSmDesktopWidth) {
+    padding: 31px 28px;
+  }
+}
+.main-form__input.show .catalog-select__body {
+  position: absolute!important;
+  max-height: 500px!important;
+  visibility: visible!important;
+  transform: translateY(0)!important;
+  opacity: 1!important;
+  transition:.4s!important;
+}
+.main-form__input.show > .arrow-svg { 
+  transform: rotate(0deg);
+}
 .catalog-select.show .catalog-select__title .arrow-svg {
   transform: rotate(0deg);
 }
 .main-form__input .catalog-select__body:before {
-  
-  @media screen and (min-width: $beforeTableWidth) {
-    display: none !important;
-  }
+  display: none !important;
 }
+
+.main-form__input.show .arrow-svg {
+  transform:rotate(0deg);
+}    
+
 .main-form__input .catalog-select__body {
   top: unset;
   bottom: -50%;
 }
 
 .catalog-select {
+  cursor: pointer;
   &__button {
     text-align: center;
   }
