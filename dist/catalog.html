@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Заголовок | Проект</title>
@@ -114,6 +114,146 @@
                                 <span>Колористы</span> <span>Организаторы</span> <span>Рестораны</span>
                                 <span>Аниматоры</span> <span>Эвент-мейкеры</span> <span>Хареографы</span>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="catalog-select">
+                          <div class="catalog-select__intro">
+                            <div class="catalog-select__title">
+                              <span>Дата</span>
+                              <div class="arrow-svg"></div>
+                            </div>
+                            <div class="catalog-select__result"><span>Москва</span></div>
+                          </div>
+                          <div class="catalog-select__body">
+                            <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
+                            <v-calendar
+                              mode="range"
+                              title-position="left"
+                              v-model="date"
+                              is-inline
+                              color="red"
+                              :popover="{ placement: 'bottom', visibility: 'click' }"
+                            >
+                            </v-calendar>
+                            <div class="catalog-select__button">
+                              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                                ><span>Применить</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="catalog-select">
+                          <div class="catalog-select__intro">
+                            <div class="catalog-select__title">
+                              <span>Дата</span>
+                              <div class="arrow-svg"></div>
+                            </div>
+                            <div class="catalog-select__result"><span>Москва</span></div>
+                          </div>
+                          <div class="catalog-select__body">
+                            <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
+                            <v-calendar
+                              mode="range"
+                              title-position="left"
+                              v-model="date"
+                              is-inline
+                              color="red"
+                              :popover="{ placement: 'bottom', visibility: 'click' }"
+                            >
+                            </v-calendar>
+                            <div class="catalog-select__button">
+                              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                                ><span>Применить</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="catalog-select">
+                          <div class="catalog-select__intro">
+                            <div class="catalog-select__title">
+                              <span>Дата</span>
+                              <div class="arrow-svg"></div>
+                            </div>
+                            <div class="catalog-select__result"><span>Москва</span></div>
+                          </div>
+                          <div class="catalog-select__body">
+                            <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
+                            <v-calendar
+                              mode="range"
+                              title-position="left"
+                              v-model="date"
+                              is-inline
+                              color="red"
+                              :popover="{ placement: 'bottom', visibility: 'click' }"
+                            >
+                            </v-calendar>
+                            <div class="catalog-select__button">
+                              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                                ><span>Применить</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="catalog-select">
+                          <div class="catalog-select__intro">
+                            <div class="catalog-select__title">
+                              <span>Дата</span>
+                              <div class="arrow-svg"></div>
+                            </div>
+                            <div class="catalog-select__result"><span>Москва</span></div>
+                          </div>
+                          <div class="catalog-select__body">
+                            <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
+                            <v-calendar
+                              mode="range"
+                              title-position="left"
+                              v-model="date"
+                              is-inline
+                              color="red"
+                              :popover="{ placement: 'bottom', visibility: 'click' }"
+                            >
+                            </v-calendar>
+                            <div class="catalog-select__button">
+                              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                                ><span>Применить</span></a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-filter__item">
+                        <div class="catalog-select">
+                          <div class="catalog-select__intro">
+                            <div class="catalog-select__title">
+                              <span>Дата</span>
+                              <div class="arrow-svg"></div>
+                            </div>
+                            <div class="catalog-select__result"><span>Москва</span></div>
+                          </div>
+                          <div class="catalog-select__body">
+                            <div class="catalog-select__body-title"><span>Выберете размер скидки</span></div>
+                            <v-calendar
+                              mode="range"
+                              title-position="left"
+                              v-model="date"
+                              is-inline
+                              color="red"
+                              :popover="{ placement: 'bottom', visibility: 'click' }"
+                            >
+                            </v-calendar>
+                            <div class="catalog-select__button">
+                              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                                ><span>Применить</span></a
+                              >
                             </div>
                           </div>
                         </div>
@@ -314,20 +454,12 @@
         </div>
         <!-- html change new-->
         <div class="catalog__nothing">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="catalog__nothing_body">
-                  <div class="catalog__nothing_pic"><img src="./img/general/what.png" alt="" /></div>
-                  <div class="catalog__nothing_title"><span>Ничего не найдено</span></div>
-                  <div class="info-page__head_subtitle">
-                    <p>Упс.... По вашему запросу ничего не найдено попробуйте снова</p>
-                  </div>
-                  <div class="catalog__nothing_button">
-                    <a href="#" class="thin-rectangle-btn rectangle-btn-border-green"><span>Вернуться назад</span></a>
-                  </div>
-                </div>
-              </div>
+          <div class="fof-page__wrapp">
+            <div class="fof-page__pic"><img src="./img/general/what.png" alt="" /></div>
+            <div class="fof-page__title"><span>Ничего не найдено</span></div>
+            <div class="fof-page__subtitle"><p>Упс.... По вашему запросу ничего не найдено попробуйте снова</p></div>
+            <div class="fof-page__button">
+              <a href="#" class="rectangle-btn-border rectangle-btn-border-green"><span>Вернуться назад</span></a>
             </div>
           </div>
         </div>

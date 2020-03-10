@@ -21,6 +21,10 @@
     }
     &__body {
         padding: 10px 60px 30px 35px;
+
+        @media screen and (max-width: $beforeTableWidth) {
+            padding: 0px 20px 20px;
+        }
     }
     &__icon {
         & .catalog-card__discount-icon {
@@ -68,6 +72,9 @@
         display: flex;
         justify-content: center;
         padding: 20px 0 0;
+        @media screen and (max-width: $phoneWidth) {
+            padding: 10px;
+        }
         & .vc-container {
             background: #e6ece4;
         }
@@ -87,6 +94,9 @@
         flex-wrap: wrap;
         width: 290px;
         margin-top: 21px;
+        @media screen and (max-width: $beforeTableWidth) {
+            width: 100%;
+        }
     }
 }
 .discount-item {

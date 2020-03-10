@@ -6,6 +6,7 @@ import './scripts/glide.js'
 import './scripts/range-slider.js'
 import './scripts/sticky.js'
 import './scripts/slick-slider'
+import './scripts/azazlyst'
 
 
 // Vue

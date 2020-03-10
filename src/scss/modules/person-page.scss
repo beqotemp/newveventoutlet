@@ -212,11 +212,19 @@
             height: 60px;
             background-position: center;
             background-size: cover;
-            
+            cursor: pointer;
+            transition:.4s;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            &:hover {
+                border: 2px solid #fff; 
+            }
         }
     }
     &__controls {
+        user-select:none;
         & .slick-arrow {
+            user-select:none;
             height: 60px;
             width: 60px;
             border-radius: 50%;
@@ -226,6 +234,15 @@
             justify-content: center;
             user-select: none;
             cursor: pointer;
+            border:1px solid transparent;
+            transition: .4s;
+            &:hover { 
+                box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.28);
+            }
+            &:active {
+                border:1px solid transparent;
+                background-color: #e8e8e8;
+            }
             @media screen and (max-width: $beforeTableWidth) {
                 height: 41px;
                 width: 41px;

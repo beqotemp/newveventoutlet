@@ -75,6 +75,7 @@
 	    max-height: 0;
 	    overflow: hidden;
 	    transition: .3s;
+	   	z-index: 999;
 	}
     
 	&.show {
@@ -282,7 +283,7 @@
 		& span {
 			font-family: $SFR;
 			font-size: 16px;
-			color: #231f20;
+			color: #272425;
 			position: relative;
 			letter-spacing: 0.7px;
 			@media screen and (max-width: $beforeTableWidth) {
@@ -445,6 +446,7 @@
 	    		display: block;
 	    		position: relative;
 	    		letter-spacing: 0.7px;
+	    		transition:.4s;
 	    		&:after {
 	    			content: '';
 	    			position: absolute;
@@ -453,6 +455,13 @@
 	    			height: 1px;
 	    			width: 75%;
 	    			background-color: #c9c9c9;
+	    			transition:.4s;
+	    		}
+	    		&:hover {
+	    			color: #272425;
+	    			&:after {
+	    				background-color: #b3b3b3;
+	    			}
 	    		}
 	    	}
 	    }
@@ -521,6 +530,13 @@
 			align-items: center;
 			justify-content:center;
 			background-color: #ededed;
+			transition:.4s;
+			&:hover {
+				background-color: #cacaca;
+			}
+			&:active {
+				background-color: #d5d5d5;
+			}
 			& .contacts-block-svg {
 			    height: 17px;
 				width: 17px;
@@ -640,6 +656,7 @@
 		height: 60px;
 		transition:.4s;
 		opacity: 0;
+		user-select:none;
 		@media screen and (max-width: $beforeTableWidth) { 
 			opacity: 1;
 		}
@@ -648,9 +665,13 @@
 			width: 22px;
 			background-color: #313131;
 		}
-		&:hover {
+		&:hover { 
 			box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.28);
 		}
+		&:active {
+            border:1px solid transparent;
+            background-color: #e8e8e8;
+        }
 	}
 	&__slide {
 		cursor: pointer;
@@ -726,8 +747,10 @@
 .vc-reset [role=button], .vc-reset button {
     height: 30px;
     width: 30px;
+    transition: .4s;
     background-color: #e3e9e1;
     border-radius: 50%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .vc-svg-icon[data-v-5572e632] {
     height: 17px;
@@ -836,6 +859,7 @@
 				}
 				& label {
 					& span {
+						user-select:none;
 						font-family: $GR;
 						font-size: 14px;
 						color: #767676;
@@ -843,6 +867,9 @@
 						transition: .4s;
 						&:hover {
 							color: #000;
+						}
+						&:active {
+							color: #799830;							
 						}
 					}
 					
