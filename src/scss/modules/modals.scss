@@ -25,6 +25,12 @@
 		top: -90px;
 		left: -120px;
 		background-size: cover;
+		@media screen and (max-width: $beforeTableWidth) {
+			height: 263px;
+			width: 169px;
+			top: -110px;
+			left: -100px;
+		}
 	}
 	&__s-figure {
 		background-image: url(../img/general/modal-itemm.png);
@@ -35,6 +41,9 @@
 		top: 0%;
 		transform: translateY(120%);
 		background-repeat: no-repeat;
+		@media screen and (max-width: $beforeTableWidth) {
+			display: none;
+		}
 	}
     &.active {
     	opacity: 1;
@@ -54,21 +63,36 @@
 	}
 	&__title {
 		text-align: center;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0 15px;
+		}
 		& span {
 			font-family: $GS;
 			font-size: 35px;
 			color: #33473f;
 		    line-height: 32px;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 20px;
+				line-height: 20px;
+			}
 		}
 	}
 	&__subtitle {
 		margin-top: 12px;
 		text-align: center;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 210px;
+			margin: 0 auto;
+			margin-top: 0px;
+		}
 		& span {
 			font-family: $SFL;
 			font-size: 16px;
 			color: #515151;
 			line-height: 23px;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+			}
 		}
 	}
 	&__form {
@@ -122,6 +146,10 @@
 		&.thanks-modal {
 		    padding: 60px 0;
     		padding-bottom: 100px;
+			@media screen and (max-width: $beforeTableWidth) {
+				padding-bottom: 100px;
+			}
+
 			& .modal__form {
 				text-align: center;
 			}
@@ -165,11 +193,18 @@
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+	@media screen and (max-width: $beforeTableWidth) {
+		padding-top: 24px;
+	}
 	&__cross {
 	    position: absolute;
         top: 30px;
     	right: 30px;
     	cursor: pointer;
+		@media screen and (max-width: $beforeTableWidth) {
+			top:15px;
+			right: 15px;
+		}
     	& .times-svg {
     		background-color: #858585;
     		height: 30px;
@@ -181,8 +216,14 @@
 .acquainted {
 	margin-top: 65px;
 	margin-bottom: 30px;
+	@media screen and (max-width: $beforeTableWidth) {
+		margin-top: 0;
+	}
 	&__wrapper {
 		padding: 0px 30px;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0 15px;
+		}
 	}
 	&__body {
 		padding: 50px 30px 30px;
@@ -190,16 +231,26 @@
 		border:1px solid rgb(224, 224, 224);
 		display: flex;
 		flex-direction:row;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 15px;
+			flex-direction: column;
+		}
 	}
 	&__title {
 		& span {
 			font-family: $GS;
 			font-size: 25px;
 			color: #33473f;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 17px;
+			}
 		}
 	}
 	&__intro {
 		width: 70%;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
 	}
 	&__subtitle {
 		margin-top: 10px;
@@ -207,10 +258,23 @@
 			font-family: $SFL;
 			font-size: 16px;
 			color: #33473f;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 19px;
+			}
 		}
 	}
 	&__button {
 		margin-top: 20px;
+		@media screen and (max-width: $beforeTableWidth) {
+			text-align: center;
+		}
+	}
+	&__pic {
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 30px 0 10px;
+			text-align: center;
+		}
 	}
 }
 .alert__wrapper {
@@ -305,6 +369,8 @@
 	}
 	&__intro {
 		position: relative;
+		padding: 10px;
+		background-color: #fff;
 		& .times-svg {
 			cursor: pointer;
 			height: 13px;
@@ -314,7 +380,6 @@
 			top: 13px;
 			background-color: black;
 		}
-		padding: 10px;
 	}
 	&__head {
 		padding-bottom: 10px;

@@ -1,5 +1,5 @@
 // Nav style
-.navbar-general__profile-body.show > .navbar-general__profile-preview > span {
+.navbar-general__profile-body.show > .navbar-general__profile-preview > a.profile-preview__link {
 	@media screen and (min-width: $smDesktopWidth) {
 		transform: translateX(-23px);		    
 	}
@@ -95,12 +95,13 @@
 	&__profile {
 		display: flex;
 		position: relative;
-		@media screen and (min-width: $beforeTableWidth) {
+		@media screen and (min-width: $tableWidth) {
 			margin-left: auto;
 		}
 		@media screen and (max-width: $beforeTableWidth) {
 			height: 100%;
     		width: 100%;
+    		
 		}
 	}
 	&__profile-photo {
@@ -143,9 +144,22 @@
 	    		border-top-left-radius: 8px;
 	    		border-top-right-radius: 8px;
 			}
+			& a.profile-preview__link:after {
+				opacity:0!important;
+				visibility: hidden!important;
+			}
 			& span:after {
 				opacity:0!important;
 				visibility: hidden!important;
+			}
+		}
+		&:hover a.profile-preview__link {
+			color: #6b6b6b;
+			&:after {
+				content: '';
+				background-color: #cecece;
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 		&:hover span {
@@ -159,6 +173,32 @@
 		}
 		& img {
 			height: 46px;
+		}
+		& a.profile-preview__link {
+			font-family: $SFM;
+			font-size: 15px;
+			color: #202020;
+			margin-right: 17px;
+			letter-spacing: 0.5px;
+			transition:.4s;
+			position: relative;
+			pointer-events: none;
+			&:after {
+				content:'';
+				position: absolute;
+				bottom: 0px;
+				width: 100%;
+				height: 1px;
+				opacity: 0;
+				visibility: hidden;
+				transition:.4s;
+				left: 0;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 16px;
+				margin-left: 15px;
+				pointer-events: auto;
+			}
 		}
 		& span {
 			font-family: $SFM;

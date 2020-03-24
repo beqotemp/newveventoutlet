@@ -32,6 +32,12 @@
 	}
 	&__name {
 		margin-top: 25px;
+		& a {
+			font-family: $GS;
+			font-size: 16px;
+			color: #231f20;
+			letter-spacing: 0.6px;
+		}
 		& span {
 			font-family: $GS;
 			font-size: 16px;

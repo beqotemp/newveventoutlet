@@ -32,6 +32,7 @@
 		background-color: #e6ece4;
 		// padding: 50px 0;
 		transition-delay:.2s;
+		height: auto;
 		@media (max-width: $beforeTableWidth) {
 			background-color: #f5f7f5;
 			padding: 0;
@@ -40,7 +41,7 @@
 			padding: 34.5px 0 0;	
 		}	
 		@media (min-width: $smDesktopWidth) {
-			padding: 50px 0 10px;	
+			padding: 30px 0 10px;
 		}	
 		
 
@@ -658,7 +659,7 @@
 		height: 60px;
 		transition:.4s;
 		opacity: 0;
-		user-select:none;
+		lect:none;
 		@media screen and (max-width: $beforeTableWidth) { 
 			opacity: 1;
 		}
@@ -861,7 +862,6 @@
 				}
 				& label {
 					& span {
-						user-select:none;
 						font-family: $GR;
 						font-size: 14px;
 						color: #767676;

@@ -211,16 +211,11 @@
                                         <div class="profile-core__contacts_title">
                                             <span>Стоимость</span>
                                         </div>
-                                        <div class="profile-edit__body profile-core__list">
+                                        <div class="profile-edit__body profile-core__list tmin_price">
                                             <!-- Line -->
                                             <div class="pe-block pr-block">
                                                 <div class="special-offer">
                                                     <div class="special-offer__head">
-                                                        <div class="special-offer__icon">
-                                                            <div class="catalog-card__discount-icon">
-                                                                <div class="percent-svg"></div>
-                                                            </div>
-                                                        </div>
                                                         <div class="special-offer__item">
                                                             <span>Услуга</span>
                                                             <span>Фотосессия </span>
@@ -313,26 +308,34 @@
                                             <div class="sidebar__item">
                                                 <div class="sidebar__core">
                                                 <div class="sidebar__head">
+                                                    <div class="catalog-card__discount-icon">
+                                                        <div class="percent-svg"></div>
+                                                    </div>
+                                                    <div class="sidebar__head_item">
+                                                        <span>Дата</span>
+                                                        <span class="sidebar-price">10-16.07.2019</span>
+                                                    </div>
+
+                                                    <!-- <div class="sidebar__slash"></div> -->
+                                                    <div class="sidebar__head_item">
+                                                        <span>Скидка</span>
+                                                        <span class="sidebar-price">30%</span>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="sidebar__head">
                                                     <div class="sidebar__head_item">
                                                         <span>Услуга</span>
                                                         <span class="service-name">Фотосессия</span>
                                                     </div>
                                                     <!-- <div class="sidebar__slash"></div> -->
                                                     <div class="sidebar__head_item">
-                                                        <span>Дата</span>
-                                                        <span class="sidebar-price">10-16.07.2019</span>
-                                                    </div>
-                                                </div>
-                                                <div class="sidebar__head">
-                                                    <div class="sidebar__head_item">
                                                         <span>Цена со скидкой</span>
                                                         <span class="service-prcie">3 000 р / фикс</span>
                                                     </div>
-                                                    <!-- <div class="sidebar__slash"></div> -->
-                                                    <div class="sidebar__head_item">
-                                                        <span>Скидка</span>
-                                                        <span class="sidebar-price">30%</span>
-                                                    </div>
+
+
                                                 </div>
                                                 <div class="sidebar__description">
                                                     <span>Описание</span>
@@ -393,5 +396,5 @@
 
 
 
-
+<%= _.template(require('./../includes/modals.html'))(data) %>
 <%= _.template(require('./../includes/footer.html'))(data) %>

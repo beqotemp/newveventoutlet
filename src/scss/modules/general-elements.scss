@@ -101,6 +101,14 @@
   padding: 21px 50px;
   vertical-align: middle;
   border-radius: 4px;
+  @media screen and (max-width: $beforeTableWidth) {
+    font-size: 12px;
+    padding: 17px 15px;
+  }
+  @media screen and (max-width: $beforePhoneWidth) {
+    font-size: 12px;
+    padding: 16px 11px;
+  }
 }
 .thin-rectangle-btn-dark {
   background-color: #353535;
@@ -112,6 +120,13 @@
   font-family: $SFR;
   font-size: 17px;
   color: #33473f;
+  transition:.4s;
+  &:hover {
+    color: #9aaf64;
+  }
+  &:active {
+    color:#798c4c;
+  }
 }
 .rectangle-btn {
   cursor: pointer;
@@ -121,6 +136,7 @@
   height: 69px;
   vertical-align: middle;
   border-radius: 4px;
+  transition:.4s;
 }
 .rectangle-btn-green {
   background-color: #91b15f;
@@ -128,6 +144,12 @@
     font-family: $SFR;
     font-size: 17px;
     color: #fff;
+  }
+  &:hover {
+    background-color: #799830;
+  }
+  &:active {
+    background-color: #93b444;
   }
 }
 .rectangle-btn-border {
