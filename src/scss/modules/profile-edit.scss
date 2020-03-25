@@ -65,6 +65,11 @@
 		padding: 30px 60px 30px 35px;
 		display: flex;
 		flex-direction:column;
+		&.special-page {
+			@media screen and (max-width: $beforeTableWidth) {
+				padding: 15px;
+			}
+		}
 		@media screen and (max-width: $beforeTableWidth) {
 			padding: 20px;
 		}
@@ -143,10 +148,16 @@
 		display: flex;
 		flex-direction:row;
 		align-items: flex-end;
+		@media screen and (max-width: $beforeTableWidth) {
+			flex-wrap: wrap;
+		}
 	}
 	&__title {
 		display: flex;
 		flex-direction:column;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+		}
 		& span {
 			&:nth-child(2){
 				font-family: $GM;
@@ -158,6 +169,10 @@
 	}
 	&__moder-info {
 		margin-left: 44px;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+			margin-left: unset;
+		}
 		& span {
 			font-family: $GS;
 			font-size: 16px;
@@ -169,14 +184,26 @@
 		display: flex;
 		flex-direction:row;
 		align-items: flex-end;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+			border-top: 1px solid #dedede;
+			margin-top: 15px;
+			padding-top: 15px;
+		}
 	}
 	&__info-left {
 		display: flex;
 		flex-direction:column;
 		margin-right: 23px;
+
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+			margin: unset;
+		}
 	}
 	&__price {
 		margin-top: 3px;
+
 		span {
 			font-family: $GM;
 			font-size: 16px;
@@ -422,3 +449,7 @@
 	opacity: 1;
 	visibility: visible;
 }
+
+
+
+

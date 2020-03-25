@@ -1,3 +1,95 @@
+.tmin_price {
+
+    & .special-offer {
+        &__head {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #ededed;
+                padding-bottom: 17px;
+            }
+        }
+        &__item {
+            @media screen and (max-width: $beforeTableWidth) {
+                width: 46%;
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+        & .sidebar__slash{
+            @media screen and (max-width: $beforeTableWidth) {
+                height: 30px;
+            }
+        }
+    }
+}
+.special-page {
+    & .catalog-card__discount-icon {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: $beforeTableWidth) {
+            margin-left: unset;
+        }
+    }
+    & .special-offer {
+        &__item {
+            &:nth-child(1) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 1;
+                }
+            }
+
+            &:nth-child(2) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 2;
+                }
+            }
+
+            &:nth-child(3) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 4;
+                    width: 50%;
+                    padding: 10px 5px;
+                    margin: 10px 0;
+                    border-top: 1px solid #b9b9b96b;
+                    border-bottom: 1px solid #b9b9b96b;
+                }
+            }
+
+            &:nth-child(4) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 5;
+                    width: 50%;
+                    padding: 10px 5px;
+                    margin: 10px 0;
+                    border-top: 1px solid #b9b9b96b;
+                    border-bottom: 1px solid #b9b9b96b;
+                }
+            }
+
+            &:nth-child(5) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 6;
+                    padding: 10px 5px 0;
+                }
+            }
+
+            &:nth-child(6) {
+                @media screen and (max-width: $beforeTableWidth) {
+                    display: flex;
+                    order: 3;
+                }
+            }
+        }
+    }
+}
 .profile-special {
     padding-bottom: 30px;
     & .pe-block__add-btn {
@@ -42,6 +134,10 @@
         margin-top: 53px;
         & .profile-special__political {
             max-width: 650px;
+            & .checkmark {
+                top: 0%;
+                transform: translateY(25%);
+            }
         }
         & .additional_filters__checkbox {
             text-align: left;
@@ -53,11 +149,17 @@
             font-family: $SFL;
             font-size: 15px;
             color: #525252;
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 14px;
+            }
             & a {
                 color: #000000;
                 font-family: $SFL;
                 font-size: 15px;
                 text-decoration: underline;
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 14px;
+                }
             }
         }
         & .pe-block__save-button {
@@ -202,6 +304,12 @@
         padding-right: 25px;
         padding-left: 25px;
         border-right: 1px solid #ededed;
+
+        @media screen and (max-width: $beforeTableWidth) {
+            border-right: none;
+        }
+
+
         &:last-child {
             border: none;
         }
@@ -222,6 +330,10 @@
     }
     &__button {
         margin-left: auto;
+        @media screen and (max-width: $beforeTableWidth) {
+            display: flex;
+            order: 3;
+        }
         & a {
             font-family: $GR;
             font-size: 15px;
