@@ -92,7 +92,21 @@
     background-color: #e16f62;
   }
 }
-
+.add-video-btn {
+  font-family: $GM;
+  font-size: 14px;
+  padding: 19px 37px;
+  background-color: #799830;
+  border-radius: 4px;
+  transition:.4s;
+  color: #ffff;
+  &:active {
+    background-color: #9aaf64;
+  }
+  &:hover {
+    background-color: #668227;
+  }
+}
 .thin-rectangle-btn {
   cursor: pointer;
   position: relative;

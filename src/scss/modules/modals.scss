@@ -16,7 +16,51 @@
     opacity: 0;
     visibility: hidden;
 	pointer-events: none;
-	
+	&__add-btn {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	&__or-button {
+		text-align: center;
+		margin-top: 15px;
+		& .add-btn {
+
+		}
+	}
+	&__paragraph {
+		padding: 35px 0;
+		p {
+			font-family: $SFL;
+			font-size: 16px;
+
+			line-height: 25px;
+		}
+		span {
+			font-family: $SFS;
+			font-size: 16px;
+			padding: 15px 0;
+			display: block;
+		}
+		& ul li {
+			list-style-type: disc;
+
+		}
+
+		& ol li {
+			list-style-type: decimal;
+
+		}
+		& li {
+			font-family: $SFL;
+			font-size: 16px;
+			line-height: 20px;
+
+		}
+		& ul, & li {
+			margin: 10px;
+		}
+	}
 	&__f-figure {
 		background-image: url(../img/general/modal-item.png);
 		height: 437px;

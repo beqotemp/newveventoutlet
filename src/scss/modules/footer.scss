@@ -34,6 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    height: 100%;
     @media screen and (max-width: $beforeSmDesktopWidth) {
 
     }
@@ -43,11 +44,17 @@
         margin-top: 17px;
     }
     &__item {
+        width: 100%;
         & ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            @media screen and (max-width: $beforeTableWidth) {
+                flex-direction: column;
+            }
             & li {
-                margin-top: 30px;
                 &:first-child {
-                    margin-top: 23px;
+
                     @media screen and (max-width: $beforeTableWidth) {
                         margin-top: 13px;
                     }
