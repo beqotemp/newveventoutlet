@@ -64,7 +64,7 @@
 // first lvl filters;
 .form-filter-trigger-wrapper {
 	@media screen and (min-width: $tableWidth) {
-		background-color: #dce2da;
+		display: none;
 	}
 }
 .catalog-filter {
