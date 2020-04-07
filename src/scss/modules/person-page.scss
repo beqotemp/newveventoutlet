@@ -594,8 +594,14 @@
     & iframe {
         height: 100%;
         width: 100%;
+        & .ytp-chrome-top, .ytp-chrome-bottom {
+            display: none;
+        }
     }
     & .ytp-chrome-top, .ytp-chrome-bottom, .branding-img-container, .play-bar, .vp-sidedock, .vp-controls {
         display: none;
     } 
+    & .ytp-chrome-top, .ytp-chrome-bottom {
+        display: none;
+    }
 }
