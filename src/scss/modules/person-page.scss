@@ -586,6 +586,12 @@
     }
 }
 
-.tmin_price {
-
+.profile-slider__item_video {
+    & iframe {
+        height: 100%;
+        width: 100%;
+    }
+    & .ytp-chrome-top, .ytp-chrome-bottom, .branding-img-container, .play-bar, .vp-sidedock, .vp-controls {
+        display: none;
+    }
 }
