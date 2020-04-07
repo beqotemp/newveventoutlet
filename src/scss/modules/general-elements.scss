@@ -726,7 +726,8 @@
   }
   &__select-wrapper {
     // height: 120px;
-    height: auto;
+    max-height: 138px;
+    height: 100%;
     width: 100%;
     // overflow: hidden;
   }
@@ -736,9 +737,12 @@
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
+    max-height: 138px;
     &::-webkit-scrollbar {
-      width: 0px; /* remove scrollbar space */
-      background: transparent;
+      @media screen and (min-width: $tableWidth) {
+        width: 0px; /* remove scrollbar space */
+        background: transparent;  
+      }
     }
     & span {
       font-family: $GR;

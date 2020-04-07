@@ -37,17 +37,9 @@
 			background-color: #f5f7f5;
 			padding: 0;
 		}	
-		@media (min-width: $tableWidth) {
-			padding: 34.5px 0 0;	
-		}	
-		@media (min-width: $smDesktopWidth) {
-			padding: 30px 0 10px;
-		}	
-		
-
 	}
 	&__title {
-		padding-top: 25px;
+		padding-top: 51px;
 		@media screen and (max-width: $beforeTableWidth) {
 			padding-top: unset;
 		}
@@ -111,7 +103,6 @@
 	&__wrapper{
 		display: flex;
 		flex-wrap:wrap;
-	    padding-top: 4px;
 	    background-color: #e6ece4;
 		@media (max-width: $beforeTableWidth ) {
 	    	background-color: #fafafa;
@@ -155,14 +146,21 @@
    
 	&__item {
 		position: relative;
-	    padding-left: 35px;
-	    padding-right: 35px;
-	    margin-bottom: 20px;
-	    padding-top: 25px;
-	    padding-bottom: 25px;
-	    border-left: 1px solid #dfe2de;
+    	padding: 51px 35px;
 	    transition:.4s;
 	    cursor:pointer;
+	    &:before {
+	    	@media (min-width: $tableWidth) {
+	    		content: '';
+	    		position: absolute;
+	    		left: 0;
+	    		top: 50%;
+	    		transform:translateY(-50%);
+	    		width: 1px;
+	    		height: 57%;
+	    		background-color: #dfe2de;
+			}
+	    }
 	    &:hover {
 	    	background-color: #dce2da;
 	    }
