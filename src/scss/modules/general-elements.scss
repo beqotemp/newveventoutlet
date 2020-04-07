@@ -416,6 +416,26 @@
   -webkit-mask: url(../img/svg/letter.svg) no-repeat center;
   mask: url(../img/svg/letter.svg) no-repeat center;
 }
+.smile-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/smile.svg) no-repeat center;
+  mask: url(../img/svg/smile.svg) no-repeat center;
+}
+.agent-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/agent.svg) no-repeat center;
+  mask: url(../img/svg/agent.svg) no-repeat center;
+}
 .long-arrow-svg {
   display: inline-block;
   width: 22px;

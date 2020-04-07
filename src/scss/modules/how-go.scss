@@ -1,0 +1,39 @@
+.how-go {
+	&__card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-radius: 8px;
+	    padding: 46px 39px 26px;
+	    margin-bottom: 25px;
+	    background: #fff;
+	    @media screen and (max-width: $beforeTableWidth) {
+			flex-direction:column;
+			padding: 21px 21px 26px;
+		}
+	    & .info-page__card_title {
+	    	width: 60%;
+    		margin-right: 41px;
+	    	@media screen and (max-width: $beforeTableWidth) {
+	    		width: unset;
+	    		margin-right: 0;
+	    	}
+	    }
+	}
+	&__benefits {
+		& .whats-it__benefit {
+			margin-bottom: 20px;
+		}
+	}
+	&__sub-s {
+		padding-top: 15px;
+	}
+	&__pic {
+		& img {
+			height: 400px;
+			@media screen and (max-width: $beforeTableWidth) {
+				height: unset
+			}
+		}
+	}
+}
