@@ -360,10 +360,22 @@
 }
 .add-btn-corall {
   border-color: #ff7061;
+  transition:.4s;
   & span {
     font-family: $GM;
     font-size: 16px;
     color: #ff7061;
+    transition:.4s;
+    @media screen and (max-width: $beforeTableWidth) {
+        font-size: 14px;
+    }
+  }
+  &:hover {
+    background-color: #ff7061;
+    border-color: #ff7061;
+  }
+  &:hover span {
+    color: #fff;
   }
 }
 .add-btn-green {

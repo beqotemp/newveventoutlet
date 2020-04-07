@@ -298,6 +298,31 @@
         flex-wrap: wrap;
         align-items: center;
     }
+    &__icon {
+        & .catalog-card__discount-icon {
+            margin-left: unset;
+            margin-right: 15px;
+            & .percent-svg {
+                @media screen and (max-width: $beforeTableWidth) { 
+                    height: 22px;
+                    width: 22px
+                }
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                padding: 0;
+                background-color: #ff7061;
+                border-radius: 50%;
+                margin-left: unset;
+                margin-right: 10px;
+                height: 34px;
+                width: 34px;
+                margin-top: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
     &__item {
         display: flex;
         flex-direction: column;
@@ -308,8 +333,58 @@
         @media screen and (max-width: $beforeTableWidth) {
             border-right: none;
         }
+        &:nth-child(1) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 1;
+            }
+        }
 
+        &:nth-child(2) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 2;
+            }
+        }
 
+        &:nth-child(3) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 4;
+                width: 50%;
+                padding: 10px 5px;
+                margin: 10px 0;
+                border-top: 1px solid #b9b9b96b;
+                border-bottom: 1px solid #b9b9b96b;
+            }
+        }
+
+        &:nth-child(4) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 5;
+                width: 50%;
+                padding: 10px 5px;
+                margin: 10px 0;
+                border-top: 1px solid #b9b9b96b;
+                border-bottom: 1px solid #b9b9b96b;
+            }
+        }
+
+        &:nth-child(5) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 6;
+                padding: 10px 5px 0;
+            }
+        }
+
+        &:nth-child(6) {
+            @media screen and (max-width: $beforeTableWidth) {
+                display: flex;
+                order: 3;
+            }
+        }
         &:last-child {
             border: none;
         }

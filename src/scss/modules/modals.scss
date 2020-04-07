@@ -16,6 +16,7 @@
     opacity: 0;
     visibility: hidden;
 	pointer-events: none;
+
 	&__add-btn {
 		text-align: center;
 		margin-top: 30px;
@@ -229,6 +230,7 @@
 	transition:.4s;
 }
 .modal-body {
+	overflow: hidden;
 	background: #fff;
 	border-radius: 8px;
 	padding-top: 54px;
