@@ -29,11 +29,10 @@
 		padding-top: 15px;
 	}
 	&__pic {
-		& img {
-			height: 400px;
-			@media screen and (max-width: $beforeTableWidth) {
-				height: unset
-			}
-		}
+		background-size: contain;
+	    width: 400px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    min-height: 340px;
 	}
 }

@@ -696,6 +696,9 @@
   &__label {
     display: block;
     margin-bottom: 25px;
+    @media screen and (max-width: $beforeTableWidth) {
+      margin-bottom: 0;
+    }
     & span {
       font-family: $SFM;
       font-size: 15px;
@@ -710,6 +713,12 @@
   }
   &__select {
     position: relative;
+    & .rectangle-btn.rectangle-btn-green:last-child{
+      height: 40px;
+      background: #b91e1e;
+      margin-bottom: 14px;
+      margin-top: 20px;
+    }
     &.show {
       &:hover .form__select-intro {
         border:1px solid transparent!important;
