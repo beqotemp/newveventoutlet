@@ -696,9 +696,6 @@
   &__label {
     display: block;
     margin-bottom: 25px;
-    @media screen and (max-width: $beforeTableWidth) {
-      margin-bottom: 0;
-    }
     & span {
       font-family: $SFM;
       font-size: 15px;
