@@ -1003,3 +1003,24 @@
 	font-family: $GR!important;
 	font-size: 14px!important;
 }
+
+
+
+.profile-slider__play-btn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 62px;
+    width: 62px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-emphasis: circle;
+    & .play-svg {
+    	background: #8e8e8e;
+    	height: 23px;
+    	width: 26px;
+    }
+}

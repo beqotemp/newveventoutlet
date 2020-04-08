@@ -349,9 +349,11 @@
 		}
 		@media screen and (min-width: $smDesktopWidth) { 
 			margin-left: 42px;
+			margin-bottom: -4px;
 		}
 		@media screen and (min-width: $beforeTableWidth) { 
 			margin-left: 10px;
+			
 		}
 	}
 	& .container-bg {
@@ -365,34 +367,40 @@
 
 .search-block {
 	margin-left: auto;
-    display: flex;
     flex: 1;
-
+	margin-bottom: -10px;
+	display: none;
+	@media screen and (min-width: $smDesktopWidth ) {
+		display: flex;
+	}
 	&__label {
 		cursor: pointer;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		width: 150px;
 		font-family: $GL;
 		font-size: 16px;
 		& .search-svg {
     		margin-right: 10px;
     		background-color: #989898;
+    		margin-top: -4px;
     	}
 		input[type=search] {
 			position: relative;
 			border-bottom: 1px solid #e6ece4;
 			padding-bottom: 4px;
 			transition:.2s;
-			width: 1%;
+			width: 0;
 			opacity: 0;
+			&::-webkit-search-decoration, &::-webkit-search-cancel-button {
+				display:none;
+			}
 			&::placeholder {
 				font-family: $GL;
 				font-size: 16px;
 			}
 			&:focus {
-				width: 100%;
+				width: 120px;
 				opacity: 1;
 			}
 		}
