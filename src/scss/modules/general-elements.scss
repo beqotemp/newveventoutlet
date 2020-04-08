@@ -408,6 +408,16 @@
   -webkit-mask: url(../img/svg/search.svg) no-repeat center;
   mask: url(../img/svg/search-.svg) no-repeat center;
 }
+.play-svg {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/play.svg) no-repeat center;
+  mask: url(../img/svg/play.svg) no-repeat center;
+}
 .thumble-svg {
   display: inline-block;
   width: 22px;
