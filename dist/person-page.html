@@ -23,11 +23,19 @@
                     EventOutlet
                   </span>
                 </a>
-                <div class="navbar-general__collapse">
+                <div class="navbar-general__collapse search-active">
                   <ul class="navbar-general__main">
                     <li><a href="#">Каталог специалистов</a></li>
                     <li><a href="#">Стать исполнителем</a></li>
                   </ul>
+                  <div class="search-block">
+                    <form action="">
+                      <label class="search-block__label" for="input-search">
+                        <input id="input-search" type="search" placeholder="Поиск" />
+                        <div class="search-svg"></div>
+                      </label>
+                    </form>
+                  </div>
                   <div class="navbar-general__profile">
                     <div class="navbar-general__profile-body">
                       <div class="navbar-general__profile-preview">
@@ -46,6 +54,7 @@
                     </div>
                   </div>
                 </div>
+
                 <a href="#" class="oval-btn oval-btn-green" style="display: none;">
                   <span>Вход</span>
                   <span> / </span>
