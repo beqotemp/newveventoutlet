@@ -11,6 +11,12 @@
             font-size: 25px;
             color: #33473f;
             transition:.4s;
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 21px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 21px;
+            }
             @media screen and (max-width: $beforeTableWidth) {
                 font-size: 18px;
             }

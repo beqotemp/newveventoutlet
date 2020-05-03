@@ -240,9 +240,21 @@
 			color: #3a3a3a;
 			letter-spacing: 2.04px;
 			line-height: 66px;
+			letter-spacing: 2.03px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 40px;
+				line-height: 50px;
+				letter-spacing: 2.26px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 36px;
+				line-height: 47px;	
+				letter-spacing: 2.03px;
+			}
 			@media screen and (max-width: $beforeTableWidth) {
 				font-size: 30px;
 				line-height: 40px;
+				letter-spacing: 1.69px;
 			}
 		}
 		
@@ -251,6 +263,12 @@
 		margin-top: 36px;
 		text-align: center;
 		padding: 0 20px;
+		@media screen and (max-width: $desktopWidth) {
+			margin-top: 21px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin-top: 25px;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
 			padding: 0;
 			margin: 16px -15px 0;
@@ -258,12 +276,13 @@
 		p {
 			font-family: $SFR;
 			font-size: 16px;
-			line-height: 23px;
-			letter-spacing: .64px;
+			line-height: 25px;
+			letter-spacing: 0.64px;
 			color: #676666;
-			@media screen and (max-width: $beforeTableWidth) {
+			@media screen and (max-width: $desktopWidth) {
 				font-size: 14px;
-				line-height: 23px;
+				line-height: 17.72px;
+				letter-spacing: 0.79px;
 			}
 		}
 	}
@@ -443,8 +462,72 @@
 .profitable {
 	background-color: #e6ece4;
 	padding: 98px 0 114px;
+	overflow: hidden;
+	&__head {
+		& .whats-it__title {
+			@media screen and (max-width: $beforeTableWidth) {
+        		margin: 0 -12px;
+    		}
+		}
+	}
+	@media screen and (max-width: $desktopWidth) {
+		padding: 77px 0 123px;
+	}
+	@media screen and (max-width: $beforeSmDesktopWidth) {
+		padding: 80px 0 110px;	
+	}
 	@media screen and (max-width: $beforeTableWidth) {
-    	padding: 56px 0 123px;
+    	padding: 56px 0 128px;
+	}
+	&__f-figure {
+	    position: absolute;
+	    top: 0;
+	    left: -2%;
+    	width: 264px;
+	    height: 45%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    @media screen and (max-width: $desktopWidth) {
+			
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    left: -5%;
+    		width: 210px;
+		    height: 37%;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+        	display: none;
+    	}
+	} 
+	&__s-figure {
+		position: absolute;
+        bottom: 0;
+	    right: -4%;
+	    height: 63%;
+	    width: 596px;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    @media screen and (max-width: $desktopWidth) {
+			height: 57%;
+	        right: -12%;
+    		width: 461px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    
+    		right: -12%;
+    	    height: 52%;
+    		width: 361px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+	    	right: -7%;
+			height: 40%;
+			width: 261px;
+    	}
+    	@media screen and (max-width: $beforePhoneWidth) {
+			right: -7%;
+			height: 37%;
+			width: 261px;
+		}
 	}
 }
 .profitable-cards {

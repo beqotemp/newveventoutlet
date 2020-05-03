@@ -22,17 +22,61 @@
             
         }
     }
-    &__pic {}
+    &__pic {
+        img {
+            @media screen and (max-width: $desktopWidth) {
+                height: 171px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                height: 128px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                
+            }
+        }
+    }
     &__title {
         text-align: center;
         & span {
             font-family: $GS;
             font-size: 26px;
             color: #33473f;
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 18px;
+            }
         }
         
     }
     &__button {
         margin-top: 30px;
+        & .rectangle-btn-border {
+            @media screen and (max-width: $desktopWidth) {
+                padding: 19px 59px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                padding: 17px 50px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                padding: 17px 44px;
+            }   
+            & span {
+                font-size: 16px;
+                @media screen and (max-width: $desktopWidth) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: $beforeSmDesktopWidth) {
+                    font-size: 16px;
+                }
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 16px;
+                }   
+            }
+        }
     }
 }

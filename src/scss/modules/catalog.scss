@@ -6,14 +6,6 @@
 	@media screen and (max-width: $beforeTableWidth) {
 		margin-top: 8px;
 	}
-	&__wrapper {
-	    
-	}
-	@media (min-width: 1200px) {
-		.container {
-		    max-width: 1169px;
-		}
-	}
 }
 // all fitlers 
 .catalog-nav.sticky .catalog-filter__item {
@@ -150,7 +142,7 @@
    
 	&__item {
 		position: relative;
-    	padding: 51px 35px;
+    	padding: 51px 33px;
 	    transition:.4s;
 	    cursor:pointer;
 	    &:before {
@@ -896,7 +888,7 @@
 	}
 } 
 .catalog-pagination {
-	margin-top: 50px;
+	margin-top: 15px;
 	@media screen and (max-width: $beforeTableWidth) {
 		margin-top: 25px;
 	}

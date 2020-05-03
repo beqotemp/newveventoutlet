@@ -5,6 +5,12 @@
 	}
 	&__content {
 		margin: 0 -15px;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 0 -15px;
+		}
 	}
 	&__row {
 		display: flex;
@@ -19,6 +25,30 @@
 	  	border-radius: 4px;
 	  	overflow: hidden;
 	  	background-color: #fff;
+	  	@media screen and (max-width: $desktopWidth) {
+			flex-direction: column;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			flex-direction:row;
+			padding: 29px 35px 38px;
+			text-align: left;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			flex-direction:column;
+			padding: 50px 0;
+			text-align: center;
+		}
+	}
+	&__body-block {
+		@media screen and (max-width: $desktopWidth) {
+			margin-left: 0;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin-left: 42px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-left: 0;
+		}
 	}
 	&__card-photo {
 		height: 127px;
@@ -29,9 +59,27 @@
 		margin: 0 auto;
 		border-radius: 50%;
 		overflow:hidden;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin: unset;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 0 auto;
+		}
 	}
 	&__name {
 		margin-top: 25px;
+		@media screen and (max-width: $desktopWidth) {
+			margin-top: 25px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin-top: 6px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-top: 25px;
+		}
 		& a {
 			font-family: $GS;
 			font-size: 16px;
@@ -50,10 +98,26 @@
 			font-family: $SFR;
 			font-size: 16px;
 			color: #979697;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 16px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+			}
 		}
 	}
 	&__wrapper {
 		margin: 0 -18px;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0 -18px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin: 31px 0;
+		}
+	
 		@media screen and (max-width: $beforeTableWidth) {
 			margin: 20px 0;
 		}
@@ -65,6 +129,15 @@
 		padding: 30px 60px 30px 35px;
 		display: flex;
 		flex-direction:column;
+		@media screen and (max-width: $desktopWidth) {
+            padding: 15px 17px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            padding: 15px 17px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            padding: 15px;
+        }
 		&.special-page {
 			@media screen and (max-width: $beforeTableWidth) {
 				padding: 15px;
@@ -81,6 +154,15 @@
 			font-size: 35px;
 			color: #33473f;
 			letter-spacing: 1.4px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 28px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 28px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 20px;
+			}
 		}
 	}
 }

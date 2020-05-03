@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 115vh;
     width: 100%;
     background: #000000ba;
     transition: .4s;
@@ -31,8 +31,19 @@
 	}
 	&__paragraph {
 		padding: 35px 0;
+		@media screen and (max-width: $desktopWidth) {
+			width: 60%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+            width: 60%;
+    		margin: 0 auto;
+		}
+
 		@media screen and (max-width: $beforeTableWidth) {
 			padding: 90px 15px 15px;
+			width: auto;
+			margin: unset;
 		}
 		p {
 			font-family: $SFL;
@@ -73,11 +84,29 @@
 		top: -90px;
 		left: -120px;
 		background-size: cover;
+		@media screen and (max-width: $desktopWidth) {
+			height: 352px;
+		    width: 226px;
+		    top: -30px;
+		    left: -120px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+	        height: 352px;
+		    width: 226px;
+		    top: -30px;
+		    left: -120px;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
-			height: 263px;
-			width: 169px;
-			top: -110px;
-			left: -100px;
+			height: 253px;
+		    width: 162px;
+		    top: -91px;
+		    left: -103px;	
+		}
+		@media screen and (max-width: $beforePhoneWidth ) {
+		    height: 233px;
+		    width: 149px;
+		    top: -91px;
+		    left: -103px;
 		}
 	}
 	&__s-figure {
@@ -89,9 +118,19 @@
 		top: 0%;
 		transform: translateY(120%);
 		background-repeat: no-repeat;
+		background-size: cover;
+		@media screen and (max-width: $desktopWidth) {
+		    height: 191px;
+    		width: 107px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    height: 225px;
+			width: 212px;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
 			display: none;
 		}
+    	
 	}
     &.active {
     	opacity: 1;
@@ -103,7 +142,16 @@
 		padding-top: 122px;
 		overflow-y: auto;
 		height: 100%;
-		padding-bottom: 50px;
+		padding-bottom: 205px;
+		@media screen and (max-width: $desktopWidth) {
+		    padding-bottom: 295px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+	        padding-bottom: 295px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding-bottom: 522px;
+		}
 		&::-webkit-scrollbar {
 		    width: 0px;  /* remove scrollbar space */
 		    background: transparent;
@@ -111,41 +159,88 @@
 	}
 	&__title {
 		text-align: center;
+		@media screen and (max-width: $desktopWidth) {
+			font-size: 30px;
+			line-height: 29px;
+		 	width: 50%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 50%;
+    		margin: 0 auto;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
-			padding: 0 15px;
+			padding: 0 30px;
+			width: unset;
+			margin: unset;
 		}
 		& span {
 			font-family: $GS;
 			font-size: 35px;
 			color: #33473f;
 		    line-height: 32px;
+		    @media screen and (max-width: $desktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
 			@media screen and (max-width: $beforeTableWidth) {
 				font-size: 20px;
-				line-height: 20px;
+				line-height: 23px;
 			}
 		}
 	}
 	&__subtitle {
 		margin-top: 12px;
 		text-align: center;
+		@media screen and (max-width: $desktopWidth) {
+			width: 52%;
+    		margin: 26px auto 0;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 60%;
+    		margin: 26px auto 0;
+		}
 		@media screen and (max-width: $beforeTableWidth) {
 			width: 210px;
-			margin: 0 auto;
-			margin-top: 0px;
+			margin: 15px auto 0;
 		}
 		& span {
 			font-family: $SFL;
 			font-size: 16px;
 			color: #515151;
 			line-height: 23px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
 			@media screen and (max-width: $beforeTableWidth) {
 				font-size: 14px;
+				line-height: 23px;
 			}
 		}
 	}
 	&__form {
 		margin-top: 33px;
 	    padding: 0 20px;
+	    @media screen and (max-width: $desktopWidth) {
+			width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
 	    & form {
     	    display: flex;
     		flex-direction: column;
@@ -174,10 +269,27 @@
 		    letter-spacing: 0.7px;
 		    transition: .4s;
     		border: 1px solid transparent;
+    		font-size: 20px; 
+    		@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 16px;
+				padding: 20px 16px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				padding: 20px 16px;
+			}
     		&::placeholder {
     			font-family: $SFL;
 				color: #b4b4b4;
 				font-size: 20px;
+				@media screen and (max-width: $desktopWidth) {
+
+				}
+				@media screen and (max-width: $beforeSmDesktopWidth) {
+					font-size: 16px;
+				}
+				@media screen and (max-width: $beforeTableWidth) {
+					font-size: 16px;
+				}
     		}
     	}
 	}
@@ -233,6 +345,7 @@
 	transition:.4s;
 }
 .modal-body {
+	position: relative;
 	overflow: hidden;
 	background: #fff;
 	border-radius: 8px;

@@ -349,10 +349,9 @@
 		}
 		@media screen and (min-width: $smDesktopWidth) { 
 			margin-left: 42px;
-			margin-bottom: -4px;
 		}
 		@media screen and (min-width: $beforeTableWidth) { 
-			margin-left: 10px;
+			margin-left: 20px;
 			
 		}
 	}
@@ -400,7 +399,7 @@
 				font-size: 16px;
 			}
 			&:focus {
-				width: 120px;
+				width: 139px;
 				opacity: 1;
 			}
 		}

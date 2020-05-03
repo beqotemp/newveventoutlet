@@ -113,7 +113,12 @@
     }
     &__body {
         padding: 10px 60px 30px 35px;
-
+        @media screen and (max-width: $desktopWidth) {
+            padding: 0 23px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            padding: 10px 23px;
+        }
         @media screen and (max-width: $beforeTableWidth) {
             padding: 0px 20px 20px;
         }
@@ -302,24 +307,30 @@
         & .catalog-card__discount-icon {
             margin-left: unset;
             margin-right: 15px;
-            & .percent-svg {
-                @media screen and (max-width: $beforeTableWidth) { 
-                    height: 22px;
-                    width: 22px
-                }
+            @media screen and (max-width: $desktopWidth) {
+                margin-right: 0;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                margin-right: 0;
             }
             @media screen and (max-width: $beforeTableWidth) {
                 padding: 0;
                 background-color: #ff7061;
                 border-radius: 50%;
                 margin-left: unset;
-                margin-right: 10px;
+                margin-right: -10px;
                 height: 34px;
                 width: 34px;
                 margin-top: 3px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            & .percent-svg {
+                @media screen and (max-width: $beforeTableWidth) { 
+                    height: 22px;
+                    width: 22px
+                }
             }
         }
     }
@@ -344,6 +355,7 @@
             @media screen and (max-width: $beforeTableWidth) {
                 display: flex;
                 order: 2;
+                width: 50%;
             }
         }
 
@@ -394,12 +406,30 @@
                 font-size: 14px;
                 color: #8f8f8f;
                 white-space: nowrap;
+                @media screen and (max-width: $desktopWidth) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: $beforeSmDesktopWidth) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 12px;
+                }
             }
             &:nth-child(2){
                 font-family: $GS;
                 font-size: 15px;
                 color: #202020;
                 white-space: nowrap;
+                @media screen and (max-width: $desktopWidth) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: $beforeSmDesktopWidth) {
+                    font-size: 13px;
+                }
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -413,6 +443,15 @@
             font-family: $GR;
             font-size: 15px;
             color: #202020;
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 13px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 13px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 12px;
+            }
         }
     }
     &__desctipton {
@@ -449,7 +488,7 @@
         }
         & .filter-checkbox {
             font-family: $SFL;
-            font-size: 15px;
+            font-size: 14px;
             color: #525252;
         }
     }

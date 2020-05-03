@@ -13,7 +13,7 @@
     <!-- main wrapper -->
     <div id="app" class="wrapper">
       <nav id="menuBody" class="navbar-general">
-        <div class="container">
+        <div class="container container-bg">
           <div class="row">
             <div class="col-xl-12">
               <div class="navbar-general__row">
@@ -80,17 +80,21 @@
                 <div class="profile-edit__card-wrapper">
                   <div class="profile-edit__card profile-special">
                     <div class="profile-edit__card-photo" style="background-image: url(/img/person.png);"></div>
-                    <div class="profile-edit__name">
-                      <span>Виктория Никифорова</span>
+                    <div class="profile-edit__body-block">
+                      <!-- html changes -->
+                      <div class="profile-edit__name">
+                        <span>Виктория Никифорова</span>
+                      </div>
+                      <div class="profile-edit__prof">
+                        <span>Фотограф</span>
+                      </div>
+                      <div class="pe-block__add-btn">
+                        <a href="#" class="add-btn">
+                          <span>Редактировать профиль</span>
+                        </a>
+                      </div>
                     </div>
-                    <div class="profile-edit__prof">
-                      <span>Фотограф</span>
-                    </div>
-                    <div class="pe-block__add-btn">
-                      <a href="#" class="add-btn">
-                        <span>Редактировать профиль</span>
-                      </a>
-                    </div>
+                    <!-- html changes -->
                   </div>
                 </div>
               </div>
@@ -427,7 +431,11 @@
         <div class="modal__wrapper">
           <div class="container">
             <div class="row no-gutters">
-              <div class="col-xl-8 offset-xl-2">
+              <div
+                class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-1 col-xl-8 offset-xl-2"
+              >
+                <!-- html change new -->
+
                 <div class="modal-body">
                   <div class="modal__f-figure"></div>
                   <div class="modal__s-figure"></div>

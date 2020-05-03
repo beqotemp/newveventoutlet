@@ -10,6 +10,7 @@ html {
   color: $mainFontColor;
   height: 100%;
 
+  
   @media screen and (max-width: $desktopWidth) {
 		font-size: 16px;
   }
@@ -24,6 +25,9 @@ html {
   }
   @media screen and (max-width: $phoneWidth) {
 		font-size: 14px;
+  }
+  @media screen and (max-height: 768px) and (min-width: 1210px) {
+    zoom:0.9;
   }
 }
 
@@ -42,6 +46,7 @@ body {
   -webkit-tap-highlight-color: transparent!important;
   &.overflow {
     overflow: hidden;
+    position: relative;
   }
 }
 
@@ -82,9 +87,6 @@ section, .section {
 .wrapper {
   flex: 1;
   min-height: 89vh;
-  @media screen and (max-height: 768px) and (min-width: 1210px) {
-    zoom:0.9;
-  }
 }
 
 // Modules
