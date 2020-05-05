@@ -731,6 +731,11 @@
   &__label {
     display: block;
     margin-bottom: 25px;
+    &.invalid .validation{
+      opacity: 1;
+      visibility: visible;
+      color: #d6555e;
+    }
     & span {
       font-family: $SFM;
       font-size: 15px;
@@ -819,10 +824,16 @@
   }
   &__select-wrapper {
     // height: 120px;
-    max-height: 138px;
+    max-height: 222px;
     height: 100%;
     width: 100%;
     // overflow: hidden;
+    & input {
+      padding: 18px 25px 18px 22px;
+    }
+    & .form__icon-input-wrapper {
+      padding-left: unset;
+    }
   }
   &__select-list {
     display: flex;
@@ -830,12 +841,18 @@
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
-    max-height: 138px;
+    max-height: 222px;
     &::-webkit-scrollbar {
-      @media screen and (min-width: $tableWidth) {
-        width: 0px; /* remove scrollbar space */
-        background: transparent;  
-      }
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.16);
+      border-radius: 60px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 61px;
+      -webkit-box-shadow: inset 0 0 6px rgb(106, 153, 29);
     }
     & span {
       font-family: $GR;
@@ -974,13 +991,21 @@
     }
   }
 }
+.catalog-select.show .catalog-select__intro {
+ 
+  @media (max-width: $beforeTableWidth) {
+   padding-bottom: 25px;
+  }
+}
 .catalog-select.show .catalog-select__body {
   transform: scaleY(1);
-  @media (max-width: $phoneWidth) {
+  @media (max-width: $beforeTableWidth) {
     max-height: 100%;
     transition: max-height 0.25s ease-in;
-    padding: 21px 30px;
+    padding: 18px 20px;
     transition: 0.25s ease-in;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -1099,8 +1124,10 @@
       padding: 0;
       // anim
       max-height: 0;
-      transition: 0.15s ease-out;
+      transition: 0.4s ease-out;
       overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }
