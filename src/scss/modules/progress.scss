@@ -1,0 +1,150 @@
+
+.progress-hero {
+	& .almost-square-btn {
+		@media (max-width: $beforeTableWidth ) {
+		    padding: 19px 48px;
+		}	
+	}
+}
+.header-hero {
+
+	&__independent {
+		display: flex;
+		justify-content:center;
+		margin-top: 30px;
+		&.almost-square-btn {
+			border-radius: 4px!important;
+		}
+	}
+}
+
+.progress {
+	&__title {
+		font-family: $SFR;
+		font-size: 31px;
+		color: #2f2f2f;
+		line-height: 43px;
+		display: inline-block;
+    	text-align: center;
+    	@media (max-width: $beforeTableWidth ) {
+		    font-size: 24px;
+		    line-height: 42px;
+		}	
+    	& b {
+    		font-family: $SFB;
+    	}
+	}
+	&__cards {
+		border-bottom: none;
+		& .whats-it__block {
+    		padding: 30px 26px 24px;
+		}
+	}
+	&__button {
+	    margin-top: 29px;
+	}
+}
+.profitable-process {
+	background-color: #fff;
+	& .profitable__s-figure {
+		height: 30%;
+	}
+}
+.process-punkts {
+    background-color: #f9f9f9;
+    &__card {
+    	width: 849px;
+    	display:flex;
+    	align-items:center;
+    	border-radius: 7px;
+    	background-color: #fff;
+    	position: relative;
+    	padding-left:85px;
+    	padding-right: 50px;
+    	height: 87px; 
+    	margin: 0 auto 11px;
+    	@media (max-width: $beforeTableWidth ) {
+		    width: 100%;
+		    height: auto;
+			padding: 20px;
+		}	
+    	& span {
+    		font-family: $GS;
+    		font-size: 20px;
+    		color: #33473f;
+    		letter-spacing: 0.8px;
+    		line-height: 30px;
+    		@media (max-width: $beforeTableWidth ) {
+	    	    line-height: 20px;
+	    	    font-size: 16px;
+			}	
+    	}
+    }
+    &__number {
+    	position: absolute;
+    	left: 31px;
+    	top: 50%;
+    	transform:translateY(-50%);
+    	@media (max-width: $beforeTableWidth ) {
+		    display:none;
+		}	
+    	& span {
+    		font-family: $GS;
+    		font-size: 24px;
+    		letter-spacing: 0.96px;
+    		color: #91b15f;
+    		line-height: 30px;
+    	}
+    }
+    &__success {
+    	width: 849px;
+    	margin: 0 auto;
+    	background-color: #97c94a;
+    	display: flex;
+    	border-radius: 7px;
+    	align-items:center;
+    	justify-content:center;
+    	height: 84px;
+    	@media (max-width: $beforeTableWidth ) {
+		    width: 100%;
+		    height: auto;
+			padding: 20px;
+		}	
+    	& span {
+    		font-family: $GS;
+    		font-size: 20px;
+    		letter-spacing: 0.8px;
+    		color:#fff;
+    		@media (max-width: $beforeTableWidth ) {
+	    	    line-height: 20px;
+	    	    font-size: 16px;
+			}	
+    	}
+    }
+}
+
+.hiw {
+	background-color: #f9f9f9;
+	&__title {
+		padding: 30px 0 70px;
+		text-align: center;
+		& span {
+			font-family: $GS;
+			font-size: 50px;
+			color: #3a3a3a;
+			letter-spacing: 2px;
+		}
+	}
+	&__button {
+		margin-top: 60px;
+		display: flex;
+		@media (max-width: $beforeTableWidth ) {
+		    margin-top: 30px;
+		    margin-bottom: 30px;
+		}	
+		& .thin-rectangle-btn {
+			margin: 0 auto;
+			padding:18px 47px;
+		}
+	}
+}
