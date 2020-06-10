@@ -443,6 +443,46 @@
   -webkit-mask: url(../img/svg/search.svg) no-repeat center;
   mask: url(../img/svg/search-.svg) no-repeat center;
 }
+.edit-projess {
+  display: inline-block;
+  width: 22px;
+  vertical-align: middle;
+  height: 18px;
+  background-color: #91b15f;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/edit-projess.svg) no-repeat center;
+  mask: url(../img/svg/edit-projess.svg) no-repeat center;
+}
+.calendar-process {
+  display: inline-block;
+  width: 26px;
+  height: 23px;
+  vertical-align: middle;
+  background-color: #91b15f;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/calendar-process.svg) no-repeat center;
+  mask: url(../img/svg/calendar-process.svg) no-repeat center;
+}
+.calendar-plus-process {
+  display: inline-block;
+  width: 23px;
+  vertical-align: middle;
+  height: 26px;
+  background-color: #91b15f;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/calendar-plus-proceess.svg) no-repeat center;
+  mask: url(../img/svg/calendar-plus-proceess.svg) no-repeat center;
+}
+.badge-process {
+  width: 29px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #91b15f;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/badge-process.svg) no-repeat center;
+  mask: url(../img/svg/badge-process.svg) no-repeat center;
+}
 .play-svg {
   display: inline-block;
   width: 22px;

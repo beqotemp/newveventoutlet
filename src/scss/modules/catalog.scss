@@ -250,6 +250,9 @@
 		letter-spacing: .6px;
 		color:#101010;
 		font-size: 16px;
+		overflow: hidden;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
 		@media screen and (max-width: $beforeSmDesktopWidth) {
 			font-size: 14px;
 			line-height: 15px;
@@ -259,6 +262,9 @@
 			line-height: 14px;
 		}	
 		& a {
+			overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
 			font-family: $SFB;
 			letter-spacing: .6px;
 			color:#101010;

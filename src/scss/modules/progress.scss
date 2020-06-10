@@ -1,5 +1,9 @@
 
 .progress-hero {
+	.header-hero__wrapper {
+		margin-top: 15px;
+	    padding: 121px 0 81px;
+	}
 	& .almost-square-btn {
 		@media (max-width: $beforeTableWidth ) {
 		    padding: 19px 48px;
@@ -11,13 +15,20 @@
 	&__independent {
 		display: flex;
 		justify-content:center;
-		margin-top: 30px;
+		margin-top: 54px;
 		&.almost-square-btn {
 			border-radius: 4px!important;
 		}
 	}
 }
-
+.process {
+	&__button {
+		margin-top: 9px;
+	}
+}
+.process-whats {
+	padding: 120px 0 95px;
+}
 .progress {
 	&__title {
 		font-family: $SFR;
@@ -26,6 +37,7 @@
 		line-height: 43px;
 		display: inline-block;
     	text-align: center;
+    	letter-spacing: 0.2px;
     	@media (max-width: $beforeTableWidth ) {
 		    font-size: 24px;
 		    line-height: 42px;
@@ -37,11 +49,19 @@
 	&__cards {
 		border-bottom: none;
 		& .whats-it__block {
-    		padding: 30px 26px 24px;
+		    padding: 10px 26px 24px 19px;
+		}
+		& .whats-it__block_title {
+			margin-top: 0px;
+		}
+		& .whats-it__block_pic {
+			& img {
+				height: 100%;
+			}
 		}
 	}
 	&__button {
-	    margin-top: 29px;
+	    margin-top: 6px;
 	}
 }
 .profitable-process {
@@ -52,8 +72,44 @@
 		}	
 	}
 }
+.profitable-process {
+    padding: 107px 0 114px;
+	& .whats-it__subtitle {
+		margin-top: 25px;
+	}
+}
+.hiw-blocks {
+	& .process-punkts__card {
+		padding: 30px 47px 25px 81px;
+	    margin: 0 auto 10px;
+	    height: unset;
+		& .process-punkts__number {
+			left: 28px
+		}
+		& .process-punkts__number {
+			left: 28px
+		}
+	}
+}
+.hiw__number-f {
+	left: 28px;
+    top: 50%;
+}
+.hiw__number-s {
+	left: 26px;
+    top: 38%;
+}
+.hiw__number-t {
+	left: 29px;
+    top: 41%;
+}
+.hiw__number-f {
+    left: 27px;
+    top: 43%;
+}
 .process-punkts {
     background-color: #f9f9f9;
+    padding: 19px 0 100px;
     &__card {
     	width: 849px;
     	display:flex;
@@ -61,10 +117,14 @@
     	border-radius: 7px;
     	background-color: #fff;
     	position: relative;
-    	padding-left:85px;
+	    padding-left: 76px;
     	padding-right: 50px;
     	height: 87px; 
-    	margin: 0 auto 11px;
+    	margin: 0 auto 7px;
+    	& .edit-projess {
+		    width: 28px;
+			height: 26px;
+    	}
     	@media (max-width: $beforeTableWidth ) {
 		    width: 100%;
 		    height: auto;
@@ -84,7 +144,7 @@
     }
     &__number {
     	position: absolute;
-    	left: 31px;
+    	left: 26px;
     	top: 50%;
     	transform:translateY(-50%);
     	@media (max-width: $beforeTableWidth ) {
@@ -128,7 +188,7 @@
 .hiw {
 	background-color: #f9f9f9;
 	&__title {
-		padding: 30px 0 70px;
+		padding: 60px 0 70px;
 		text-align: center;
 		& span {
 			font-family: $GS;
@@ -139,7 +199,11 @@
 	}
 	&__button {
 		margin-top: 60px;
+		margin-bottom: 20px;
 		display: flex;
+		& .rectangle-btn-border-green {
+		    background-color: #fff;
+		}
 		@media (max-width: $beforeTableWidth ) {
 		    margin-top: 30px;
 		    margin-bottom: 30px;
