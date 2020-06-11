@@ -3,6 +3,10 @@
 	.header-hero__wrapper {
 		margin-top: 15px;
 	    padding: 121px 0 81px;
+	    @media screen and (max-width: $beforeTableWidth) {
+            margin: 0 -41px;
+            padding: 49px 30px 67px 38px;
+        }
 	}
 	& .almost-square-btn {
 		@media (max-width: $beforeTableWidth ) {
@@ -202,6 +206,9 @@
 		margin-bottom: 20px;
 		display: flex;
 		& .rectangle-btn-border-green {
+		    background-color: #fff;
+		}
+		& .rectangle-btn-border-green:hover {
 		    background-color: #799830;
 		    border-radius: #799830;
 		}

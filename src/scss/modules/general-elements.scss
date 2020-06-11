@@ -867,6 +867,9 @@
     max-height: 222px;
     height: 100%;
     width: 100%;
+    @media screen and (max-width: $beforeTableWidth) {
+      max-height: 122px;
+    }
     // overflow: hidden;
     & input {
       padding: 18px 25px 18px 22px;
@@ -882,6 +885,9 @@
     overflow-y: auto;
     height: 100%;
     max-height: 222px;
+    @media screen and (max-width: $beforeTableWidth) {
+      max-height: 122px;
+    }
     &::-webkit-scrollbar {
       width: 6px;
     }
