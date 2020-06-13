@@ -80,7 +80,8 @@
 
   }
   @media screen and (max-width: $beforeTableWidth) {
-    padding: 19px 62px;
+    padding: 19px 39px;
+    width: 100%;
   }
 }
 .almost-square-btn-corral {
@@ -901,6 +902,7 @@
       box-shadow: inset 0px 0px 12px #d7d6d7
     }
     & span {
+      cursor: pointer;
       font-family: $GR;
       color: #231f20;
       font-size: 16px;
@@ -1264,6 +1266,7 @@
     background-color: #ff7061;
     margin-top: 21px!important;
     padding: 15px 35px!important;
+    width: 100%;
     &:hover {
       background-color: #dc594b!important;
     }

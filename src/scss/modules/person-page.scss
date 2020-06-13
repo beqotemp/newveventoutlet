@@ -374,6 +374,7 @@
         margin-top: 30px;
         border-bottom: 1px solid #e0e0e0;
         padding-bottom: 35px;
+        white-space: pre-line;
         @media screen and (max-width: $beforeSmDesktopWidth) {
             margin-top: 15px;
             padding-bottom: 25px;
@@ -492,6 +493,7 @@
         & .vc-container {
             @media screen and (max-width: $beforeSmDesktopWidth) {
                 margin: 0 auto;
+                width: 100%;
             }
         }
         @media screen and (max-width: $beforeTableWidth) {
@@ -584,6 +586,7 @@
     &__description {
         margin-top: 20px;
         padding-bottom: 23px;
+        white-space: pre-line;
         & span {
             font-family: $GR;
             font-size: 14px;
