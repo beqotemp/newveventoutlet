@@ -880,7 +880,7 @@
     }
   }
   &__select-list {
-    display: block;
+    display: flex;
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
@@ -891,7 +891,10 @@
     }
     &::-webkit-scrollbar {
       width: 6px;
+      display: block;
       -webkit-appearance: none;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
     }
     &::-webkit-scrollbar:vertical {
       width: 6px;
