@@ -886,25 +886,26 @@
     overflow-y: scroll;
     height: 100%;
     max-height: 222px;
+    -webkit-appearance: none;
     @media screen and (max-width: $beforeTableWidth) {
       max-height: 122px;
     }
-    &::-webkit-scrollbar {
+    &.scrollbar::-webkit-scrollbar {
       width: 6px;
       display: block;
       -webkit-appearance: none;
-      -webkit-overflow-scrolling: touch;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
+
     }
-    &::-webkit-scrollbar:vertical {
+    &.scrollbar::-webkit-scrollbar:vertical {
       width: 6px;
+       -webkit-appearance: none;
     }
-    &::-webkit-scrollbar-track {
+    &.scrollbar::-webkit-scrollbar-track {
       box-shadow: inset 0 0px 27px rgba(0, 0, 0, 0.04);
       border-radius: 60px;
     }
 
-    &::-webkit-scrollbar-thumb {
+    &.scrollbar::-webkit-scrollbar-thumb {
       border-radius: 61px;
       box-shadow: inset 0px 0px 12px #d7d6d7
     }
