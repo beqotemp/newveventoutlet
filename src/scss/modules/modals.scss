@@ -357,6 +357,7 @@
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+    height: 100%;
 	@media screen and (max-width: $beforeTableWidth) {
 		padding-top: 24px;
 	}
