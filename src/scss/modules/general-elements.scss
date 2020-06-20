@@ -880,12 +880,13 @@
     }
   }
   &__select-list {
-    display: flex;
+    display: block;
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
     height: 100%;
     max-height: 222px;
+    -webkit-overflow-scrolling:touch;
     @media screen and (max-width: $beforeTableWidth) {
       max-height: 122px;
     }
@@ -899,9 +900,8 @@
 
     &::-webkit-scrollbar-thumb {
       border-radius: 61px;
-      box-shadow: inset 0px 0px 12px #ff00ff;
+      box-shadow: inset 0px 0px 12px #d7d6d7
     }
-
     & span {
       cursor: pointer;
       font-family: $GR;
