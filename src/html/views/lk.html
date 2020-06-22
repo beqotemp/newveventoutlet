@@ -1,0 +1,150 @@
+<% var data = {
+    title: "Заголовок | Проект",
+    author: "Harrix"
+  }; %>
+<%= _.template(require('./../includes/head.html'))(data) %>
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+ 
+
+<section class="profile-edit">
+    <div class="container">
+        <div class="profile-edit__content">
+            <div class="row no-gutters">
+                <div class="col-md-12 col-lg-3 col-xl-3">
+                    <div class="profile-edit__card-wrapper">
+                        <div class="profile-edit__card profile-special">
+                            <div class="profile-edit__card-photo" style="background-image: url(/img/person.png);">
+
+                            </div>
+                            <div class="profile-edit__body-block"><!-- html changes -->
+                                <div class="profile-edit__name">
+                                    <span>Виктория Никифорова</span>
+                                </div>
+                                <div class="profile-edit__prof">
+                                    <span>Фотограф</span>
+                                </div>
+                                <div class="pe-block__add-btn">
+                                    <a href="#" class="add-btn">
+                                        <span>Редактировать профиль</span>
+                                    </a>
+                                </div>
+                            </div><!-- html changes -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 col-xl-8 offset-lg-1 offset-xl-1">
+                    <div class="profile-edit__wrapper">
+                        <div class="profile-edit__title lk__title">
+                            <span>Здравствуйте, Виктория</span>
+                        </div>
+                        <div class="profile-edit__body lk__body">
+                            <!-- Line -->
+                            <div class="pe-block pr-block">
+                                <div class="special-offer">
+                                    <div class="special-offer__head">
+                                        <div class="special-offer__icon">
+                                            <div class="catalog-card__discount-icon">
+                                                <div class="percent-svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="special-offer__item ">
+                                            <span>Дата</span>
+                                            <span>10-16.07.2019</span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Услуга</span>
+                                            <span>Фотосессия </span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Цена со скидкой</span>
+                                            <span>3 000 р / фикс</span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Скидка</span>
+                                            <span>30%</span>
+                                        </div>
+                                        <div class="special-offer__button">
+                                            <a href="#">Изменить</a>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer__desctipton">
+                                        <div class="special-offer__desctipton-title">
+                                            <span>Описание</span>
+                                        </div>
+                                        <div class="special-offer__desctipton-body">
+                                            <p>Минимальное время работы 3 часа. В черте города. Итог до 40
+                                                ретушированных фотографий.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-edit__body lk__body">
+                            <!-- Line -->
+                            <div class="pe-block pr-block">
+                                <div class="special-offer">
+                                    <div class="special-offer__head">
+                                        <div class="special-offer__icon">
+                                            <div class="catalog-card__discount-icon">
+                                                <div class="percent-svg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="special-offer__item ">
+                                            <span>Дата</span>
+                                            <span>10-16.07.2019</span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Услуга</span>
+                                            <span>Фотосессия </span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Цена со скидкой</span>
+                                            <span>3 000 р / фикс</span>
+                                        </div>
+                                        <div class="special-offer__item">
+                                            <span>Скидка</span>
+                                            <span>30%</span>
+                                        </div>
+                                        <div class="special-offer__button">
+                                            <a href="#">Изменить</a>
+                                        </div>
+                                    </div>
+                                    <div class="special-offer__desctipton">
+                                        <div class="special-offer__desctipton-title">
+                                            <span>Описание</span>
+                                        </div>
+                                        <div class="special-offer__desctipton-body">
+                                            <p>Минимальное время работы 3 часа. В черте города. Итог до 40
+                                                ретушированных фотографий.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                    <!-- have no offers -->
+                    <div class="lk__havent-offers">
+                        <div class="lk__havent-offers-title">
+                            <span>
+                                У вас еще нет опубликованных спецпредложений, вам нужно срочно их <a href="#">опубликовать</a> 
+                            </span>
+                        </div>
+                        
+                        <div class="pe-block__add-btn">
+                            <a href="#" class="add-btn add-btn-corall">
+                                <span>Добавить спецпредложение</span>
+                            </a>
+                        </div>
+                    </div>							
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

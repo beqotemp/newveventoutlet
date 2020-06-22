@@ -1,0 +1,625 @@
+.profile {
+    padding-top: 0;
+    background-color: #f9f9f9;
+    &__wrapper {
+        position: relative;
+        border-radius: 8px;
+        margin-top: -73px;
+        @media screen and (max-width: $beforeTableWidth) {
+            margin-top: -59px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            margin-top: -40px;
+        }
+    }
+}
+.profile-preview {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    @media screen and (max-width: $beforeSmDesktopWidth) {
+        padding: 22px 26px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {
+        padding: 12px 14px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: $beforeTableWidth) {
+            flex-wrap: wrap;
+		}
+    }
+    &__item {
+        padding-left: 25px;
+        border-left: 1px solid #dadada;
+        margin-right: 38px;
+        display: flex;
+        flex-direction: column;
+        
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            padding-left: 14px;
+            margin-right: 15px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            border-left:none;
+            padding-left: 0;
+            margin-right: 10px;
+        }
+        &.profile-preview__insta {
+            
+            @media screen and (max-width: $beforeTableWidth) {
+                padding-left: 14px;
+                margin-right: 15px;
+                width: auto;
+                margin-top: unset;
+                padding-top: unset;
+                border-top: none;
+                border-left: 1px solid #dadada;
+                margin-left: 10px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 0;
+                padding-top: 18px;
+                border-top: 1px solid #ececec;
+                border-left: none;
+            }
+        }
+        &.profile-preview__catacts {
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            @media screen and (max-width: $beforeTableWidth) {
+                width: 100%;
+                margin-top: 10px;
+                padding-top: 18px;
+                border-top: 1px solid #ececec;
+                justify-content: center;
+            }
+        }
+        &.profile-preview__photo {
+            border-left: none;
+            padding-left: 0px;
+        }
+        &.profile-preview__price {
+            & span {
+                &:nth-child(1){
+                    font-family: $SFS;
+                    font-size: 16px;
+                    color: #231f20;
+                }
+                &:nth-child(2){
+                    border-bottom: 1px solid #b1b1b1;
+                }
+            }
+        }
+        & a {
+            font-family: $SFB;
+            font-size: 16px;
+            color: #231f20;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 14px;
+            }
+        }
+        & h1 {
+            font-family: $SFB;
+            font-size: 16px;
+            color: #231f20;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 14px;
+            }
+        }
+        & h2 {
+            font-family: $SFR;
+            font-size: 16px;
+            color: #9f9f9f;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 13px;
+                color: #9f9f9f;
+            }
+        }
+        & span {
+            &:nth-child(1){
+                font-family: $SFB;
+                font-size: 16px;
+                color: #231f20;
+                @media screen and (max-width: $beforeSmDesktopWidth) {
+                    font-size: 14px;
+                }
+            }
+            &:nth-child(2){
+                font-family: $SFR;
+                font-size: 16px;
+                color: #9f9f9f;
+                @media screen and (max-width: $beforeSmDesktopWidth) {
+                    font-size: 13px;
+                    color: #9f9f9f;
+                }
+            }
+            
+        }
+    }
+    &__pic {
+        height: 86px;
+        width: 86px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        @media screen and (max-width: $desktopWidth) {
+			height: 70px;
+            width: 70px;
+		}
+        @media screen and (max-width: $beforeTableWidth) {
+			height: 56px;
+            width: 56px;
+		}
+    }
+}
+.profile-slider {
+    height: 70vh;
+    overflow: hidden;
+    @media screen and (max-width: $desktopWidth) {
+        height: 503px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {
+        height: 481px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {
+        height: 335px;
+    }
+    
+    &__wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        filter: blur(7px);
+        transition: .4s;
+        background-color:#e6ece4;
+        background-position: center;
+    }
+    &__item {
+        height: 70vh;
+        & img {
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+            @media screen and (max-width: $beforeTableWidth) {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media screen and (max-width: $desktopWidth) {
+            height: 503px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            height: 481px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            height: 335px;
+            display: flex!important;
+            align-items: center;
+        }
+    }
+    &__nav {
+        position: absolute;
+        bottom: 73px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 13px;
+        @media screen and (max-width: $beforeTableWidth) {
+			display: none;
+		}
+        & .slider-nav {
+            margin: 0 auto;
+            width: 375px;
+
+           
+        }
+        
+
+        &_item {
+            border-radius: 12px;
+            //width: 66px!important;
+            height: 60px;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            transition:.4s;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            &:hover {
+                border: 2px solid #fff; 
+            }
+        }
+    }
+    &__controls {
+        user-select:none;
+        & .slick-arrow {
+            user-select:none;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            cursor: pointer;
+            border:1px solid transparent;
+            transition: .4s;
+            &:hover { 
+                box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.28);
+            }
+            &:active {
+                border:1px solid transparent;
+                background-color: #e8e8e8;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                height: 41px;
+                width: 41px;
+            }
+        }
+    }
+    &__prev {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        & .full-arrow-svg {
+            transform: rotate(-90deg);
+            @media screen and (max-width: $beforeTableWidth) {
+                height: 17px;
+                width: 17px;
+            }
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+			left: 2%;
+		}
+    }
+    &__next {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        & .full-arrow-svg {
+            transform: rotate(90deg);
+            @media only screen and (max-width: $beforeTableWidth) {
+                height: 17px;
+                width: 17px;
+            }
+        }
+        @media only screen and (max-width: $beforeTableWidth) {
+			right: 2%;
+		}
+    }
+}
+.profile-core {
+    margin-top: 41px;
+    @media screen and (max-width: $beforeSmDesktopWidth) {
+        margin-top:32px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {
+        margin-top:22px;
+    }
+    &__content {
+        padding: 38px 30px;
+        border-radius: 8px;
+        background-color: #fff;
+        @media screen and (max-width: $beforeTableWidth) {
+            padding: 30px 23px;
+        }
+    }
+    &__input {
+        &::placeholder {
+            font-family: $GM;
+            font-size: 16px;
+            color: #202020;
+        }
+    }
+    
+    &__title {
+        & span {
+            font-family: $GS;
+            font-size: 25px;
+            color: #231f20;
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 22px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 18px;
+            }
+        }
+    }
+    &__sity {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        & .location-svg {
+            height: 15px;
+            width: 13px;
+            background-color: #b8b7b8;
+            margin-right: 7px;
+            margin-bottom: 2px;
+
+            @media screen and (max-width: $beforeTableWidth) {
+                height: 13px;
+                width: 13px;
+                background-color: #b8b7b8;
+                margin-right: 4px;
+                margin-bottom: 2px;
+            }
+            
+        }
+        & span {
+            font-family: $SFR;
+            font-size: 15px;
+            color: #979697;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 14px;
+            }
+        }
+    }
+    &__subtitle {
+        margin-top: 30px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 35px;
+        white-space: pre-line;
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            margin-top: 15px;
+            padding-bottom: 25px;
+        }
+        & p {
+            font-family: $SFR;
+            font-size: 16px;
+            color:#202020;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 15px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 14px;
+            }
+        }
+    }
+    &__contacts {
+        margin-top: 30px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            margin-top: 20px;
+        }
+        &_title {
+            & span {
+                font-family: $GS;
+                font-size: 19px;
+                color: #343434;
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__list {
+        padding: 16px;
+        border-radius: 8px;
+        & .pr-block {
+            margin-bottom: 0px;
+        }
+        & .catalog-card__discount-icon {
+            margin-left: 0px;
+        }
+        & .special-offer__item {
+            @media screen and (max-width: $beforeTableWidth) {
+                border-right:none;
+            }
+        }
+    }
+    &__offer-item {
+        @media screen and (max-width: $beforeTableWidth) {
+            width: 50%;
+            border-top: 1px solid #ececec;
+            margin-top: 15px;
+            padding: 13px 3px 0;
+            border-right: none;
+        }
+    }
+    &__text {
+        padding: 18px 25px 18px 60px;
+        background-color: #e6ece4;
+        border-radius: 4px;
+        font-family: $GM;
+        font-size: 16px;
+        color: #231f20;
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            font-size: 17px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            font-size: 13px;
+            padding: 18px 14px 18px 52px;
+        }
+    }
+    &__sidebar {
+        display: flex;
+        flex-direction: column;
+        padding-left: 27px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            padding-left: 0;
+            margin-top: 37px;
+        }
+        @media screen and (min-width: $tableWidth) and (max-width: $beforeSmDesktopWidth) {
+            flex-direction: row;
+        }
+    }
+}
+
+.sidebar {
+
+    &__slash {
+        width: 1px;
+        background-color: #ededed;
+    }
+    &__calendar {
+        padding-top: 10px;
+        border-top: 1px solid #ebebeb;
+    }
+    &__title {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        & span {
+            font-family: $GS;
+            font-size: 19px;
+            color: #343434;
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 17px;
+            }
+        }
+    }
+    &__item {
+        margin-bottom: 38px;
+        padding: 20px 23px 0;
+        border-radius: 8px;
+        background-color: #fff;
+        & .vc-container {
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            padding: 15px;
+        }
+    }
+    &__item-datepicker {
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            margin-right: 20px;
+            height: 100%;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            margin-right: 0;
+        }
+    }
+    &__head {
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ededed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        & .catalog-card__discount-icon {
+            margin-left: unset;
+            margin-right: 15px;
+            @media screen and (max-width: $beforeTableWidth) {
+                padding: 0;
+                background-color: #ff7061;
+                border-radius: 50%;
+                margin-left: unset;
+                margin-right: 10px;
+                height: 34px;
+                width: 34px;
+                margin-top: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        & .percent-svg {
+            @media screen and (max-width: $beforeTableWidth) {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        &:nth-child(2) {
+            padding-top: 20px;
+        }
+        &_item { 
+            display: flex;
+            flex-direction: column;
+            &:nth-child(1) {
+                width: 60%;
+            }
+            &:nth-child(2) {
+                width: 40%;
+                @media screen and (max-width: $beforeTableWidth) {
+                    width: 50%;
+                }
+            }
+            & span {
+                font-family: $GR;
+                font-size: 14px;
+                color: #8f8f8f;
+                @media screen and (max-width: $beforeTableWidth) {
+                    font-size: 12px;
+                }
+                &.service-name {
+                    font-family: $GS;
+                    font-size: 16px;
+                    color: #202020;
+                    padding-right: 5px;
+                    @media screen and (max-width: $beforeTableWidth) {
+                        font-size: 12px;
+                    }
+                }
+                &.service-prcie {
+                    color: #202020;
+                }
+                &.sidebar-price {
+                    font-family: $GR;
+                    font-size: 14px;
+                    color: #202020;
+                    @media screen and (max-width: $beforeTableWidth) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    &__description {
+        margin-top: 20px;
+        padding-bottom: 23px;
+        white-space: pre-line;
+        & span {
+            font-family: $GR;
+            font-size: 14px;
+            color: #8f8f8f;
+        }
+        & p {
+            font-family: $SFL;
+            font-size: 14px;
+            color: #202020;
+            margin-top: 5px;
+        }
+    }
+}
+
+.tmin-price {
+
+}
+
+.profile-slider__item_video {
+    & iframe {
+        height: 100%;
+        width: 100%;
+        & .ytp-chrome-top, .ytp-chrome-bottom {
+            display: none;
+        }
+    }
+    & .ytp-chrome-top, .ytp-chrome-bottom, .branding-img-container, .play-bar, .vp-sidedock, .vp-controls {
+        display: none;
+    } 
+    & .ytp-chrome-top, .ytp-chrome-bottom {
+        display: none;
+    }
+}
+.ytp-chrome-top {
+    display: none!important;
+}

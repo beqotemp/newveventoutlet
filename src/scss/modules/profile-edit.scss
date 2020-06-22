@@ -1,0 +1,538 @@
+.profile-edit {
+	background-color: #f9f9f9;
+	@media screen and (min-width: $tableWidth) {
+		min-height: 100vh;
+	}
+	&__content {
+		margin: 0 -15px;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 0 -15px;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-direction:row;
+		flex-wrap:row;
+	}
+	&__card {
+		display: flex;
+		flex-direction:column;
+		text-align: center;
+		padding: 50px 0;
+	  	border-radius: 4px;
+	  	overflow: hidden;
+	  	background-color: #fff;
+	  	@media screen and (max-width: $desktopWidth) {
+			flex-direction: column;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			flex-direction:row;
+			padding: 29px 35px 38px;
+			text-align: left;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			flex-direction:column;
+			padding: 50px 0;
+			text-align: center;
+		}
+	}
+	&__body-block {
+		@media screen and (max-width: $desktopWidth) {
+			margin-left: 0;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin-left: 42px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-left: 0;
+		}
+	}
+	&__card-photo {
+		height: 127px;
+		width: 127px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow:hidden;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin: unset;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 0 auto;
+		}
+	}
+	&__name {
+		margin-top: 25px;
+		@media screen and (max-width: $desktopWidth) {
+			margin-top: 25px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin-top: 6px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			margin-top: 25px;
+		}
+		& a {
+			font-family: $GS;
+			font-size: 16px;
+			color: #231f20;
+			letter-spacing: 0.6px;
+		}
+		& span {
+			font-family: $GS;
+			font-size: 16px;
+			color: #231f20;
+			letter-spacing: 0.6px;
+		}
+	}
+	&__prof {
+		span {
+			font-family: $SFR;
+			font-size: 16px;
+			color: #979697;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 16px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 14px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+			}
+		}
+	}
+	&__wrapper {
+		margin: 0 -18px;
+		@media screen and (max-width: $desktopWidth) {
+			margin: 0 -18px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			margin: 31px 0;
+		}
+	
+		@media screen and (max-width: $beforeTableWidth) {
+			margin: 20px 0;
+		}
+	}
+	&__body {
+		background-color: #fff;
+		padding: 15px;
+		margin-top: 24px;
+		padding: 30px 60px 30px 35px;
+		display: flex;
+		flex-direction:column;
+		@media screen and (max-width: $desktopWidth) {
+            padding: 15px 17px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {
+            padding: 15px 17px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {
+            padding: 15px;
+        }
+		&.special-page {
+			@media screen and (max-width: $beforeTableWidth) {
+				padding: 15px;
+			}
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 20px;
+		}
+	}
+	&__title {
+		margin-top: 20px;
+		& span {
+			font-family: $GS;
+			font-size: 35px;
+			color: #33473f;
+			letter-spacing: 1.4px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 28px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 28px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+.pe-block {
+	margin-bottom: 34px;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 25px;
+	@media screen and (max-width: $beforeTableWidth) {
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+	}
+	&__title {
+		& span {
+			font-family: $GS;
+			font-size: 19px;
+			color: #343434;
+			letter-spacing: 0.7px;
+		}
+	}
+	&__form {
+		margin-top: 20px;
+	}
+	&__form-line {
+		margin-bottom: 10px;
+	}
+	&__add-btn {
+		
+	}
+	&__save-button {
+		margin-top: 75px;
+		& .rectangle-btn {
+			padding: 22px 57px;
+			height: 70px;
+			
+		}
+	}
+	&__services-list-wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-direction:column;
+	}
+}
+.services-list.show .pe-block__form {
+	max-height: 700px;
+    transition: max-height 0.25s ease-in;
+}
+.pe-list  {
+	border:none!important;
+	padding-bottom: 0;
+}
+.save-list {
+	& .rectangle-btn {
+		padding: 0 35px;
+	    margin-top: 24px;
+	}
+}
+.services-list {
+	padding-top: 20px;
+    border-bottom: 1px solid #00000021;
+	& .pe-block__form{
+		max-height: 0;
+		transition: max-height 0.15s ease-out;
+		overflow: hidden;
+	}
+	&__head {
+		display: flex;
+		flex-direction:row;
+		align-items: flex-end;
+		@media screen and (max-width: $beforeTableWidth) {
+			flex-wrap: wrap;
+		}
+	}
+	&__title {
+		display: flex;
+		flex-direction:column;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+		}
+		& span {
+			&:nth-child(2){
+				font-family: $GM;
+				font-size: 16px;
+				color: #231f20;
+				margin-top: 3px;
+			}
+		}
+	}
+	&__moder-info {
+		margin-left: 44px;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+			margin-left: unset;
+		}
+		& span {
+			font-family: $GS;
+			font-size: 16px;
+			color: #e0c87e;
+		}
+	}
+	&__info {
+		margin-left: auto;
+		display: flex;
+		flex-direction:row;
+		align-items: flex-end;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+			border-top: 1px solid #dedede;
+			margin-top: 15px;
+			padding-top: 15px;
+		}
+	}
+	&__info-left {
+		display: flex;
+		flex-direction:column;
+		margin-right: 23px;
+
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 50%;
+			margin: unset;
+		}
+	}
+	&__price {
+		margin-top: 3px;
+
+		span {
+			font-family: $GM;
+			font-size: 16px;
+			color: #231f20;
+			
+		}
+	}
+	&__change-btn {
+		& a {
+			font-family: $GM;
+			font-size: 16px;
+			color: #231f20;
+		}
+	}
+	&__description {
+	    padding: 15px 15px;
+	    background: #f9f9f9;
+	    border-radius: 7px;
+	    margin: 0 -3px;
+	    margin-top: 16px;
+		p {
+			font-family: $GM;
+			font-size: 16px;
+			color: #231f20;
+		}
+	}
+
+
+	&__ltitle {
+		font-family: $GM;
+		font-size: 14px;
+		color: #b4b4b4;
+	}
+}
+
+  
+
+
+.pe-portfolio {
+	&__wrapper {
+
+	}
+	&__item {
+		display: flex;
+		flex-direction:column;
+	}
+	&__item-title {
+		margin-bottom: 5px;
+		& span {
+			font-family: $SFM;
+			font-size: 15px;
+			color: #343434;
+			line-height: 19px;
+		}
+	}
+	&__block {
+		height: 172px;
+		width: 100%;
+		background-color: #e6ece4;
+		border-radius: 19px;
+		overflow: hidden;
+		position: relative;
+		& span.pe-portfolio__counter {
+			display: block;
+			font-family: $GR;
+			font-size: 14px;
+			color: #727272;
+			position: absolute;
+		    left: 15px;
+		    bottom: 13px;
+		}
+	}
+	&__field {
+		height: 80%;
+		overflow: hidden;
+		overflow-y: auto;
+		display: flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		padding:13px 15px;
+		&::-webkit-scrollbar {
+		    width: 0px;  /* remove scrollbar space */
+		    background: transparent;
+		} 
+	}
+	
+	&__avatar { // avatar wrapper
+		height: 100%;
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		&:hover .bold-plus-svg {
+			background-color: #383838;
+		}
+	}	
+	&__avatar-hasnt {
+		display: flex;
+		flex-direction:column;
+		height: 100%;
+		text-align: center;
+		justify-content: center;
+		height: 100%;
+		& span {
+			display: block;
+			margin-top: 5px;
+			font-family: $GR;
+			font-size: 14px;
+			color: #727272;
+		}
+		& .bold-plus-svg {
+			height: 24px;
+			width: 24px;
+			background-color: #727272;
+			margin: 0 auto;
+			margin-top: 5px;
+		}
+	}
+	&__avatar-has {
+		display: flex;
+		flex-direction:column;
+		text-align: center;
+		justify-content: center;
+		height: 100%;
+		& .pe-portfolio__added-photo {
+			height: 70px;
+			width: 70px;
+			margin: 0 auto;
+		}
+		& .pe-portfolio__increase-photo .increase-svg {
+			right: 7px;
+		    height: 15px;
+		    width: 15px;
+		}
+		& .pe-portfolio__delete-photo .times-svg {
+			height: 20px;
+    		width: 20px;
+			left: 7px;
+		}
+		& span {
+			display: block;
+			margin-top: 5px;
+			font-family: $GR;
+			font-size: 14px;
+			color: #727272;
+		}
+	}
+	&__add-photo {
+		cursor: pointer;
+  		border-radius: 10px;
+  		display: flex;
+  		align-items: center;
+  		height: 55px;
+  		width: 55px;
+  		border: 1px solid #cfcfcf;
+  		&:hover .bold-plus-svg {
+			background-color: #383838;
+  		}
+  		& .bold-plus-svg {
+  			height: 25px;
+  			width: 25px;
+  			background-color: #727272;
+  			margin: 0 auto;
+  		}
+	}
+	&__field-item {
+		margin-right: 5px;
+	    margin-bottom: 5px;
+	    &:nth-child(3n+3) {
+	    	@media screen and (min-width: $desktopWidth) {
+	    		margin-right: 0;	
+	    	}
+	    	
+	    }
+	}
+	&__added-photo {
+		cursor: pointer;
+  		border-radius: 10px;
+    	background-repeat: no-repeat;
+	    background-size: cover;
+	    height: 55px;
+    	width: 55px;
+	    background-position: center;
+	    position: relative;
+	    display: flex;
+	    flex-direction:row;
+	    overflow: hidden;
+	}
+	&__bg {
+		background: #000000ba;
+		position: absolute;height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition:.4s;
+	}
+	&__delete-photo {
+
+		z-index: 1;
+		opacity: 0;
+		visibility: hidden;
+		transition:.4s;
+		width: 50%;
+		position: relative;
+		& .times-svg {
+			position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    left: 3px;
+		    height: 15px;
+		    width: 15px;
+			background-color: #fff;
+		}
+	}
+	&__increase-photo {
+		z-index: 1;
+		opacity: 0;
+		visibility: hidden;
+		transition:.4s;
+		width: 50%;
+		position: relative;
+		& .increase-svg {
+			position: absolute;
+		    top: 50%;
+		    transform: translateY(-50%);
+	        right: 6px;
+		    height: 11px;
+		    width: 11px;
+			background-color: #fff;
+		}
+	}
+}
+.pe-portfolio__added-photo:hover .pe-portfolio__bg {
+	opacity: 1;
+	visibility: visible;
+}
+.pe-portfolio__added-photo:hover .pe-portfolio__increase-photo {
+	opacity: 1;
+	visibility: visible;
+}
+.pe-portfolio__added-photo:hover .pe-portfolio__delete-photo {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+

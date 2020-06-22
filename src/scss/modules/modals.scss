@@ -1,0 +1,564 @@
+.modal.active .modal-body {
+	transform: translateY(0px);
+
+	
+}
+.modal {
+	z-index: 997;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 115vh;
+    width: 100%;
+    background: #000000ba;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+	pointer-events: none;
+
+
+	&__add-btn {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	&__or-button {
+		text-align: center;
+		margin-top: 15px;
+		& .add-btn {
+
+		}
+	}
+	&__paragraph {
+		padding: 35px 0;
+		@media screen and (max-width: $desktopWidth) {
+			width: 60%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+            width: 60%;
+    		margin: 0 auto;
+		}
+
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 90px 15px 15px;
+			width: auto;
+			margin: unset;
+		}
+		p {
+			font-family: $SFL;
+			font-size: 16px;
+
+			line-height: 25px;
+		}
+		span {
+			font-family: $SFS;
+			font-size: 16px;
+			padding: 15px 0;
+			display: block;
+		}
+		& ul li {
+			list-style-type: disc;
+
+		}
+
+		& ol li {
+			list-style-type: decimal;
+
+		}
+		& li {
+			font-family: $SFL;
+			font-size: 16px;
+			line-height: 20px;
+
+		}
+		& ul, & li {
+			margin: 10px;
+		}
+	}
+	&__f-figure {
+		background-image: url(../img/general/modal-item.png);
+		height: 437px;
+		width: 281px;
+		position: absolute;
+		top: -90px;
+		left: -120px;
+		background-size: cover;
+		@media screen and (max-width: $desktopWidth) {
+			height: 352px;
+		    width: 226px;
+		    top: -30px;
+		    left: -120px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+	        height: 352px;
+		    width: 226px;
+		    top: -30px;
+		    left: -120px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			height: 253px;
+		    width: 162px;
+		    top: -91px;
+		    left: -103px;	
+		}
+		@media screen and (max-width: $beforePhoneWidth ) {
+		    height: 233px;
+		    width: 149px;
+		    top: -91px;
+		    left: -103px;
+		}
+	}
+	&__s-figure {
+		background-image: url(../img/general/modal-itemm.png);
+		height: 225px;
+		width: 212px;
+		position: absolute;
+		right: -90px;
+		top: 0%;
+		transform: translateY(120%);
+		background-repeat: no-repeat;
+		background-size: cover;
+		@media screen and (max-width: $desktopWidth) {
+		    height: 191px;
+    		width: 107px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    height: 225px;
+			width: 212px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			display: none;
+		}
+    	
+	}
+    &.active {
+    	opacity: 1;
+    	visibility: visible;
+    	pointer-events: unset;
+    }
+	&__wrapper {
+		position: relative;
+		padding-top: 122px;
+		overflow-y: auto;
+		height: 100%;
+		padding-bottom: 205px;
+
+		@media screen and (max-width: $desktopWidth) {
+		    padding-bottom: 295px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+	        padding-bottom: 295px;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding-bottom: 522px;
+		}
+		&::-webkit-scrollbar {
+		    width: 0px;  /* remove scrollbar space */
+		    background: transparent;
+		}
+	}
+	&__title {
+		text-align: center;
+		@media screen and (max-width: $desktopWidth) {
+			font-size: 30px;
+			line-height: 29px;
+		 	width: 50%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 50%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0 30px;
+			width: unset;
+			margin: unset;
+		}
+		& span {
+			font-family: $GS;
+			font-size: 35px;
+			color: #33473f;
+		    line-height: 32px;
+		    @media screen and (max-width: $desktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 20px;
+				line-height: 23px;
+			}
+		}
+	}
+	&__subtitle {
+		margin-top: 12px;
+		text-align: center;
+		@media screen and (max-width: $desktopWidth) {
+			width: 52%;
+    		margin: 26px auto 0;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 60%;
+    		margin: 26px auto 0;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 210px;
+			margin: 15px auto 0;
+		}
+		& span {
+			font-family: $SFL;
+			font-size: 16px;
+			color: #515151;
+			line-height: 23px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 23px;
+			}
+		}
+	}
+	&__form {
+		margin-top: 33px;
+	    padding: 0 20px;
+	    @media screen and (max-width: $desktopWidth) {
+			width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
+	    & form {
+    	    display: flex;
+    		flex-direction: column;
+	    }
+	    & .rectangle-btn {
+	    	margin-top: 16px;
+	    }
+	    & .empty-btn {
+	    	margin:25px auto;
+	    }
+	}
+	&__label {
+		margin-bottom: 17px;
+	    display: flex;
+    	flex-direction: column;
+    	&.invalid {
+    		& .validation {
+    			opacity: 1;
+    			visibility: visible;
+    		}
+    	}
+    	& input {
+    		background: #e6ece4;
+		    padding: 24px 29px;
+		    border-radius: 4px;
+		    letter-spacing: 0.7px;
+		    transition: .4s;
+    		border: 1px solid transparent;
+    		font-size: 20px; 
+    		@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 16px;
+				padding: 20px 16px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				padding: 20px 16px;
+			}
+    		&::placeholder {
+    			font-family: $SFL;
+				color: #b4b4b4;
+				font-size: 20px;
+				@media screen and (max-width: $desktopWidth) {
+
+				}
+				@media screen and (max-width: $beforeSmDesktopWidth) {
+					font-size: 16px;
+				}
+				@media screen and (max-width: $beforeTableWidth) {
+					font-size: 16px;
+				}
+    		}
+    	}
+	}
+	&__input-name {
+		margin-bottom: 7px;
+		font-family: $SFM;
+		color: #343434;
+		font-size: 15px;
+	    letter-spacing: 1.1px;
+	}
+	&__var {
+		padding: 20px 0;
+    	padding-bottom: 50px;
+		&.thanks-modal {
+		    padding: 60px 0;
+    		padding-bottom: 100px;
+			@media screen and (max-width: $beforeTableWidth) {
+				padding-bottom: 100px;
+			}
+
+			& .modal__form {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.modal__label.invalid {
+	& input {
+		border: 1px solid #ff0000;
+	}
+}
+.forgot-pass {
+	& a {
+		font-size: 14px;
+		font-family: $SFM;
+		text-decoration: underline;
+		line-height: 1.357;
+		color: rgba(52, 52, 52, 0.722);
+		display: block;
+		margin-top: 5px;
+	}
+}
+.validation {
+	font-family: $GS;
+	font-size: 14px;
+	color: red;
+	display: block;
+	margin-top: 5px;
+	user-select:none;
+	opacity: 0;
+	visibility:hidden; 
+	transition:.4s;
+}
+.modal-body {
+	position: relative;
+	overflow: hidden!important;
+	background: #fff;
+	border-radius: 8px;
+	padding-top: 54px;
+
+	transform: translateY(60px);
+
+    transition: .4s;
+    height: 100%;
+	@media screen and (max-width: $beforeTableWidth) {
+		padding-top: 24px;
+	}
+	&__cross {
+	    position: absolute;
+        top: 30px;
+    	right: 30px;
+    	cursor: pointer;
+		@media screen and (max-width: $beforeTableWidth) {
+			top:15px;
+			right: 15px;
+		}
+    	& .times-svg {
+    		background-color: #858585;
+    		height: 30px;
+    		width: 30px;
+    	}
+		
+	}
+}
+.acquainted {
+	margin-top: 65px;
+	margin-bottom: 30px;
+	@media screen and (max-width: $beforeTableWidth) {
+		margin-top: 0;
+	}
+	&__wrapper {
+		padding: 0px 30px;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0 15px;
+		}
+	}
+	&__body {
+		padding: 50px 30px 30px;
+		border-radius: 9px;
+		border:1px solid rgb(224, 224, 224);
+		display: flex;
+		flex-direction:row;
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 15px;
+			flex-direction: column;
+		}
+	}
+	&__title {
+		& span {
+			font-family: $GS;
+			font-size: 25px;
+			color: #33473f;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 17px;
+			}
+		}
+	}
+	&__intro {
+		width: 70%;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
+	}
+	&__subtitle {
+		margin-top: 10px;
+		& p {
+			font-family: $SFL;
+			font-size: 16px;
+			color: #33473f;
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 19px;
+			}
+		}
+	}
+	&__button {
+		margin-top: 20px;
+		@media screen and (max-width: $beforeTableWidth) {
+			text-align: center;
+		}
+	}
+	&__pic {
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 30px 0 10px;
+			text-align: center;
+		}
+	}
+}
+.alert__wrapper {
+	position: fixed;
+	top: 0;
+	right: 15px;
+	display: flex;
+	flex-direction: column;
+	
+	transform: translateX(110%);
+    opacity: 0;
+	visibility: hidden;
+	&.active {
+		transform: translateX(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.alert {
+    margin-top: 20px;
+	overflow: hidden;
+	transition: .4s;
+	border-radius: 5px;
+	box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.13);
+	width: 330px;
+
+	transform: translateX(110%);
+    opacity: 0;
+	visibility: hidden;
+	&.warning .alert__color{
+		background-color: #e6a23c;
+		& .times-svg {
+			display: none;
+		}
+		& .check-mark-svg {
+			display: none;
+		}
+	}
+	&.error .alert__color{
+		background-color: #ec4159;
+		& .check-mark-svg {
+			display: none;
+		}
+		& .exclamation-svg {
+			display: none;
+		}
+	}
+	&.success .alert__color{
+		background-color: #acd542;
+		& .times-svg {
+			display: none;
+		}
+		& .exclamation-svg {
+			display: none;
+		}
+	}
+	&.active {
+		transform: translateX(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+	&__body{
+		display: flex;
+		flex-direction:row;
+	}
+	&__color {
+		padding:15px;
+	}
+	&__sign {
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		& .check-mark-svg {
+			height: 13px;
+			width:13px;
+			background: #acd542;
+		}
+		& .times-svg {
+			height: 13px;
+			width:13px;
+			background: #ec4159;
+		}
+		& .exclamation-svg {
+			height: 13px;
+			width:13px;
+			background: #e6a23c;
+		}
+	}
+	&__intro {
+		position: relative;
+		padding: 10px;
+		background-color: #fff;
+		& .times-svg {
+			cursor: pointer;
+			height: 13px;
+			width: 13px;
+			position: absolute;
+			right: 13px;
+			top: 13px;
+			background-color: black;
+		}
+	}
+	&__head {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eaeaea;
+	}
+	&__title {
+		font-family: $GS;
+		font-size: 17px;
+		color: #272425;
+	}
+	&__subtitle {
+		margin-top: 10px;
+		& p {
+			font-family: $GR;
+			font-size: 14px;
+			color: #646464;
+		}
+	}
+}

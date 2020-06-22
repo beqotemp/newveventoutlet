@@ -1,0 +1,108 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+
+  
+  @media screen and (max-width: $desktopWidth) {
+		font-size: 16px;
+  }
+  @media screen and (max-width: $beforeSmDesktopWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $tableWidth) {
+		font-size: 15px;
+  }
+  @media screen and (max-width: $beforeTableWidth) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+		font-size: 14px;
+  }
+  @media screen and (max-height: 768px) and (min-width: 1210px) {
+    zoom:0.9;
+  }
+}
+
+body {
+  // background: url(/img/remove/bgggg.png);
+  background-size: cover;
+//dev
+
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent!important;
+  &.overflow {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+a, button {
+  cursor: pointer;
+}
+a { text-decoration: none; }
+
+input,
+textarea,
+button,
+select,
+a,
+*
+.navbar-burger {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+section, .section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+.container {
+  @media screen and (max-width: $beforeTableWidth) {
+    width: 86%;
+  }
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1;
+  min-height: 89vh;
+}
+
+// Modules
+@import "modules/general-elements.scss";
+@import "modules/header.scss";
+@import "modules/main-page.scss";
+@import "modules/profile-edit.scss";
+@import "modules/catalog.scss";
+@import "modules/special.scss";
+@import "modules/lk.scss";
+@import "modules/person-page.scss";
+@import "modules/404.scss";
+@import "modules/info-page.scss";
+@import "modules/progress.scss";
+@import "modules/how-go.scss";
+@import "modules/password-recovery.scss";
+@import "modules/modals.scss";
+@import "modules/footer.scss";
+

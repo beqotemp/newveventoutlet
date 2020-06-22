@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <title>Заголовок | Проект</title>
+  </head>
+  <body class="Site">
+    <!-- main wrapper -->
+    <div id="app" class="wrapper">
+      <nav id="menuBody" class="navbar-general">
+        <div class="container container-bg">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="navbar-general__row">
+                <a href="#" class="navbar-logo">
+                  <img src="./img/general/logo.png" alt="" />
+                  <span class="eventoutlet">
+                    EventOutlet
+                  </span>
+                </a>
+                <div class="navbar-general__collapse search-active">
+                  <ul class="navbar-general__main">
+                    <li><a href="#">Каталог специалистов</a></li>
+                    <li><a href="#">Стать исполнителем</a></li>
+                  </ul>
+                  <div class="search-block">
+                    <form action="">
+                      <label class="search-block__label" for="input-search">
+                        <input id="input-search" type="search" placeholder="Поиск" />
+                        <div class="search-svg"></div>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="navbar-general__profile">
+                    <div class="navbar-general__profile-body">
+                      <div class="navbar-general__profile-preview">
+                        <a href="#" class="profile-preview__link">Виктория</a>
+                        <div
+                          class="navbar-general__profile-photo"
+                          style="background-image: url(./img/person.png);"
+                        ></div>
+                        <div class="arrow-svg"></div>
+                      </div>
+                      <ul class="navbar-general__profile-menu">
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Редактировать профиль</a></li>
+                        <li><a href="#">Выход</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="oval-btn oval-btn-green" style="display: none;">
+                  <span>Вход</span>
+                  <span> / </span>
+                  <span>Регистрация</span>
+                </a>
+
+                <div id="menuBtn" class="navbar-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="header-hero">
+        <div class="container container-bg">
+          <div class="header-hero__wrapper">
+            <div class="header-hero__figure"></div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-10 col-xl-8 offset-md-1 offset-xl-2">
+                <!-- html change -->
+                <div class="header-hero__title">
+                  <span>
+                    Поиск свободных специалистов для вашего мероприятия со скидкой
+                  </span>
+                </div>
+                <div class="header-hero__subtitle">
+                  <span>Найдите специалиста для проекта в 2 клика</span>
+                </div>
+              </div>
+            </div>
+            <!-- html change -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+              <!-- html change -->
+              <div class="header-hero__form">
+                <div class="main-form__container">
+                  <div class="main-form__wrapper">
+                    <div class="main-form__inputs">
+                      <div class="main-form__input catalog-select">
+                        <div class="main-form__input-content">
+                          <span>Выберите специалиста</span>
+                          <div class="arrow-svg"></div>
+                        </div>
+                        <div class="catalog-select__body ">
+                          <div class="catalog-select__body-title">
+                            <span>Выберете город</span>
+                          </div>
+                          <div class="form__select-wrapper">
+                            <div class="form__select-list">
+                              <span>Москва</span>
+                              <span>Москва</span>
+                              <span>Москва</span>
+                              <span>Москва</span>
+                              <span>Москва</span>
+                              <span>Москва</span>
+                              <span>Москва</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="main-form__input catalog-select catalog-select_datepicker">
+                        <div class="main-form__input-content">
+                          <span>Выберите даты</span>
+                          <div class="arrow-svg"></div>
+                        </div>
+                        <div class="catalog-select__body catalog-select__body_datepicker">
+                          <div class="catalog-select__body-title">
+                            <span>Выберете город</span>
+                          </div>
+                          <v-calendar
+                            class="calendar main-calendar"
+                            mode="range"
+                            title-position="left"
+                            v-model="date"
+                            is-inline
+                            color="red"
+                            :popover="{ placement: 'bottom', visibility: 'click' }"
+                          >
+                          </v-calendar>
+                          <div class="catalog-select__button">
+                            <a href="#" class="rectangle-btn-border rectangle-btn-border-green"
+                              ><span>Применить</span></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="almost-square-btn almost-square-btn-corral">
+                      <span>Поиск</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ///////// html change -->
+          </div>
+        </div>
+      </header>
+      <section id="whats" class="whats">
+        <div class="container">
+          <div class="whats-it">
+            <div class="whats-it__head">
+              <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+                  <div class="whats-it__title">
+                    <span>Как работает Event Outlet?</span>
+                  </div>
+                  <div class="whats-it__subtitle">
+                    <p>
+                      Если ваше мероприятие в ближайшие 31 день, а кого-то из специалистов или площадку вы еще не нашли,
+                      наш портал поможет вам! Вы сможете найти любого подрядчика на вашу дату со скидкой от 20% до 50%.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="whats-it__count">
+              <div class="row">
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex">
+                  <div class="whats-it__block">
+                    <div class="whats-it__block_wrapp">
+                      <div class="whats-it__block_pic">
+                        <img src="./img/general/what.png" alt="" />
+                      </div>
+                      <div class="whats-it__block_title">
+                        <span>Кому нужен этот портал?</span>
+                      </div>
+                      <div class="whats-it__block_subtitle">
+                        <p>
+                          Если вам просто нужен специалист event-индустрии на конкретный день
+                        </p>
+                      </div>
+                      <div class="whats-it__block_button">
+                        <a href="#" class="thin-rectangle-btn rectangle-btn-border rectangle-btn-border-green">
+                          <span>Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex">
+                  <div class="whats-it__block">
+                    <div class="whats-it__block_wrapp">
+                      <div class="whats-it__block_pic">
+                        <img src="./img/general/what-2.png" alt="" />
+                      </div>
+                      <div class="whats-it__block_title">
+                        <span>Как это работает?</span>
+                      </div>
+                      <div class="whats-it__block_subtitle">
+                        <p>
+                          Если вам просто нужен специалист event-индустрии на конкретный день
+                        </p>
+                      </div>
+                      <div class="whats-it__block_button">
+                        <a href="#" class="thin-rectangle-btn rectangle-btn-border rectangle-btn-border-green">
+                          <span>Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex">
+                  <div class="whats-it__block">
+                    <div class="whats-it__block_wrapp">
+                      <div class="whats-it__block_pic">
+                        <img src="./img/general/what-3.png" alt="" />
+                      </div>
+                      <div class="whats-it__block_title">
+                        <span>Как найти специалиста?</span>
+                      </div>
+                      <div class="whats-it__block_subtitle">
+                        <p>
+                          Если вам просто нужен специалист event-индустрии на конкретный день
+                        </p>
+                      </div>
+                      <div class="whats-it__block_button">
+                        <a href="#" class="thin-rectangle-btn rectangle-btn-border rectangle-btn-border-green">
+                          <span>Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 d-flex">
+                  <div class="whats-it__block">
+                    <div class="whats-it__block_wrapp">
+                      <div class="whats-it__block_pic">
+                        <img src="./img/general/what-4.png" alt="" />
+                      </div>
+                      <div class="whats-it__block_title">
+                        <span>Что вы получаете?</span>
+                      </div>
+                      <div class="whats-it__block_subtitle">
+                        <p>
+                          Если вам просто нужен специалист event-индустрии на конкретный день
+                        </p>
+                      </div>
+                      <div class="whats-it__block_button">
+                        <a href="#" class="thin-rectangle-btn rectangle-btn-border rectangle-btn-border-green">
+                          <span>Подробнее</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="whats-it__benefits">
+              <div class="row">
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex">
+                  <div class="whats-it__benefit">
+                    <div class="whats-it__benefit_wrapper">
+                      <div class="whats-it__benefit_head">
+                        <div class="clock-svg svg"></div>
+                        <span>Актуальность</span>
+                      </div>
+                      <div class="whats-it__benefit_subtitle">
+                        <p>
+                          Всегда актуальные предложения по самой низкой цене. Новые предложения появляются каждый день
+                        </p>
+                      </div>
+                      <div class="whats-it__benefit_button">
+                        <a href="#" class="benefit-btn">
+                          <span>Смотреть предложения</span>
+                          <div class="long-arrow-svg"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex">
+                  <div class="whats-it__benefit">
+                    <div class="whats-it__benefit_wrapper">
+                      <div class="whats-it__benefit_head">
+                        <div class="thumble-svg svg"></div>
+                        <span>Без посредников</span>
+                      </div>
+                      <div class="whats-it__benefit_subtitle">
+                        <p>Напрямую связываетесь со специалистом через популярные мессенджеры. Без посредников</p>
+                      </div>
+                      <div class="whats-it__benefit_button">
+                        <a href="#" class="benefit-btn">
+                          <span>Как работает сервис?</span>
+                          <div class="long-arrow-svg"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex">
+                  <div class="whats-it__benefit">
+                    <div class="whats-it__benefit_wrapper">
+                      <div class="whats-it__benefit_head">
+                        <div class="letter-svg svg"></div>
+                        <span>Обновления</span>
+                      </div>
+                      <div class="whats-it__benefit_subtitle">
+                        <p>
+                          Если не нашли сегодня то, что вам надо, заходите завтра! Новые предложения появляются каждый
+                          день, не упустите самое привлекательное
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="whats-it__benefits_button">
+                <a href="#" class="benefits-btn yellow">
+                  <span>Подобрать исполнителя</span>
+                  <div class="full-arrow-svg"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="finda" id="finda">
+        <div class="container">
+          <div class="finda__head">
+            <div class="row">
+              <div class="col-xl-10 offset-xl-1">
+                <div class="whats-it__title">
+                  <span>Поиск актуальных предложений на портале Event Outlet со скидкой</span>
+                </div>
+              </div>
+            </div>
+            <div class="finda__wrapper">
+              <img src="./img/general/anim.png" alt="" />
+            </div>
+            <div class="finda__button">
+              <a href="#" class="benefits-btn red-border">
+                <span>Подобрать исполнителя</span>
+                <div class="full-arrow-svg"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="profitable" class="profitable">
+        <div class="profitable__f-figure" style="background-image: url(./img/general/evd-item.png);"></div>
+        <div class="profitable__s-figure" style="background-image: url(./img/general/evd-s-item.png);"></div>
+        <div class="container">
+          <div class="profitable__head">
+            <div class="row">
+              <div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                <!-- Html changes -->
+                <div class="whats-it__title">
+                  <span>Самые выгодные предложения каждый день</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 col-xl-6 offset-xl-3">
+                <div class="whats-it__subtitle">
+                  <p>
+                    Каждый день наш каталог специалистов пополняется новыми профессионалами и скидками, не пропустите)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="profitable-cards" class="profitable-cards">
+        <div class="container">
+          <div class="catalog__wrapper">
+            <div class="container-bg">
+              <!-- Html changes -->
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="catalog-card">
+                    <div class="catalog-card__head">
+                      <div class="catalog-card__head-photo" style="background-image: url(/img/person.png);"></div>
+                      <div class="catalog-card__head-info catalog-card-name">
+                        <span class="catalog-card__first-title"><a href="#">Александр Мирошниченко</a></span>
+                        <span class="catalog-card__second-title">Колористика</span>
+                      </div>
+                      <div class="catalog-card__head-info catalog-card-insta">
+                        <span class="catalog-card__first-title">@info_mirosch</span>
+                        <span class="catalog-card__second-title">Instagram</span>
+                      </div>
+                      <div class="catalog-card__head-info catalog-card-price">
+                        <span class="catalog-card__first-title">Цена со скидкой</span>
+                        <div class="catalog-card__price">
+                          <span class="catalog-card__second-title">3 000 р / час</span>
+                        </div>
+                      </div>
+                      <div class="catalog-card__head-info-discount">
+                        <div class="catalog-card__discount-icon">
+                          <div class="percent-svg"></div>
+                        </div>
+                        <div class="catalog-card__discount-info">
+                          <span>Скидка: 30%</span>
+                          <span><a href="#">Все скидки</a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="catalog-card__media"></div>
+                    <div class="catalog-card__contacts-block">
+                      <div class="catalog-card__head-info catalog-card-insta">
+                        <span class="catalog-card__first-title">@info_mirosch</span>
+                        <span class="catalog-card__second-title">Instagram</span>
+                      </div>
+                      <div class="contacts-block__item">
+                        <a href="#">
+                          <div class="at-svg contacts-block-svg"></div>
+                        </a>
+                      </div>
+                      <div class="contacts-block__item">
+                        <a href="#">
+                          <div class="wa-svg contacts-block-svg"></div>
+                        </a>
+                      </div>
+                      <div class="contacts-block__item">
+                        <a href="#">
+                          <div class="phone-svg contacts-block-svg"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-pagination">
+              <div class="catalog-pagination__wrapper">
+                <a href="#" class="almost-square-btn rectangle-btn-border-green"><span>Перейти к каталогу</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="alert__wrapper">
+        <div class="alert success">
+          <div class="alert__body">
+            <div class="alert__color">
+              <div class="alert__sign">
+                <div class="check-mark-svg"></div>
+                <div class="exclamation-svg"></div>
+                <div class="times-svg"></div>
+              </div>
+            </div>
+            <div class="alert__intro">
+              <div class="times-svg"></div>
+              <div class="alert__head">
+                <span class="alert__title">
+                  Успешно
+                </span>
+              </div>
+              <div class="alert__subtitle">
+                <p>
+                  Ваши данные успешно отправлены на модерацию и будут опубликованы после проверки
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert warning">
+          <div class="alert__body">
+            <div class="alert__color">
+              <div class="alert__sign">
+                <div class="check-mark-svg"></div>
+                <div class="exclamation-svg"></div>
+                <div class="times-svg"></div>
+              </div>
+            </div>
+            <div class="alert__intro">
+              <div class="times-svg"></div>
+              <div class="alert__head">
+                <span class="alert__title">
+                  Успешно
+                </span>
+              </div>
+              <div class="alert__subtitle">
+                <p>
+                  Ваши данные успешно отправлены на модерацию и будут опубликованы после проверки
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__wrapper">
+          <div class="container">
+            <div class="row no-gutters">
+              <div
+                class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-1 col-xl-8 offset-xl-2"
+              >
+                <!-- html change new -->
+
+                <div class="modal-body">
+                  <div class="modal__f-figure"></div>
+                  <div class="modal__s-figure"></div>
+                  <div class="modal-body__figure"></div>
+                  <div class="modal-body__cross">
+                    <div class="times-svg"></div>
+                  </div>
+                  <!-- Video step one  -->
+                  <div class="modal__var">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Заргрузка видео</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>
+                            Чтобы начать загрузку, выберите файл на компьютере или перетащите его в это окно.
+                          </span>
+                        </div>
+                        <div class="modal__add-btn">
+                          <a href="#" class="add-video-btn">Выбрать файл</a>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>
+                            Или
+                          </span>
+                        </div>
+                        <div class="modal__or-button">
+                          <a href="#" class="add-btn"><span>Добавить с другого сайта</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Video step two  -->
+                  <div class="modal__var">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__form">
+                          <form action="">
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ссылка на видео</span>
+                              <input type="text" placeholder="https://" />
+                            </label>
+                          </form>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>
+                            Вы можете указать ссылку на видеозаписи таких сайтах, как Youtube, Rutube, Vimeo и др.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Oferta  -->
+                  <div class="modal__var">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Оферта</span>
+                        </div>
+                        <div class="modal__paragraph">
+                          <p>
+                            Event Outlet – информационный портал по поиску исполнителей на мероприятия. Обращаем ваше
+                            внимание на то, что данный портал, а также вся информация об услугах, товарах и ценах,
+                            предоставленная на нём, носит исключительно информационный характер и ни при каких условиях
+                            не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса
+                            Российской Федерации. Для получения подробной информации о стоимости указанных товаров и
+                            (или) услуг, пожалуйста, обращайтесь к исполнителю напрямую по указанным контактным данным в
+                            его анкете.
+                          </p>
+                          <span>
+                            ГК РФ Статья 437. Приглашение делать оферты. Публичная оферта
+                          </span>
+                          <ol>
+                            <li>
+                              Реклама и иные предложения, адресованные неопределенному кругу лиц, рассматриваются как
+                              приглашение делать оферты, если иное прямо не указано в предложении.
+                            </li>
+                            <li>
+                              Содержащее все существенные условия договора предложение, из которого усматривается воля
+                              лица, делающего предложение, заключить договор на указанных в предложении условиях с
+                              любым, кто отзовется, признается офертой (публичная оферта).
+                            </li>
+                          </ol>
+                          <span>
+                            Рекомендации по безопасности
+                          </span>
+                          <p>
+                            Исполнители не являются сотрудниками Event Outlet и несут личную ответственность за качество
+                            предоставляемых услуг. При сотрудничестве с любым исполнителем мы рекомендуем всегда
+                            соблюдать базовые правила безопасности.
+                          </p>
+                          <ul>
+                            <li>Внимательно изучите и обсудить конкретные условия работы на вашем мероприятии.</li>
+                            <li>
+                              Прописывайте все условия и этапы сотрудничества в договоре или смете, составляйте расписки
+                              о передаче денег или сохраняйте чеки.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Callback ememe  -->
+                  <div class="modal__var">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Обратная связь</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span
+                            >Если у вас есть вопросы по сотрудничеству, предложения или обратная связь по работе
+                            портала, пишите нам! Нам очень важно быть с вами на связи.</span
+                          >
+                        </div>
+                        <div class="modal__form">
+                          <form action="">
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ваше Имя</span>
+                              <input type="text" placeholder="Александр" />
+                            </label>
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ваш почта</span>
+                              <input type="text" placeholder="eventoutlet@gmail.com" />
+                            </label>
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Тема</span>
+                              <input type="text" placeholder="Тема сообщения" />
+                            </label>
+                            <label class="form__label">
+                              <span>Сообщение</span>
+                              <div class="form__textarea-wrapp">
+                                <textarea name="" id="" class="form__textarea" placeholder="Начните писать"></textarea>
+                                <span>Еще 1000 символов</span>
+                              </div>
+                            </label>
+
+                            <button type="submit" class="rectangle-btn rectangle-btn-green">
+                              <span>Отправить</span>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Sign in  -->
+                  <div class="modal__var" style="display: none">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Вход</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>Введите ваш логин/адрес почты и пароль для входа в личный кабинет.</span>
+                        </div>
+                        <div class="modal__form">
+                          <form action="">
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ваша почта </span>
+                              <input type="text" placeholder="eventoutlet@gmail.com" />
+                              <span class="validation">Валидация почты</span>
+                            </label>
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Пароль</span>
+                              <input type="pasword" placeholder="*********" />
+                              <span class="forgot-pass"><a href="#">Забыли пароль?</a></span>
+                            </label>
+                            <button type="submit" class="rectangle-btn rectangle-btn-green">
+                              <span>Вход</span>
+                            </button>
+                            <a href="#" class="empty-btn">Регистрация</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- REGISTRATION  -->
+                  <div class="modal__var" style="display: none">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Регистрация</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>Вы можете зарегестрироваться и стать исполнителем в 2 клика на нашем сервисе.</span>
+                        </div>
+                        <div class="modal__form">
+                          <form action="">
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ваш логин или почта </span>
+                              <input type="text" placeholder="eventoutlet@gmail.com" />
+                            </label>
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Пароль</span>
+                              <input type="pasword" placeholder="*********" />
+                            </label>
+                            <button type="submit" class="rectangle-btn rectangle-btn-green">
+                              <span>Зарегестрироваться</span>
+                            </button>
+                            <a href="#" class="empty-btn">Вход</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Password recovery  -->
+                  <div class="modal__var" style="display: none">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Восстановление пароля</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span
+                            >Введите почту на которую был зарегистрирован ваш профиль, на него придет письмо с
+                            подтверждением смены пароля</span
+                          >
+                        </div>
+                        <div class="modal__form">
+                          <form action="">
+                            <label class="modal__label" for="">
+                              <span class="modal__input-name">Ваш почта</span>
+                              <input type="text" placeholder="eventoutlet@gmail.com" />
+                            </label>
+
+                            <button type="submit" class="rectangle-btn rectangle-btn-green">
+                              <span>Восстановить</span>
+                            </button>
+                            <a href="#" class="empty-btn">Вход</a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Thanks -->
+                  <div class="modal__var thanks-modal">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3">
+                        <div class="modal__title">
+                          <span>Пароль отпправлен на вашу почту</span>
+                        </div>
+                        <div class="modal__subtitle">
+                          <span>Мы отправили письмо с инструкцией по восстановлению пароля на вашу почту.</span>
+                        </div>
+                        <div class="modal__form">
+                          <a href="#" class="rectangle-btn-border rectangle-btn-border-green">
+                            <span>Вход</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Wanna meet? -->
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="acquainted">
+                        <div class="acquainted__wrapper">
+                          <div class="acquainted__body">
+                            <div class="acquainted__intro">
+                              <div class="acquainted__title">
+                                <span>Мы еще не знакомы?</span>
+                              </div>
+                              <div class="acquainted__subtitle">
+                                <p>
+                                  Давайте знакомиться. Ознакомитесь с нашим сервисов, чем он будет вам полезен и как
+                                  выгодно и эффективно его использовать.
+                                </p>
+                              </div>
+                              <div class="acquainted__button">
+                                <a href="#" class="thin-rectangle-btn thin-rectangle-btn-dark">
+                                  <span>Обучение работе с сервисом</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="acquainted__pic">
+                              <img src="../img/general/meet.png" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end main wrapper -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="footer__logo">
+              <img src="./img/general/logo.png" alt="" />
+              <span class="eventoutlet">EventOutlet</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-xl-7">
+            <div class="footer__discription">
+              <p>
+                Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+                sodales, augue velit cursus nunc.Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
+                augue velit cursus nunc Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat,
+                leo eget bibendum sodales, augue
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-5">
+            <div class="footer-nav">
+              <div class="footer-nav__item">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Каталог специалистов</a></li>
+                  <li><a href="#">Стать исполнителем</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav__item">
+                <ul>
+                  <li><a href="#">Вход</a></li>
+                  <li><a href="#">Регистрация</a></li>
+                  <li><a href="#">Как пользоваться?</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>

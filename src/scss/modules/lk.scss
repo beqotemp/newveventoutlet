@@ -1,0 +1,41 @@
+.lk {
+    &__title {
+        margin-top: 0;
+    }
+    &__body {
+        padding: 15px 60px 0px 35px;
+    }
+    &__havent-offers-title {
+        & span {
+            font-family: $GM;
+            font-size: 25px;
+            color: #33473f;
+            transition:.4s;
+            @media screen and (max-width: $desktopWidth) {
+                font-size: 21px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {
+                font-size: 21px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {
+                font-size: 18px;
+            }
+            & a {
+                color: #ff7061;
+                transition:.4s;
+                text-decoration: underline;
+                &:hover {
+                    color: #e05f51;
+                }
+            }
+        }
+    }
+    &__havent-offers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & .pe-block__add-btn {
+            margin-top: 30px;
+        }
+    }
+}
