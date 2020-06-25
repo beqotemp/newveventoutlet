@@ -544,3 +544,35 @@
 	display: block;
 	border-radius: 4px;
 }
+
+.mscroll {
+	height: 322px;
+	display: grid;
+	grid-template-columns: 80% auto;
+	margin: 0;
+    white-space: break-spaces;
+}
+.simplebar-scrollbar {
+	background-color: #d7d6d7;
+    border-radius: 61px;
+    
+}
+.simplebar-scrollbar:before {
+	background-color: transparent;
+	opacity: 1;
+
+}
+.simplebar-track {
+	background-color: #f7f7f7;
+    border-radius: 61px;
+
+}
+.simplebar-track:before {
+	background-color: #f7f7f7;
+    border-radius: 61px;
+
+}
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 6px;
+}

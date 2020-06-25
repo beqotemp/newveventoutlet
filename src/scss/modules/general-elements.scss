@@ -891,33 +891,34 @@
     @media screen and (max-width: $beforeTableWidth) {
       max-height: 122px;
     }
-    &::-webkit-scrollbar {
-      width: 6px;
-      -webkit-overflow-scrolling: auto;
-      display: block;
-      -webkit-appearance: none;
+    // &::-webkit-scrollbar {
+    //   width: 6px;
+    //   -webkit-overflow-scrolling: auto;
+    //   display: block;
+    //   -webkit-appearance: none;
 
-    }
-    &::-webkit-scrollbar:vertical {
-      -webkit-overflow-scrolling: auto;
-      width: 6px;
-       -webkit-appearance: none;
-    }
-    &::-webkit-scrollbar-track {
-      box-shadow: inset 0 0px 27px rgba(0, 0, 0, 0.04);
-      border-radius: 60px;
-    }
+    // }
+    // &::-webkit-scrollbar:vertical {
+    //   -webkit-overflow-scrolling: auto;
+    //   width: 6px;
+    //    -webkit-appearance: none;
+    // }
+    // &::-webkit-scrollbar-track {
+    //   box-shadow: inset 0 0px 27px rgba(0, 0, 0, 0.04);
+    //   border-radius: 60px;
+    // }
 
-    &::-webkit-scrollbar-thumb {
-      border-radius: 61px;
-      box-shadow: inset 0px 0px 12px #d7d6d7
-    }
+    // &::-webkit-scrollbar-thumb {
+    //   border-radius: 61px;
+    //   box-shadow: inset 0px 0px 12px #d7d6d7
+    // }
     & span {
+      display: block;
       cursor: pointer;
       font-family: $GR;
       color: #231f20;
       font-size: 16px;
-      line-height: 25px;
+      line-height: 0px;
       transition:.4s;
       &:hover {
         color: #849855;

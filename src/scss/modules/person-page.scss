@@ -196,7 +196,8 @@
             margin: 0 auto;
             @media screen and (max-width: $beforeTableWidth) {
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
             }
         }
         @media screen and (max-width: $desktopWidth) {

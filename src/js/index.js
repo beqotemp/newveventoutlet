@@ -1,7 +1,7 @@
 
 
 // JS
-import './scripts/menu.js'
+import './scripts/simblebar.js'
 import './scripts/glide.js'
 import './scripts/range-slider.js'
 import './scripts/sticky.js'
