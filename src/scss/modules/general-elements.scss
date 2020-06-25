@@ -891,6 +891,9 @@
     @media screen and (max-width: $beforeTableWidth) {
       max-height: 122px;
     }
+    &::-webkit-scrollbar { 
+      display: none; 
+    }
     // &::-webkit-scrollbar {
     //   width: 6px;
     //   -webkit-overflow-scrolling: auto;
@@ -918,7 +921,7 @@
       font-family: $GR;
       color: #231f20;
       font-size: 16px;
-      line-height: 0px;
+      line-height: 20px;
       transition:.4s;
       &:hover {
         color: #849855;

@@ -546,11 +546,9 @@
 }
 
 .mscroll {
-	height: 322px;
 	display: grid;
 	grid-template-columns: 80% auto;
-	margin: 0;
-    white-space: break-spaces;
+	margin: 0;   
 }
 .simplebar-scrollbar {
 	background-color: #d7d6d7;
