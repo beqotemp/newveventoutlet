@@ -450,6 +450,13 @@
 		}
 	}
 	&__pic {
+		& img {
+		    height: auto;
+    		width: 100%;
+    		@media screen and (max-width: $beforeTableWidth) {
+    			width: auto
+    		}	
+		}
 		@media screen and (max-width: $beforeTableWidth) {
 			padding: 30px 0 10px;
 			text-align: center;
