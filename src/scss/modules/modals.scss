@@ -15,7 +15,7 @@
     opacity: 0;
     visibility: hidden;
 	pointer-events: none;
-
+	
 
 	&__add-btn {
 		text-align: center;
@@ -77,7 +77,7 @@
 		}
 	}
 	&__f-figure {
-		background-image: url(../img/general/modal-item.png);
+		
 		height: 437px;
 		width: 281px;
 		position: absolute;
@@ -346,18 +346,34 @@
 	transition:.4s;
 }
 .modal-body {
+	background: #fff;
 	position: relative;
 	overflow: hidden;
-	background: #fff;
 	border-radius: 8px;
 	padding-top: 54px;
-
 	transform: translateY(60px);
-
     transition: .4s;
     height: 100%;
+	background-image: url(../img/general/modal-item.png);
+	background-repeat: no-repeat; 
+	background-position-x: -140px;
+    background-position-y: -140px;
+
+	@media screen and (max-width: $desktopWidth) {
+		background-position-x: -160px;
+	    background-position-y: -150px;
+	    background-size: 300px;
+	}
+	@media screen and (max-width: $beforeSmDesktopWidth) {
+		background-position-x: -173px;
+	    background-position-y: -154px;
+	    background-size: 295px;
+	}
 	@media screen and (max-width: $beforeTableWidth) {
 		padding-top: 24px;
+	    background-position-x: -93px;
+	    background-position-y: -64px;
+	    background-size: 135px;
 	}
 	&__cross {
 	    position: absolute;
