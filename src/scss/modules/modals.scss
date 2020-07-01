@@ -451,10 +451,10 @@
 	}
 	&__pic {
 		& img {
-		    height: auto;
+		    height: auto!important;
     		width: 100%;
     		@media screen and (max-width: $beforeTableWidth) {
-    			width: auto
+    			width: auto;
     		}	
 		}
 		@media screen and (max-width: $beforeTableWidth) {
