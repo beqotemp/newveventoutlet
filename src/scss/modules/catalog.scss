@@ -912,7 +912,9 @@
 	}
 	&__wrapper {
 		display: flex;
-		justify-content: center;
+		width: 300px;
+	    overflow: scroll;
+	    padding-bottom: 20px;
 	}
 	&__body {
 		display: flex;
