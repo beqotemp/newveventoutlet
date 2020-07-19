@@ -912,9 +912,12 @@
 	}
 	&__wrapper {
 		display: flex;
-		width: 300px;
-	    overflow: scroll;
-	    padding-bottom: 20px;
+		justify-content: center;
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 270px;
+		    overflow: scroll;
+		    padding-bottom: 20px;
+		}
 	}
 	&__body {
 		display: flex;
