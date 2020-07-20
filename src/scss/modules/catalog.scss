@@ -913,12 +913,7 @@
 	&__wrapper {
 		display: flex;
 		justify-content: center;
-		@media screen and (max-width: $beforeTableWidth) {
-		    overflow: scroll;
-		    padding-bottom: 20px;
-		    justify-content: normal;
-	        margin-right: -37px;
-		}
+		
 	}
 	&__body {
 		display: flex;
