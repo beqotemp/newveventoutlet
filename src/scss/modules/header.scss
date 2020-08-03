@@ -372,7 +372,7 @@
 	@media screen and (min-width: $smDesktopWidth ) {
 		display: flex;
 	}
-	@media screen and (min-width: $beforeSmDesktopWidth ) {
+	@media screen and (max-width: $beforeSmDesktopWidth ) {
 		margin-left:unset;
 		display: block;
 	}
