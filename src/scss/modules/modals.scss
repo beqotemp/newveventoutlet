@@ -76,13 +76,13 @@
 			margin: 10px;
 		}
 	}
-	&__f-figure {
-		
-		height: 437px;
-		width: 281px;
+	&__t-figure {
+		background-image: url(../img/general/new-modal-first.png);
 		position: absolute;
-		top: -90px;
-		left: -120px;
+		height: 471px;
+	    width: 153px;
+	    top: 0;
+	    left: 0;
 		background-size: cover;
 		@media screen and (max-width: $desktopWidth) {
 			height: 352px;
@@ -103,20 +103,21 @@
 		    left: -103px;	
 		}
 		@media screen and (max-width: $beforePhoneWidth ) {
-		    height: 233px;
-		    width: 149px;
-		    top: -91px;
-		    left: -103px;
+		    height: 185px;
+    		width: 60px;
+		    top: -43px;
+		    left: -26px;
+		    transform: rotate(7deg);
 		}
 	}
-	&__s-figure {
-		background-image: url(../img/general/modal-itemm.png);
-		height: 225px;
-		width: 212px;
+	&__f-figure {
+		background-image: url(../img/general/new-modal-pic.png);
 		position: absolute;
-		right: -90px;
-		top: 0%;
-		transform: translateY(120%);
+	    height: 340px;
+	    width: 122px;
+	    right: 0;
+	    top: 0;
+	    transform: translateY(80%);
 		background-repeat: no-repeat;
 		background-size: cover;
 		@media screen and (max-width: $desktopWidth) {
@@ -130,8 +131,14 @@
 		@media screen and (max-width: $beforeTableWidth) {
 			display: none;
 		}
-    	
+    	@media screen and (max-width: $beforePhoneWidth ) {
+		    height: 126px;
+    		width: 37px;
+    		top: 0;
+		    right: 0;
+		}
 	}
+
     &.active {
     	opacity: 1;
     	visibility: visible;
@@ -156,6 +163,44 @@
 		&::-webkit-scrollbar {
 		    width: 0px;  /* remove scrollbar space */
 		    background: transparent;
+		}
+	}
+	&__title-type-second {
+		text-align: center;
+		@media screen and (max-width: $desktopWidth) {
+			font-size: 30px;
+			line-height: 29px;
+		 	width: 50%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 62%;
+    		margin: 0 auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 0;
+			text-align: left;
+			width: unset;
+			margin: unset;
+		}
+		& span {
+			font-family: $GS;
+			font-size: 35px;
+			color: #33473f;
+			letter-spacing: 1.09px;
+		    line-height: 32px;
+		    @media screen and (max-width: $desktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 30px;
+				line-height: 29px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 20px;
+				line-height: 23px;
+			}
 		}
 	}
 	&__title {
@@ -194,6 +239,36 @@
 			}
 		}
 	}
+	&__subtitle-type-second {
+		margin-top: 25px;
+		text-align: left;
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			width: 62%;
+		    margin: 25px auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
+		& span {
+			font-family: $SFL;
+			font-size: 16px;
+			color: #515151;
+			line-height: 23px;
+			@media screen and (max-width: $desktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			@media screen and (max-width: $beforeSmDesktopWidth) {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			@media screen and (max-width: $beforeTableWidth) {
+				font-size: 14px;
+				line-height: 23px;
+				margin-top: 10px;
+			}
+		}
+	}
 	&__subtitle {
 		margin-top: 12px;
 		text-align: center;
@@ -228,6 +303,65 @@
 			}
 		}
 	}
+
+	&__form-second-type {
+		margin-top: 33px;
+		@media screen and (max-width: $desktopWidth) {
+			width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+		    width: 60%;
+    		margin: 33px auto;
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			width: 100%;
+		}
+	    & form {
+    	    display: flex;
+    		flex-direction: column;
+	    }
+	    & .rectangle-btn {
+	    	margin-top: 16px;
+	    }
+	    & .empty-btn {
+	    	margin:25px auto;
+	    }
+	    & .form__label {
+	    	& span {
+	    		font-size: 15px;
+	    		letter-spacing: 0.6px;
+	    		color: #343434;
+	    		font-family: $SFM;
+	    	}
+	    	& .form__select-wrapper {
+	    		& span {
+					display: block;
+					cursor: pointer;
+					font-family: $GR;
+					color: #231f20;
+					font-size: 16px;
+					line-height: 26px;
+					transition:.4s;
+					&:hover {
+					    color: #849855;
+					}
+	    		}
+	    	}
+	    	& .form__select-intro {
+	    		font-family: $SFM;
+	    		font-size: 17px;
+	    		letter-spacing: 0.68px;
+	    		color: #444444;
+	    	}
+	    	& .form__select-intro {
+    		    padding: 24px 25px;
+	    	}
+	    	& .form__select-body {
+    		    padding: 31px 35px 65px;
+	    	}
+	    }
+	}
 	&__form {
 		margin-top: 33px;
 	    padding: 0 20px;
@@ -236,7 +370,7 @@
     		margin: 33px auto;
 		}
 		@media screen and (max-width: $beforeSmDesktopWidth) {
-		    width: 60%;
+		    width: 62%;
     		margin: 33px auto;
 		}
 		@media screen and (max-width: $beforeTableWidth) {
@@ -301,6 +435,7 @@
 		font-size: 15px;
 	    letter-spacing: 1.1px;
 	}
+
 	&__var {
 		padding: 20px 0;
     	padding-bottom: 50px;
@@ -314,7 +449,13 @@
 			& .modal__form {
 				text-align: center;
 			}
+			& .modal__form-second-type {
+				text-align: center;
+			}
 		}
+	}
+	&__second-var {
+		padding: 0px 25px;
 	}
 }
 
@@ -354,27 +495,6 @@
 	transform: translateY(60px);
     transition: .4s;
     height: 100%;
-	background-image: url(../img/general/modal-item.png);
-	background-repeat: no-repeat; 
-	background-position-x: -140px;
-    background-position-y: -140px;
-
-	@media screen and (max-width: $desktopWidth) {
-		background-position-x: -160px;
-	    background-position-y: -150px;
-	    background-size: 300px;
-	}
-	@media screen and (max-width: $beforeSmDesktopWidth) {
-		background-position-x: -173px;
-	    background-position-y: -154px;
-	    background-size: 295px;
-	}
-	@media screen and (max-width: $beforeTableWidth) {
-		padding-top: 24px;
-	    background-position-x: -93px;
-	    background-position-y: -64px;
-	    background-size: 135px;
-	}
 	&__cross {
 	    position: absolute;
         top: 30px;
@@ -390,6 +510,30 @@
     		width: 30px;
     	}
 		
+	}
+}
+.track-button-modal {
+	margin-top: 35px;
+}
+.checkpol {
+	margin-top: 10px;
+    width: 80%;
+	& .filter-checkbox {
+		position: relative;
+		color: #525252;
+		font-size: 15px;
+		letter-spacing: 0.65px;
+		font-family: $SFL;
+
+	}
+	& .filter-checkbox input:checked~.checkmark {
+	    background-color: #91b15f;
+	}
+	& .checkmark {
+		height: 18px;
+		width: 18px;
+		top: 5px;
+    	transform: translateY(0%);	
 	}
 }
 .acquainted {

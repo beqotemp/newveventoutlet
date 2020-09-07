@@ -554,6 +554,18 @@
   -webkit-mask: url(../img/svg/long-arrow.svg) no-repeat center;
   mask: url(../img/svg/long-arrow.svg) no-repeat center;
 }
+.bell-svg {
+  display: inline-block;
+  width: 17px;
+  vertical-align: middle;
+  height: 19px;
+  margin-top: -2px;
+  margin-right: 10px;
+  background-color: #202020;
+  transition: 0.4s ease;
+  -webkit-mask: url(../img/svg/bell.svg) no-repeat center;
+  mask: url(../img/svg/bell.svg) no-repeat center;
+}
 .full-arrow-svg {
   display: inline-block;
   width: 22px;

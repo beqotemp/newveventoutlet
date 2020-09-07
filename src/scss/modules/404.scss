@@ -10,9 +10,12 @@
         height: 80vh;
     }
     &__subtitle {
-        max-width: 300px;
+        max-width: 520px;
         margin: 0 auto;
         margin-top: 10px;
+        @media screen and (max-width: $beforeTableWidth) {
+            max-width: 300px;
+        }
         & p {
             font-family: $SFR;
             font-size: 16px;
@@ -24,6 +27,7 @@
     }
     &__pic {
         img {
+            width: 160px;
             @media screen and (max-width: $desktopWidth) {
                 height: 171px;
             }
@@ -31,16 +35,16 @@
                 height: 128px;
             }
             @media screen and (max-width: $beforeTableWidth) {
-                
+                width: auto;
             }
         }
     }
     &__title {
         text-align: center;
         & span {
-            font-family: $GS;
-            font-size: 26px;
-            color: #33473f;
+            font-family: $SFM;
+            font-size: 40px;
+            color: #808080;
             @media screen and (max-width: $desktopWidth) {
                 font-size: 22px;
             }
