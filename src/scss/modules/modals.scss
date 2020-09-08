@@ -125,11 +125,11 @@
     		width: 107px;
 		}
 		@media screen and (max-width: $beforeSmDesktopWidth) {
-		    height: 225px;
-			width: 212px;
+		    height: 212px;
+    		width: 92px;
 		}
 		@media screen and (max-width: $beforeTableWidth) {
-			display: none;
+			
 		}
     	@media screen and (max-width: $beforePhoneWidth ) {
 		    height: 126px;
@@ -176,6 +176,7 @@
 		@media screen and (max-width: $beforeSmDesktopWidth) {
 		    width: 62%;
     		margin: 0 auto;
+    		text-align: left;
 		}
 		@media screen and (max-width: $beforeTableWidth) {
 			padding: 0;
@@ -357,8 +358,16 @@
 	    	& .form__select-intro {
     		    padding: 24px 25px;
 	    	}
-	    	& .form__select-body {
-    		    padding: 31px 35px 65px;
+	    	& .select-wrapper-second-type {
+	    		max-height: 233px;
+	    		@media screen and (max-width: $beforeTableWidth) {
+					max-height: 255px;
+				}
+				& .vc-container {
+					@media screen and (max-width: $beforeTableWidth) {
+						width: 100%;
+					}
+				}
 	    	}
 	    }
 	}
@@ -455,7 +464,8 @@
 		}
 	}
 	&__second-var {
-		padding: 0px 25px;
+		padding: 0px 25px 160px;
+
 	}
 }
 
@@ -514,6 +524,27 @@
 }
 .track-button-modal {
 	margin-top: 35px;
+	& .full-arrow-svg {
+		@media screen and (max-width: $beforeTableWidth) {
+		    margin-left: 6px;
+		}
+	}
+	& .benefits-btn {
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 21px 10px;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	& .bell-svg {
+		@media screen and (max-width: $beforeTableWidth) {
+		    margin-right: 3px;
+		    width: 15px;
+	    	height: 15px;
+	    	margin-right: 3px;
+	    }
+	}
 }
 .checkpol {
 	margin-top: 10px;
@@ -729,3 +760,11 @@
 		}
 	}
 }
+.select-body-second-type {
+	@media screen and (max-width: $beforeTableWidth) {
+		padding: 20px 15px 20px;
+		width: 110%;
+		left: -5%;
+	}
+}
+		   
