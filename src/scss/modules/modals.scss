@@ -767,4 +767,18 @@
 		left: -5%;
 	}
 }
-		   
+
+.collapse-checkbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&__title {
+		margin-top: 3px;
+	}
+	& input:checked~.checkmark {
+		background-color: #849855;
+	}
+	& .checkmark:after {
+		transform: rotate(45deg) translate(-93%,-22%);
+	}
+}
