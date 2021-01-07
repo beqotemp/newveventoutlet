@@ -463,6 +463,7 @@
 	background-color: #e6ece4;
 	padding: 98px 0 114px;
 	overflow: hidden;
+	margin-bottom: -35px!important;
 	&__head {
 		& .whats-it__title {
 			@media screen and (max-width: $beforeTableWidth) {
