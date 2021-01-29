@@ -485,7 +485,8 @@
 	    top: 0;
 	    left: -2%;
     	width: 264px;
-	    height: 45%;
+		height: 45%;
+		max-height: 160px;
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    @media screen and (max-width: $desktopWidth) {
