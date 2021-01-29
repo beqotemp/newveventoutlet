@@ -464,6 +464,18 @@
 	padding: 98px 0 114px;
 	overflow: hidden;
 	margin-bottom: -35px!important;
+	&.in-catalog {
+		padding: 78px 0 84px;
+		@media screen and (max-width: $desktopWidth) {
+			padding: 77px 0 123px;
+		}
+		@media screen and (max-width: $beforeSmDesktopWidth) {
+			padding: 80px 0 110px;	
+		}
+		@media screen and (max-width: $beforeTableWidth) {
+			padding: 56px 0 128px;
+		}
+	}
 	&__head {
 		& .whats-it__title {
 			@media screen and (max-width: $beforeTableWidth) {
@@ -506,7 +518,8 @@
         bottom: 0;
 	    right: -4%;
 	    height: 63%;
-	    width: 596px;
+		width: 536px;
+		max-height: 270px;
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    @media screen and (max-width: $desktopWidth) {
