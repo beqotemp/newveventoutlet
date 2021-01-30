@@ -476,6 +476,9 @@
 			padding: 56px 0 128px;
 		}
 	}
+	& .whats-it__title {
+		font-size: 48px;
+	}
 	&__head {
 		& .whats-it__title {
 			@media screen and (max-width: $beforeTableWidth) {
