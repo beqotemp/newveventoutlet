@@ -477,7 +477,9 @@
 		}
 	}
 	& .whats-it__title {
-		font-size: 48px;
+		span {
+			font-size: 48px;
+		}
 	}
 	&__head {
 		& .whats-it__title {
