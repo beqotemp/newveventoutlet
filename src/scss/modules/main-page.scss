@@ -252,7 +252,7 @@
 				letter-spacing: 2.03px;
 			}
 			@media screen and (max-width: $beforeTableWidth) {
-				font-size: 30px;
+				font-size: 30px!important;
 				line-height: 40px;
 				letter-spacing: 1.69px;
 			}
@@ -479,7 +479,6 @@
 	& .whats-it__title {
 		span {
 			font-size: 48px;
-			
 		}
 	}
 	&__head {
